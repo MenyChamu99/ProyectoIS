@@ -73,6 +73,20 @@ namespace Proyecto_Ing_Soft
             }
             return salida;
         }
+        public string insertarA(String id, String nombre, String apellidoP, String apellidoM, String sexo, String edoCivil, String edad, String fecha, String lugarN, String telefono, String correo, String domicilio, String entidad, String colonia, String carrera, String semestre, String sangre, String nomP, String telP, String nomM, String telM)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Alumnos(idAlumno,Nombres,ApellidoP,ApellidoM,Sexo,EdoCivil,Edad,FechaN,LugarNacimiento,Telefono,Correo,Domicilio,EntFed,Colonia,Carrera,Semestre,TipoSangre,NomPadre,TelPadre,NomMadre,TelMadre) values('" + id + "','" + nombre + "','" + apellidoP + "','" + apellidoM + "','" + sexo + "','" + edoCivil + "','" + edad + "','"+ fecha + "','" + lugarN + "','" + telefono + "','" + correo + "','" + domicilio + "','" + entidad + "','" + colonia + "','" + carrera + "','" + semestre + "','" + sangre + "','" + nomP + "','" + telP + "','" + nomM + "','" + telM + "')", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
         public int personaRegistrada(String id)
         {
             int contador = 0;
@@ -130,6 +144,25 @@ namespace Proyecto_Ing_Soft
             }
             return contador;
         }
+        public int alumnoRegistrado(String id)
+        {
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Alumnos WHERE idAlumno='" + id + "'", cn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    contador++;
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien: " + ex.ToString());
+            }
+            return contador;
+        }
 
         public void llenarTextBoxConsulta(String id,TextBox txtNombre, TextBox txtUsuario, TextBox txtContraseña, ComboBox cbtipousuario)
         {
@@ -168,7 +201,7 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
             }
         }
-        public void llenarTextBoxConsultaMateria(String id, TextBox txtNombreM, TextBox txtHoras, TextBox txtIdCarreraM, TextBox txtCreditos, TextBox txtUnidades)
+        public void llenarTextBoxConsultaMateria(String id, TextBox txtNombreM, TextBox txtHoras, ComboBox cbIdCarrera, TextBox txtCreditos, TextBox txtUnidades)
         {
             try
             {
@@ -178,7 +211,7 @@ namespace Proyecto_Ing_Soft
                 {
                     txtNombreM.Text = dr["Nombre"].ToString();
                     txtHoras.Text = dr["Horas"].ToString();
-                    txtIdCarreraM.Text = dr["Id_Carrera"].ToString();
+                    cbIdCarrera.SelectedItem = dr["Id_Carrera"].ToString();
                     txtCreditos.Text = dr["Creditos"].ToString();
                     txtUnidades.Text = dr["Unidades"].ToString();
                 }

@@ -579,7 +579,7 @@ namespace InterfazDocente
 
         private void ID_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form1 f1 = new Form1();
+            InicioSesion f1 = new InicioSesion();
             f1.Show();
         }
     }
