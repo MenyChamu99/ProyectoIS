@@ -87,6 +87,20 @@ namespace Proyecto_Ing_Soft
             }
             return salida;
         }
+        public string insertarG(String id, String semestre, String grupo, String turno, String idmateria)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Grupo(Id_Grupo,Semestre,Grupo,Turno,Id_Materia) values('" + id + "','" + semestre + "','" + grupo + "','" + turno + "','" + idmateria + "')", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
         public int personaRegistrada(String id)
         {
             int contador = 0;
@@ -168,7 +182,7 @@ namespace Proyecto_Ing_Soft
             int contador = 0;
             try
             {
-                cmd = new SqlCommand("SELECT * FROM Alumnos WHERE idAlumno='" + id + "'", cn);
+                cmd = new SqlCommand("SELECT * FROM Grupo WHERE Id_Grupo='" + id + "'", cn);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
@@ -279,23 +293,22 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
             }
         }
-        public void llenarTextBoxConsultaGrupo(String id, TextBox txtNombre, TextBox txtHoras, TextBox txtIdCarrera)
+        public void llenarTextBoxConsultaMateria2(String id, Label lbNombreMateria)
         {
-            //try
-            //{
-            //    cmd = new SqlCommand("SELECT * FROM Usuarios WHERE ID_Usuario=" + id + "", cn);
-            //    dr = cmd.ExecuteReader();
-            //    if (dr.Read())
-            //    {
-            //        txtNombre.Text = dr["Nombre"].ToString();
-            //        txtUsuario.Text = dr["Usuario"].ToString();
-            //    }
-            //    dr.Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
-            //}
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Materias WHERE Id_Materia=" + id + "", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    lbNombreMateria.Text = dr["Nombre"].ToString();
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+            }
         }
         public void cargarPersonas(DataGridView dgv)
         {

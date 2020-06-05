@@ -102,7 +102,13 @@ namespace Proyecto_Ing_Soft
             cbGrupo.Visible = false;
             lbTurno.Visible = false;
             cbTurno.Visible = false;
+            cbIdMateria.Visible = false;
+            lbMateria.Visible = false;
+            lbNombreMateria.Visible = false;
             btnBuscarG.Visible = false;
+            btnAgregarG.Visible = false;
+            btnEditarG.Visible = false;
+            btnEliminarG.Visible = false;
             //
             TablaAlumno.Visible = false;
         }
@@ -167,7 +173,13 @@ namespace Proyecto_Ing_Soft
             cbGrupo.Visible = true;
             lbTurno.Visible = true;
             cbTurno.Visible = true;
+            cbIdMateria.Visible = true;
+            lbMateria.Visible = true;
+            lbNombreMateria.Visible = true;
             btnBuscarG.Visible = true;
+            btnAgregarG.Visible = true;
+            btnEditarG.Visible = true;
+            btnEliminarG.Visible = true;
 
             //            
             TablaAlumno.Visible = false;
@@ -232,7 +244,13 @@ namespace Proyecto_Ing_Soft
             cbGrupo.Visible = false;
             lbTurno.Visible = false;
             cbTurno.Visible = false;
+            cbIdMateria.Visible = false;
+            lbMateria.Visible = false;
+            lbNombreMateria.Visible = false;
             btnBuscarG.Visible = false;
+            btnAgregarG.Visible = false;
+            btnEditarG.Visible = false;
+            btnEliminarG.Visible = false;
             //
             TablaAlumno.Visible = false;
             GrupoaDocente f7 = new GrupoaDocente();
@@ -299,7 +317,13 @@ namespace Proyecto_Ing_Soft
             cbGrupo.Visible = false;
             lbTurno.Visible = false;
             cbTurno.Visible = false;
+            cbIdMateria.Visible = false;
+            lbMateria.Visible = false;
+            lbNombreMateria.Visible = false;
             btnBuscarG.Visible = false;
+            btnAgregarG.Visible = false;
+            btnEditarG.Visible = false;
+            btnEliminarG.Visible = false;
             //
             TablaAlumno.Visible = false;
             AlumnoaGrupo f5 = new AlumnoaGrupo();
@@ -365,7 +389,13 @@ namespace Proyecto_Ing_Soft
             cbGrupo.Visible = false;
             lbTurno.Visible = false;
             cbTurno.Visible = false;
+            cbIdMateria.Visible = false;
+            lbMateria.Visible = false;
+            lbNombreMateria.Visible = false;
             btnBuscarG.Visible = false;
+            btnAgregarG.Visible = false;
+            btnEditarG.Visible = false;
+            btnEliminarG.Visible = false;
             //
             TablaAlumno.Visible = false;
             PlanT PT = new PlanT();
@@ -435,12 +465,47 @@ namespace Proyecto_Ing_Soft
             {
                 cbCarrera.Items.Add(registro["Nombre"].ToString());
             }
+            registro.Close();
+            SqlCommand comando2 = new SqlCommand("SELECT Id_Materia FROM Materias", cn);
+            SqlDataReader registro2 = comando2.ExecuteReader();
+            while (registro2.Read())
+            {
+                cbIdMateria.Items.Add(registro2["Id_Materia"].ToString());
+            }
             cn.Close();
         }
 
         private void btnAgregarG_Click(object sender, EventArgs e)
         {
+            if (txtIdGrupo.Text != "" && cbSemestreG.SelectedItem.ToString() != "" && cbGrupo.SelectedItem.ToString() != "" && cbTurno.SelectedItem.ToString() != "" && cbIdMateria.SelectedItem.ToString() != "")
+            {
+                if (c.grupoRegistrado(txtIdGrupo.Text) == 0)
+                {
+                    c.insertarG(txtIdGrupo.Text,cbSemestreG.SelectedItem.ToString(), cbGrupo.SelectedItem.ToString(),cbTurno.SelectedItem.ToString(),cbIdMateria.SelectedItem.ToString());
+                    MessageBox.Show("Grupo Guardado", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtIdGrupo.Clear();
+                    lbNombreMateria.Text = "";
+                    
+                    
 
+
+                }
+                else
+                {
+                    MessageBox.Show("El registro ya existe", "Imposible de registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtIdAlumno.Clear();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe llenar todos los campos", "Campos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        
+        }
+
+        private void cbIdMateria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            c.llenarTextBoxConsultaMateria2(cbIdMateria.SelectedItem.ToString(),lbNombreMateria);
         }
     }
 }

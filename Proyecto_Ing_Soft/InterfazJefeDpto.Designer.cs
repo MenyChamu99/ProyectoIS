@@ -167,14 +167,14 @@
             // grupoAProfesorToolStripMenuItem
             // 
             this.grupoAProfesorToolStripMenuItem.Name = "grupoAProfesorToolStripMenuItem";
-            this.grupoAProfesorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grupoAProfesorToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.grupoAProfesorToolStripMenuItem.Text = "&Grupo a Docente";
             this.grupoAProfesorToolStripMenuItem.Click += new System.EventHandler(this.grupoAProfesorToolStripMenuItem_Click);
             // 
             // alumnoAGrupoToolStripMenuItem
             // 
             this.alumnoAGrupoToolStripMenuItem.Name = "alumnoAGrupoToolStripMenuItem";
-            this.alumnoAGrupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alumnoAGrupoToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.alumnoAGrupoToolStripMenuItem.Text = "&Alumno a Grupo";
             this.alumnoAGrupoToolStripMenuItem.Click += new System.EventHandler(this.alumnoAGrupoToolStripMenuItem_Click);
             // 
@@ -857,6 +857,8 @@
             this.cbIdMateria.Name = "cbIdMateria";
             this.cbIdMateria.Size = new System.Drawing.Size(99, 21);
             this.cbIdMateria.TabIndex = 67;
+            this.cbIdMateria.Visible = false;
+            this.cbIdMateria.SelectedIndexChanged += new System.EventHandler(this.cbIdMateria_SelectedIndexChanged);
             // 
             // lbMateria
             // 
@@ -866,6 +868,7 @@
             this.lbMateria.Size = new System.Drawing.Size(57, 13);
             this.lbMateria.TabIndex = 68;
             this.lbMateria.Text = "Id Materia:";
+            this.lbMateria.Visible = false;
             // 
             // lbNombreMateria
             // 
@@ -875,6 +878,7 @@
             this.lbNombreMateria.Name = "lbNombreMateria";
             this.lbNombreMateria.Size = new System.Drawing.Size(86, 23);
             this.lbNombreMateria.TabIndex = 69;
+            this.lbNombreMateria.Visible = false;
             // 
             // InterfazJefeDpto
             // 
