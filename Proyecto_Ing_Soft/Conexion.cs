@@ -163,6 +163,25 @@ namespace Proyecto_Ing_Soft
             }
             return contador;
         }
+        public int grupoRegistrado(String id)
+        {
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Alumnos WHERE idAlumno='" + id + "'", cn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    contador++;
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien: " + ex.ToString());
+            }
+            return contador;
+        }
 
         public void llenarTextBoxConsulta(String id,TextBox txtNombre, TextBox txtUsuario, TextBox txtContraseña, ComboBox cbtipousuario)
         {
@@ -222,7 +241,62 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
             }
         }
-
+        public void llenarTextBoxConsultaUsuario(String id, TextBox txtNombre, TextBox txtUsuario)
+        {
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Usuarios WHERE ID_Usuario=" + id + "", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    txtNombre.Text = dr["Nombre"].ToString();
+                    txtUsuario.Text = dr["Usuario"].ToString();
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+            }
+        }
+        public void llenarTextBoxConsultaAlumno(String id, Label lbNombres, Label lbApellidoP, Label lbApellidoM, Label lbCarrera)
+        {
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Alumnos WHERE idAlumno=" + id + "", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    lbNombres.Text = dr["Nombres"].ToString();
+                    lbApellidoP.Text = dr["ApellidoP"].ToString();
+                    lbApellidoM.Text = dr["ApellidoM"].ToString();
+                    lbCarrera.Text = dr["Carrera"].ToString();
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+            }
+        }
+        public void llenarTextBoxConsultaGrupo(String id, TextBox txtNombre, TextBox txtHoras, TextBox txtIdCarrera)
+        {
+            //try
+            //{
+            //    cmd = new SqlCommand("SELECT * FROM Usuarios WHERE ID_Usuario=" + id + "", cn);
+            //    dr = cmd.ExecuteReader();
+            //    if (dr.Read())
+            //    {
+            //        txtNombre.Text = dr["Nombre"].ToString();
+            //        txtUsuario.Text = dr["Usuario"].ToString();
+            //    }
+            //    dr.Close();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+            //}
+        }
         public void cargarPersonas(DataGridView dgv)
         {
             try
@@ -238,8 +312,23 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar el Datagridview: "+ex);
             }
         }
+        public void cargarAlumnos(DataGridView dgv)
+        {
+            try
+            {
+                da = new SqlDataAdapter("SELECT * FROM Calificaciones", cn);
+                dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
 
-       public string actualizar(String id, String nombre, String usuario, String contraseña, String tipousuario)
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo llenar el Datagridview: " + ex);
+            }
+        }
+
+        public string actualizar(String id, String nombre, String usuario, String contraseña, String tipousuario)
         {
             string salida = "Se actualizaron los datos";
             try

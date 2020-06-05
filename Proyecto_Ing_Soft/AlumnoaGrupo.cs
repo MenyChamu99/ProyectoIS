@@ -17,7 +17,7 @@ namespace Proyecto_Ing_Soft
         {
             InitializeComponent();
         }
-
+        Conexion c = new Conexion();
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -50,6 +50,16 @@ namespace Proyecto_Ing_Soft
             }
 
             cn.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            c.llenarTextBoxConsultaAlumno(comboBox1.SelectedItem.ToString(), lbNombres, lbApellidoP, lbApellidoM, lbCarrera);
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

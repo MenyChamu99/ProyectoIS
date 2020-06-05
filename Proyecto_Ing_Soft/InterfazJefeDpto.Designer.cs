@@ -97,6 +97,9 @@
             this.btnEliminarG = new System.Windows.Forms.Button();
             this.dtbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.TablaAlumno = new System.Windows.Forms.DataGridView();
+            this.cbIdMateria = new System.Windows.Forms.ComboBox();
+            this.lbMateria = new System.Windows.Forms.Label();
+            this.lbNombreMateria = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TablaAlumno)).BeginInit();
             this.SuspendLayout();
@@ -141,14 +144,14 @@
             // grupoToolStripMenuItem
             // 
             this.grupoToolStripMenuItem.Name = "grupoToolStripMenuItem";
-            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.grupoToolStripMenuItem.Text = "&Grupo";
             this.grupoToolStripMenuItem.Click += new System.EventHandler(this.grupoToolStripMenuItem_Click);
             // 
             // alumnoToolStripMenuItem
             // 
             this.alumnoToolStripMenuItem.Name = "alumnoToolStripMenuItem";
-            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alumnoToolStripMenuItem.Text = "&Alumno";
             this.alumnoToolStripMenuItem.Click += new System.EventHandler(this.alumnoToolStripMenuItem_Click);
             // 
@@ -164,14 +167,14 @@
             // grupoAProfesorToolStripMenuItem
             // 
             this.grupoAProfesorToolStripMenuItem.Name = "grupoAProfesorToolStripMenuItem";
-            this.grupoAProfesorToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.grupoAProfesorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.grupoAProfesorToolStripMenuItem.Text = "&Grupo a Docente";
             this.grupoAProfesorToolStripMenuItem.Click += new System.EventHandler(this.grupoAProfesorToolStripMenuItem_Click);
             // 
             // alumnoAGrupoToolStripMenuItem
             // 
             this.alumnoAGrupoToolStripMenuItem.Name = "alumnoAGrupoToolStripMenuItem";
-            this.alumnoAGrupoToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.alumnoAGrupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alumnoAGrupoToolStripMenuItem.Text = "&Alumno a Grupo";
             this.alumnoAGrupoToolStripMenuItem.Click += new System.EventHandler(this.alumnoAGrupoToolStripMenuItem_Click);
             // 
@@ -694,7 +697,7 @@
             // lbIdGrupo
             // 
             this.lbIdGrupo.AutoSize = true;
-            this.lbIdGrupo.Location = new System.Drawing.Point(355, 252);
+            this.lbIdGrupo.Location = new System.Drawing.Point(284, 252);
             this.lbIdGrupo.Name = "lbIdGrupo";
             this.lbIdGrupo.Size = new System.Drawing.Size(51, 13);
             this.lbIdGrupo.TabIndex = 53;
@@ -704,7 +707,7 @@
             // lbSemestreG
             // 
             this.lbSemestreG.AutoSize = true;
-            this.lbSemestreG.Location = new System.Drawing.Point(541, 252);
+            this.lbSemestreG.Location = new System.Drawing.Point(472, 252);
             this.lbSemestreG.Name = "lbSemestreG";
             this.lbSemestreG.Size = new System.Drawing.Size(54, 13);
             this.lbSemestreG.TabIndex = 54;
@@ -714,7 +717,7 @@
             // lbGrupo
             // 
             this.lbGrupo.AutoSize = true;
-            this.lbGrupo.Location = new System.Drawing.Point(699, 252);
+            this.lbGrupo.Location = new System.Drawing.Point(620, 252);
             this.lbGrupo.Name = "lbGrupo";
             this.lbGrupo.Size = new System.Drawing.Size(39, 13);
             this.lbGrupo.TabIndex = 55;
@@ -724,7 +727,7 @@
             // lbTurno
             // 
             this.lbTurno.AutoSize = true;
-            this.lbTurno.Location = new System.Drawing.Point(802, 252);
+            this.lbTurno.Location = new System.Drawing.Point(718, 252);
             this.lbTurno.Name = "lbTurno";
             this.lbTurno.Size = new System.Drawing.Size(38, 13);
             this.lbTurno.TabIndex = 56;
@@ -733,7 +736,7 @@
             // 
             // txtIdGrupo
             // 
-            this.txtIdGrupo.Location = new System.Drawing.Point(405, 249);
+            this.txtIdGrupo.Location = new System.Drawing.Point(335, 250);
             this.txtIdGrupo.Name = "txtIdGrupo";
             this.txtIdGrupo.Size = new System.Drawing.Size(84, 20);
             this.txtIdGrupo.TabIndex = 57;
@@ -745,7 +748,7 @@
             this.cbTurno.Items.AddRange(new object[] {
             "Matutino",
             "Vespertino"});
-            this.cbTurno.Location = new System.Drawing.Point(844, 249);
+            this.cbTurno.Location = new System.Drawing.Point(757, 249);
             this.cbTurno.Name = "cbTurno";
             this.cbTurno.Size = new System.Drawing.Size(100, 21);
             this.cbTurno.TabIndex = 58;
@@ -760,7 +763,7 @@
             "R1",
             "R2",
             "E"});
-            this.cbGrupo.Location = new System.Drawing.Point(742, 249);
+            this.cbGrupo.Location = new System.Drawing.Point(661, 249);
             this.cbGrupo.Name = "cbGrupo";
             this.cbGrupo.Size = new System.Drawing.Size(51, 21);
             this.cbGrupo.TabIndex = 59;
@@ -782,7 +785,7 @@
             "10",
             "11",
             "12"});
-            this.cbSemestreG.Location = new System.Drawing.Point(599, 248);
+            this.cbSemestreG.Location = new System.Drawing.Point(526, 249);
             this.cbSemestreG.Name = "cbSemestreG";
             this.cbSemestreG.Size = new System.Drawing.Size(89, 21);
             this.cbSemestreG.TabIndex = 60;
@@ -791,7 +794,7 @@
             // btnBuscarG
             // 
             this.btnBuscarG.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarG.Image")));
-            this.btnBuscarG.Location = new System.Drawing.Point(494, 241);
+            this.btnBuscarG.Location = new System.Drawing.Point(423, 241);
             this.btnBuscarG.Name = "btnBuscarG";
             this.btnBuscarG.Size = new System.Drawing.Size(42, 31);
             this.btnBuscarG.TabIndex = 61;
@@ -807,6 +810,7 @@
             this.btnAgregarG.Text = "Agregar";
             this.btnAgregarG.UseVisualStyleBackColor = true;
             this.btnAgregarG.Visible = false;
+            this.btnAgregarG.Click += new System.EventHandler(this.btnAgregarG_Click);
             // 
             // btnEditarG
             // 
@@ -846,6 +850,32 @@
             this.TablaAlumno.TabIndex = 66;
             this.TablaAlumno.Visible = false;
             // 
+            // cbIdMateria
+            // 
+            this.cbIdMateria.FormattingEnabled = true;
+            this.cbIdMateria.Location = new System.Drawing.Point(925, 249);
+            this.cbIdMateria.Name = "cbIdMateria";
+            this.cbIdMateria.Size = new System.Drawing.Size(99, 21);
+            this.cbIdMateria.TabIndex = 67;
+            // 
+            // lbMateria
+            // 
+            this.lbMateria.AutoSize = true;
+            this.lbMateria.Location = new System.Drawing.Point(863, 252);
+            this.lbMateria.Name = "lbMateria";
+            this.lbMateria.Size = new System.Drawing.Size(57, 13);
+            this.lbMateria.TabIndex = 68;
+            this.lbMateria.Text = "Id Materia:";
+            // 
+            // lbNombreMateria
+            // 
+            this.lbNombreMateria.BackColor = System.Drawing.Color.White;
+            this.lbNombreMateria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNombreMateria.Location = new System.Drawing.Point(1044, 247);
+            this.lbNombreMateria.Name = "lbNombreMateria";
+            this.lbNombreMateria.Size = new System.Drawing.Size(86, 23);
+            this.lbNombreMateria.TabIndex = 69;
+            // 
             // InterfazJefeDpto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -853,6 +883,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.lbNombreMateria);
+            this.Controls.Add(this.lbMateria);
+            this.Controls.Add(this.cbIdMateria);
             this.Controls.Add(this.TablaAlumno);
             this.Controls.Add(this.dtbFechaNacimiento);
             this.Controls.Add(this.btnEliminarG);
@@ -998,5 +1031,8 @@
         private System.Windows.Forms.Button btnEliminarG;
         private System.Windows.Forms.DateTimePicker dtbFechaNacimiento;
         private System.Windows.Forms.DataGridView TablaAlumno;
+        private System.Windows.Forms.ComboBox cbIdMateria;
+        private System.Windows.Forms.Label lbMateria;
+        private System.Windows.Forms.Label lbNombreMateria;
     }
 }

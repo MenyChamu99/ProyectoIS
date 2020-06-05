@@ -65,6 +65,7 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.Text = "Id Alumno";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // TablaCalif
             // 
@@ -301,7 +302,8 @@
             this.Controls.Add(this.TablaCalif);
             this.Controls.Add(this.comboBox2);
             this.Name = "Calif";
-            this.Text = "Captura de materias";
+            this.Text = "Captura de Calificaciones";
+            this.Load += new System.EventHandler(this.Calif_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TablaCalif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

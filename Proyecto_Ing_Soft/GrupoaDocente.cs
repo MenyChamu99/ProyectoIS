@@ -17,7 +17,8 @@ namespace Proyecto_Ing_Soft
         {
             InitializeComponent();
         }
-
+        
+        Conexion c = new Conexion();
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -35,7 +36,7 @@ namespace Proyecto_Ing_Soft
                 comboBox2.Items.Add(registro["ID_Grupo"].ToString());
             }
             registro.Close();
-            SqlCommand comando2 = new SqlCommand("SELECT ID_Usuario FROM Usuarios", cn);
+            SqlCommand comando2 = new SqlCommand("SELECT ID_Usuario FROM Usuarios WHERE Tipo_Usuario='Docente'", cn);
             SqlDataReader registro2 = comando2.ExecuteReader();
             while (registro2.Read())
             {
@@ -43,6 +44,33 @@ namespace Proyecto_Ing_Soft
             }
 
             cn.Close();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //c.llenarTextBoxConsultaGrupo(comboBox2.SelectedItem.ToString(), txtNombre, txtUsuario);
+
+        }
+        public void LlenarCampos()
+        {
+            String valor = comboBox1.SelectedItem.ToString();
+            c.llenarTextBoxConsultaUsuario(valor, txtNombre, txtUsuario);
+            
+        }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LlenarCampos();
+        }
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        
         }
     }
 }

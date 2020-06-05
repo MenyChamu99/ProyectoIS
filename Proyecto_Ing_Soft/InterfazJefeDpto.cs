@@ -301,7 +301,7 @@ namespace Proyecto_Ing_Soft
             cbTurno.Visible = false;
             btnBuscarG.Visible = false;
             //
-            TablaAlumno.Visible = true;
+            TablaAlumno.Visible = false;
             AlumnoaGrupo f5 = new AlumnoaGrupo();
             f5.Show();
         }
@@ -436,6 +436,11 @@ namespace Proyecto_Ing_Soft
                 cbCarrera.Items.Add(registro["Nombre"].ToString());
             }
             cn.Close();
+        }
+
+        private void btnAgregarG_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

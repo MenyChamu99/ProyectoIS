@@ -582,5 +582,11 @@ namespace InterfazDocente
             InicioSesion f1 = new InicioSesion();
             f1.Show();
         }
+
+        private void calificacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calif cal = new Calif();
+            cal.Show();
+        }
     }
 }

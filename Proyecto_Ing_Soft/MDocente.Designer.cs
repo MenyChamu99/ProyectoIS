@@ -340,14 +340,14 @@
             // planDeTrabajoToolStripMenuItem
             // 
             this.planDeTrabajoToolStripMenuItem.Name = "planDeTrabajoToolStripMenuItem";
-            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.planDeTrabajoToolStripMenuItem.Text = "&Plan de trabajo";
             this.planDeTrabajoToolStripMenuItem.Click += new System.EventHandler(this.planDeTrabajoToolStripMenuItem_Click);
             // 
             // reporteFinalToolStripMenuItem
             // 
             this.reporteFinalToolStripMenuItem.Name = "reporteFinalToolStripMenuItem";
-            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.reporteFinalToolStripMenuItem.Text = "&Reporte final";
             this.reporteFinalToolStripMenuItem.Click += new System.EventHandler(this.reporteFinalToolStripMenuItem_Click);
             // 
@@ -372,6 +372,7 @@
             this.calificacionesToolStripMenuItem.Name = "calificacionesToolStripMenuItem";
             this.calificacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.calificacionesToolStripMenuItem.Text = "&Calificaciones";
+            this.calificacionesToolStripMenuItem.Click += new System.EventHandler(this.calificacionesToolStripMenuItem_Click);
             // 
             // verToolStripMenuItem
             // 
@@ -385,14 +386,14 @@
             // observacionesToolStripMenuItem
             // 
             this.observacionesToolStripMenuItem.Name = "observacionesToolStripMenuItem";
-            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.observacionesToolStripMenuItem.Text = "&Observaciones";
             this.observacionesToolStripMenuItem.Click += new System.EventHandler(this.observacionesToolStripMenuItem_Click);
             // 
             // trabajosEntregadosToolStripMenuItem
             // 
             this.trabajosEntregadosToolStripMenuItem.Name = "trabajosEntregadosToolStripMenuItem";
-            this.trabajosEntregadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trabajosEntregadosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.trabajosEntregadosToolStripMenuItem.Text = "&Trabajos entregados";
             this.trabajosEntregadosToolStripMenuItem.Click += new System.EventHandler(this.trabajosEntregadosToolStripMenuItem_Click);
             // 
