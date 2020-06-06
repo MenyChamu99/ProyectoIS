@@ -364,6 +364,7 @@
             this.txtIdMateria.Size = new System.Drawing.Size(117, 20);
             this.txtIdMateria.TabIndex = 24;
             this.txtIdMateria.Visible = false;
+            this.txtIdMateria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdMateria_KeyPress_1);
             // 
             // txtNombreM
             // 
@@ -514,7 +515,7 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(573, 325);
+            this.txtIdUsuario.Location = new System.Drawing.Point(573, 303);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtIdUsuario.TabIndex = 40;
