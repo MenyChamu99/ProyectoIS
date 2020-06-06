@@ -108,21 +108,21 @@
             // jefeDeDptoToolStripMenuItem
             // 
             this.jefeDeDptoToolStripMenuItem.Name = "jefeDeDptoToolStripMenuItem";
-            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jefeDeDptoToolStripMenuItem.Text = "&Usuario";
             this.jefeDeDptoToolStripMenuItem.Click += new System.EventHandler(this.jefeDeDptoToolStripMenuItem_Click);
             // 
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.docenteToolStripMenuItem.Text = "&Carrera";
             this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.materiasToolStripMenuItem.Text = "&Materia";
             this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
             // 
@@ -230,6 +230,7 @@
             this.txtUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtUsuario.TabIndex = 8;
             this.txtUsuario.Visible = false;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // txtNombre
             // 
@@ -241,7 +242,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(754, 422);
+            this.btnAgregar.Location = new System.Drawing.Point(754, 423);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(99, 32);
             this.btnAgregar.TabIndex = 11;
@@ -299,6 +300,7 @@
             this.txtNombreC.Size = new System.Drawing.Size(100, 20);
             this.txtNombreC.TabIndex = 18;
             this.txtNombreC.Visible = false;
+            this.txtNombreC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreC_KeyPress);
             // 
             // IdMateria
             // 
@@ -373,7 +375,7 @@
             // 
             // txtHoras
             // 
-            this.txtHoras.Location = new System.Drawing.Point(577, 434);
+            this.txtHoras.Location = new System.Drawing.Point(575, 434);
             this.txtHoras.Name = "txtHoras";
             this.txtHoras.Size = new System.Drawing.Size(117, 20);
             this.txtHoras.TabIndex = 26;
@@ -382,7 +384,7 @@
             // 
             // txtCreditos
             // 
-            this.txtCreditos.Location = new System.Drawing.Point(846, 373);
+            this.txtCreditos.Location = new System.Drawing.Point(846, 374);
             this.txtCreditos.Name = "txtCreditos";
             this.txtCreditos.Size = new System.Drawing.Size(121, 20);
             this.txtCreditos.TabIndex = 28;
@@ -391,7 +393,7 @@
             // 
             // btnAgregarM
             // 
-            this.btnAgregarM.Location = new System.Drawing.Point(754, 422);
+            this.btnAgregarM.Location = new System.Drawing.Point(754, 423);
             this.btnAgregarM.Name = "btnAgregarM";
             this.btnAgregarM.Size = new System.Drawing.Size(102, 32);
             this.btnAgregarM.TabIndex = 29;
@@ -402,7 +404,7 @@
             // 
             // btnAgregarC
             // 
-            this.btnAgregarC.Location = new System.Drawing.Point(756, 422);
+            this.btnAgregarC.Location = new System.Drawing.Point(757, 422);
             this.btnAgregarC.Name = "btnAgregarC";
             this.btnAgregarC.Size = new System.Drawing.Size(97, 32);
             this.btnAgregarC.TabIndex = 30;
@@ -413,7 +415,7 @@
             // 
             // btnEliminarMateria
             // 
-            this.btnEliminarMateria.Location = new System.Drawing.Point(757, 428);
+            this.btnEliminarMateria.Location = new System.Drawing.Point(757, 427);
             this.btnEliminarMateria.Name = "btnEliminarMateria";
             this.btnEliminarMateria.Size = new System.Drawing.Size(96, 23);
             this.btnEliminarMateria.TabIndex = 31;
@@ -424,7 +426,7 @@
             // 
             // btnEliminarCarrera
             // 
-            this.btnEliminarCarrera.Location = new System.Drawing.Point(754, 428);
+            this.btnEliminarCarrera.Location = new System.Drawing.Point(754, 427);
             this.btnEliminarCarrera.Name = "btnEliminarCarrera";
             this.btnEliminarCarrera.Size = new System.Drawing.Size(106, 23);
             this.btnEliminarCarrera.TabIndex = 32;
@@ -435,7 +437,7 @@
             // 
             // btnEliminarUsuario
             // 
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(759, 428);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(754, 428);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(100, 23);
             this.btnEliminarUsuario.TabIndex = 33;
@@ -446,7 +448,7 @@
             // 
             // btnBuscarM
             // 
-            this.btnBuscarM.Location = new System.Drawing.Point(595, 349);
+            this.btnBuscarM.Location = new System.Drawing.Point(595, 347);
             this.btnBuscarM.Name = "btnBuscarM";
             this.btnBuscarM.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarM.TabIndex = 34;
@@ -512,7 +514,7 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(575, 325);
+            this.txtIdUsuario.Location = new System.Drawing.Point(573, 325);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtIdUsuario.TabIndex = 40;

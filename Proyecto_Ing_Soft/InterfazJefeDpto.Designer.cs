@@ -391,6 +391,7 @@
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
             this.txtTelefono.TabIndex = 25;
             this.txtTelefono.Visible = false;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtCorreo
             // 
@@ -399,6 +400,7 @@
             this.txtCorreo.Size = new System.Drawing.Size(176, 20);
             this.txtCorreo.TabIndex = 27;
             this.txtCorreo.Visible = false;
+            this.txtCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCorreo_KeyPress);
             // 
             // txtNombreP
             // 
@@ -407,6 +409,7 @@
             this.txtNombreP.Size = new System.Drawing.Size(100, 20);
             this.txtNombreP.TabIndex = 28;
             this.txtNombreP.Visible = false;
+            this.txtNombreP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreP_KeyPress);
             // 
             // txtNombreM
             // 
@@ -415,6 +418,7 @@
             this.txtNombreM.Size = new System.Drawing.Size(100, 20);
             this.txtNombreM.TabIndex = 29;
             this.txtNombreM.Visible = false;
+            this.txtNombreM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreM_KeyPress);
             // 
             // txtTelefonoP
             // 
@@ -423,6 +427,7 @@
             this.txtTelefonoP.Size = new System.Drawing.Size(102, 20);
             this.txtTelefonoP.TabIndex = 30;
             this.txtTelefonoP.Visible = false;
+            this.txtTelefonoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefonoP_KeyPress);
             // 
             // txtTelefonoM
             // 
@@ -431,6 +436,7 @@
             this.txtTelefonoM.Size = new System.Drawing.Size(100, 20);
             this.txtTelefonoM.TabIndex = 31;
             this.txtTelefonoM.Visible = false;
+            this.txtTelefonoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefonoM_KeyPress);
             // 
             // txtEdad
             // 
@@ -439,6 +445,7 @@
             this.txtEdad.Size = new System.Drawing.Size(37, 20);
             this.txtEdad.TabIndex = 32;
             this.txtEdad.Visible = false;
+            this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
             // txtApellidoM
             // 
@@ -448,6 +455,7 @@
             this.txtApellidoM.TabIndex = 35;
             this.txtApellidoM.Visible = false;
             this.txtApellidoM.TextChanged += new System.EventHandler(this.txtApellidoM_TextChanged);
+            this.txtApellidoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoM_KeyPress);
             // 
             // txtApellidoP
             // 
@@ -456,6 +464,8 @@
             this.txtApellidoP.Size = new System.Drawing.Size(100, 20);
             this.txtApellidoP.TabIndex = 36;
             this.txtApellidoP.Visible = false;
+            this.txtApellidoP.TextChanged += new System.EventHandler(this.txtApellidoP_TextChanged);
+            this.txtApellidoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoP_KeyPress);
             // 
             // txtNombre
             // 
@@ -464,6 +474,7 @@
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 37;
             this.txtNombre.Visible = false;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtIdAlumno
             // 
@@ -472,6 +483,7 @@
             this.txtIdAlumno.Size = new System.Drawing.Size(100, 20);
             this.txtIdAlumno.TabIndex = 38;
             this.txtIdAlumno.Visible = false;
+            this.txtIdAlumno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdAlumno_KeyPress);
             // 
             // cbEstadoCivil
             // 
@@ -741,6 +753,7 @@
             this.txtIdGrupo.Size = new System.Drawing.Size(84, 20);
             this.txtIdGrupo.TabIndex = 57;
             this.txtIdGrupo.Visible = false;
+            this.txtIdGrupo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdGrupo_KeyPress);
             // 
             // cbTurno
             // 

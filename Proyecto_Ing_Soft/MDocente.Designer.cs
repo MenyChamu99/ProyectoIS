@@ -340,14 +340,14 @@
             // planDeTrabajoToolStripMenuItem
             // 
             this.planDeTrabajoToolStripMenuItem.Name = "planDeTrabajoToolStripMenuItem";
-            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.planDeTrabajoToolStripMenuItem.Text = "&Plan de trabajo";
             this.planDeTrabajoToolStripMenuItem.Click += new System.EventHandler(this.planDeTrabajoToolStripMenuItem_Click);
             // 
             // reporteFinalToolStripMenuItem
             // 
             this.reporteFinalToolStripMenuItem.Name = "reporteFinalToolStripMenuItem";
-            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reporteFinalToolStripMenuItem.Text = "&Reporte final";
             this.reporteFinalToolStripMenuItem.Click += new System.EventHandler(this.reporteFinalToolStripMenuItem_Click);
             // 
@@ -386,14 +386,14 @@
             // observacionesToolStripMenuItem
             // 
             this.observacionesToolStripMenuItem.Name = "observacionesToolStripMenuItem";
-            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.observacionesToolStripMenuItem.Text = "&Observaciones";
             this.observacionesToolStripMenuItem.Click += new System.EventHandler(this.observacionesToolStripMenuItem_Click);
             // 
             // trabajosEntregadosToolStripMenuItem
             // 
             this.trabajosEntregadosToolStripMenuItem.Name = "trabajosEntregadosToolStripMenuItem";
-            this.trabajosEntregadosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.trabajosEntregadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.trabajosEntregadosToolStripMenuItem.Text = "&Trabajos entregados";
             this.trabajosEntregadosToolStripMenuItem.Click += new System.EventHandler(this.trabajosEntregadosToolStripMenuItem_Click);
             // 
@@ -425,6 +425,7 @@
             this.TR2.Size = new System.Drawing.Size(203, 20);
             this.TR2.TabIndex = 15;
             this.TR2.Visible = false;
+            this.TR2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR2_KeyPress);
             // 
             // LR2
             // 
@@ -444,6 +445,7 @@
             this.TR1.Size = new System.Drawing.Size(203, 20);
             this.TR1.TabIndex = 13;
             this.TR1.Visible = false;
+            this.TR1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR1_KeyPress);
             // 
             // LR1
             // 
@@ -817,6 +819,7 @@
             this.TR5.Size = new System.Drawing.Size(48, 20);
             this.TR5.TabIndex = 19;
             this.TR5.Visible = false;
+            this.TR5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR5_KeyPress);
             // 
             // LR5
             // 
@@ -836,6 +839,7 @@
             this.TR4.Size = new System.Drawing.Size(48, 20);
             this.TR4.TabIndex = 17;
             this.TR4.Visible = false;
+            this.TR4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR4_KeyPress);
             // 
             // LR4
             // 
@@ -855,6 +859,7 @@
             this.TR3.Size = new System.Drawing.Size(321, 20);
             this.TR3.TabIndex = 15;
             this.TR3.Visible = false;
+            this.TR3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR3_KeyPress);
             // 
             // LR3
             // 
