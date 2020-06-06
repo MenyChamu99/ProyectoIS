@@ -382,7 +382,7 @@
             // 
             // txtCreditos
             // 
-            this.txtCreditos.Location = new System.Drawing.Point(846, 373);
+            this.txtCreditos.Location = new System.Drawing.Point(846, 374);
             this.txtCreditos.Name = "txtCreditos";
             this.txtCreditos.Size = new System.Drawing.Size(121, 20);
             this.txtCreditos.TabIndex = 28;
@@ -512,7 +512,7 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(575, 325);
+            this.txtIdUsuario.Location = new System.Drawing.Point(573, 325);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtIdUsuario.TabIndex = 40;
