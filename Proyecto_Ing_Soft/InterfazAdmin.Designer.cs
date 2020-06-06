@@ -221,6 +221,7 @@
             this.txtContra.Size = new System.Drawing.Size(121, 20);
             this.txtContra.TabIndex = 7;
             this.txtContra.Visible = false;
+            this.txtContra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContra_KeyPress);
             // 
             // txtUsuario
             // 
@@ -289,6 +290,7 @@
             this.txtIdCarrera.Size = new System.Drawing.Size(100, 20);
             this.txtIdCarrera.TabIndex = 17;
             this.txtIdCarrera.Visible = false;
+            this.txtIdCarrera.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdCarrera_KeyPress);
             // 
             // txtNombreC
             // 
@@ -371,19 +373,21 @@
             // 
             // txtHoras
             // 
-            this.txtHoras.Location = new System.Drawing.Point(575, 434);
+            this.txtHoras.Location = new System.Drawing.Point(577, 434);
             this.txtHoras.Name = "txtHoras";
             this.txtHoras.Size = new System.Drawing.Size(117, 20);
             this.txtHoras.TabIndex = 26;
             this.txtHoras.Visible = false;
+            this.txtHoras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoras_KeyPress);
             // 
             // txtCreditos
             // 
-            this.txtCreditos.Location = new System.Drawing.Point(846, 374);
+            this.txtCreditos.Location = new System.Drawing.Point(846, 373);
             this.txtCreditos.Name = "txtCreditos";
             this.txtCreditos.Size = new System.Drawing.Size(121, 20);
             this.txtCreditos.TabIndex = 28;
             this.txtCreditos.Visible = false;
+            this.txtCreditos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCreditos_KeyPress);
             // 
             // btnAgregarM
             // 
@@ -431,7 +435,7 @@
             // 
             // btnEliminarUsuario
             // 
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(756, 428);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(759, 428);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(100, 23);
             this.btnEliminarUsuario.TabIndex = 33;
@@ -514,6 +518,7 @@
             this.txtIdUsuario.TabIndex = 40;
             this.txtIdUsuario.Visible = false;
             this.txtIdUsuario.TextChanged += new System.EventHandler(this.txtIdUsuario_TextChanged);
+            this.txtIdUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdUsuario_KeyPress);
             // 
             // DgvUsuarios
             // 
@@ -561,6 +566,8 @@
             this.txtUnidades.Size = new System.Drawing.Size(100, 20);
             this.txtUnidades.TabIndex = 45;
             this.txtUnidades.Visible = false;
+            this.txtUnidades.TextChanged += new System.EventHandler(this.txtUnidades_TextChanged);
+            this.txtUnidades.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUnidades_KeyPress);
             // 
             // cbIdCarrera
             // 

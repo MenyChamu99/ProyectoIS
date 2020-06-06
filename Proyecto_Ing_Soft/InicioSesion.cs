@@ -113,6 +113,13 @@ namespace Proyecto_Ing_Soft
             {
                 logear(this.textBox1.Text, this.textBox2.Text);
             }
+
+            if (e.KeyChar>=32 && e.KeyChar <=47 || e.KeyChar >= 58 && e.KeyChar <= 255)
+            {
+                MessageBox.Show("Sólo números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -120,5 +127,9 @@ namespace Proyecto_Ing_Soft
 
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
