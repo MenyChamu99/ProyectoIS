@@ -144,14 +144,14 @@
             // grupoToolStripMenuItem
             // 
             this.grupoToolStripMenuItem.Name = "grupoToolStripMenuItem";
-            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.grupoToolStripMenuItem.Text = "&Grupo";
             this.grupoToolStripMenuItem.Click += new System.EventHandler(this.grupoToolStripMenuItem_Click);
             // 
             // alumnoToolStripMenuItem
             // 
             this.alumnoToolStripMenuItem.Name = "alumnoToolStripMenuItem";
-            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alumnoToolStripMenuItem.Text = "&Alumno";
             this.alumnoToolStripMenuItem.Click += new System.EventHandler(this.alumnoToolStripMenuItem_Click);
             // 
@@ -400,6 +400,7 @@
             this.txtCorreo.Size = new System.Drawing.Size(176, 20);
             this.txtCorreo.TabIndex = 27;
             this.txtCorreo.Visible = false;
+            this.txtCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCorreo_KeyPress);
             // 
             // txtNombreP
             // 
@@ -408,6 +409,7 @@
             this.txtNombreP.Size = new System.Drawing.Size(100, 20);
             this.txtNombreP.TabIndex = 28;
             this.txtNombreP.Visible = false;
+            this.txtNombreP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreP_KeyPress);
             // 
             // txtNombreM
             // 
@@ -416,6 +418,7 @@
             this.txtNombreM.Size = new System.Drawing.Size(100, 20);
             this.txtNombreM.TabIndex = 29;
             this.txtNombreM.Visible = false;
+            this.txtNombreM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreM_KeyPress);
             // 
             // txtTelefonoP
             // 
@@ -452,6 +455,7 @@
             this.txtApellidoM.TabIndex = 35;
             this.txtApellidoM.Visible = false;
             this.txtApellidoM.TextChanged += new System.EventHandler(this.txtApellidoM_TextChanged);
+            this.txtApellidoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoM_KeyPress);
             // 
             // txtApellidoP
             // 
@@ -460,6 +464,8 @@
             this.txtApellidoP.Size = new System.Drawing.Size(100, 20);
             this.txtApellidoP.TabIndex = 36;
             this.txtApellidoP.Visible = false;
+            this.txtApellidoP.TextChanged += new System.EventHandler(this.txtApellidoP_TextChanged);
+            this.txtApellidoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoP_KeyPress);
             // 
             // txtNombre
             // 
@@ -468,6 +474,7 @@
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 37;
             this.txtNombre.Visible = false;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtIdAlumno
             // 
