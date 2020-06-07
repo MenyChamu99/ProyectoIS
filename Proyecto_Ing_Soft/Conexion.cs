@@ -15,7 +15,7 @@ namespace Proyecto_Ing_Soft
     {
         SqlConnection cn;
         SqlCommand cmd;
-        SqlDataReader dr;
+        SqlDataReader dr,dr2;
         SqlDataAdapter da;
         DataTable dt;
 
@@ -293,6 +293,43 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
             }
         }
+        public void llenarTextBoxConsultaGrupo(String id, Label lbSemestre, Label lbGrupo, Label lbIdMateria)
+        {
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Grupo WHERE Id_Grupo=" + id + "", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    lbSemestre.Text = dr["Semestre"].ToString();
+                    lbGrupo.Text = dr["Grupo"].ToString();
+                    lbIdMateria.Text = dr["Id_Materia"].ToString();
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+            }
+        }
+        //public void llenarTextBoxConsultaIdMateria(String id, Label lbNombreMateria)
+        //{
+        //    try
+        //    {
+        //        cmd = new SqlCommand("SELECT * FROM Materias WHERE Id_Materia=" + id + "", cn);
+        //        dr2 = cmd.ExecuteReader();
+        //        if (dr2.Read())
+        //        {
+        //            lbNombreMateria.Text = dr2["Nombre"].ToString();
+                    
+        //        }
+        //        dr2.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+        //    }
+        //}
         public void llenarTextBoxConsultaMateria2(String id, Label lbNombreMateria)
         {
             try

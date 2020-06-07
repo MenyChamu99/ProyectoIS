@@ -34,8 +34,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lbCarrera = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbSemestre = new System.Windows.Forms.Label();
+            this.lbGrupo = new System.Windows.Forms.Label();
             this.lbNombres = new System.Windows.Forms.Label();
             this.lbApellidoP = new System.Windows.Forms.Label();
             this.lbApellidoM = new System.Windows.Forms.Label();
@@ -44,6 +44,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.lbIdMateria = new System.Windows.Forms.Label();
+            this.lbNombreMateria = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,21 +93,21 @@
             this.lbCarrera.Size = new System.Drawing.Size(157, 23);
             this.lbCarrera.TabIndex = 4;
             // 
-            // label4
+            // lbSemestre
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(539, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 23);
-            this.label4.TabIndex = 5;
+            this.lbSemestre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSemestre.Location = new System.Drawing.Point(539, 181);
+            this.lbSemestre.Name = "lbSemestre";
+            this.lbSemestre.Size = new System.Drawing.Size(168, 23);
+            this.lbSemestre.TabIndex = 5;
             // 
-            // label5
+            // lbGrupo
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(539, 251);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 23);
-            this.label5.TabIndex = 6;
+            this.lbGrupo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbGrupo.Location = new System.Drawing.Point(539, 222);
+            this.lbGrupo.Name = "lbGrupo";
+            this.lbGrupo.Size = new System.Drawing.Size(168, 23);
+            this.lbGrupo.TabIndex = 6;
             // 
             // lbNombres
             // 
@@ -179,6 +181,24 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "Seleccione Grupo:";
             // 
+            // lbIdMateria
+            // 
+            this.lbIdMateria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbIdMateria.Location = new System.Drawing.Point(539, 265);
+            this.lbIdMateria.Name = "lbIdMateria";
+            this.lbIdMateria.Size = new System.Drawing.Size(168, 23);
+            this.lbIdMateria.TabIndex = 15;
+            this.lbIdMateria.TextChanged += new System.EventHandler(this.lbIdMateria_TextChanged);
+            this.lbIdMateria.Click += new System.EventHandler(this.lbIdMateria_Click);
+            // 
+            // lbNombreMateria
+            // 
+            this.lbNombreMateria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNombreMateria.Location = new System.Drawing.Point(539, 311);
+            this.lbNombreMateria.Name = "lbNombreMateria";
+            this.lbNombreMateria.Size = new System.Drawing.Size(168, 22);
+            this.lbNombreMateria.TabIndex = 16;
+            // 
             // AlumnoaGrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +206,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbNombreMateria);
+            this.Controls.Add(this.lbIdMateria);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
@@ -194,8 +216,8 @@
             this.Controls.Add(this.lbApellidoM);
             this.Controls.Add(this.lbApellidoP);
             this.Controls.Add(this.lbNombres);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbGrupo);
+            this.Controls.Add(this.lbSemestre);
             this.Controls.Add(this.lbCarrera);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -219,8 +241,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label lbCarrera;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbSemestre;
+        private System.Windows.Forms.Label lbGrupo;
         private System.Windows.Forms.Label lbNombres;
         private System.Windows.Forms.Label lbApellidoP;
         private System.Windows.Forms.Label lbApellidoM;
@@ -229,5 +251,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbIdMateria;
+        private System.Windows.Forms.Label lbNombreMateria;
     }
 }

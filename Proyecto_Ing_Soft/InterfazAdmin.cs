@@ -742,6 +742,7 @@ namespace Proyecto_Ing_Soft
                 e.Handled = true;
                 return;
             }
+
         }
 
         private void txtNombreC_KeyPress(object sender, KeyPressEventArgs e)
@@ -764,6 +765,6 @@ namespace Proyecto_Ing_Soft
             }
         }
 
-        }
+        
     }
 }
