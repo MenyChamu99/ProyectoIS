@@ -40,11 +40,6 @@
             this.observacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabajosEntregadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PT1 = new System.Windows.Forms.Panel();
-            this.TR2 = new System.Windows.Forms.TextBox();
-            this.LR2 = new System.Windows.Forms.Label();
-            this.TR1 = new System.Windows.Forms.TextBox();
-            this.LR1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -59,7 +54,6 @@
             this.L2 = new System.Windows.Forms.Label();
             this.L1 = new System.Windows.Forms.Label();
             this.PT2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.T10 = new System.Windows.Forms.TextBox();
             this.T8 = new System.Windows.Forms.TextBox();
             this.T9 = new System.Windows.Forms.TextBox();
@@ -75,13 +69,6 @@
             this.L8 = new System.Windows.Forms.Label();
             this.L7 = new System.Windows.Forms.Label();
             this.PT3 = new System.Windows.Forms.Panel();
-            this.TR5 = new System.Windows.Forms.TextBox();
-            this.LR5 = new System.Windows.Forms.Label();
-            this.TR4 = new System.Windows.Forms.TextBox();
-            this.LR4 = new System.Windows.Forms.Label();
-            this.TR3 = new System.Windows.Forms.TextBox();
-            this.LR3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.T11 = new System.Windows.Forms.TextBox();
             this.T12 = new System.Windows.Forms.TextBox();
             this.T13 = new System.Windows.Forms.TextBox();
@@ -89,24 +76,6 @@
             this.L5 = new System.Windows.Forms.Label();
             this.L4 = new System.Windows.Forms.Label();
             this.PT4 = new System.Windows.Forms.Panel();
-            this.LR21 = new System.Windows.Forms.Label();
-            this.LR20 = new System.Windows.Forms.Label();
-            this.LR19 = new System.Windows.Forms.Label();
-            this.TR126 = new System.Windows.Forms.TextBox();
-            this.TR66 = new System.Windows.Forms.TextBox();
-            this.TR116 = new System.Windows.Forms.TextBox();
-            this.TR56 = new System.Windows.Forms.TextBox();
-            this.TR106 = new System.Windows.Forms.TextBox();
-            this.TR46 = new System.Windows.Forms.TextBox();
-            this.TR96 = new System.Windows.Forms.TextBox();
-            this.TR36 = new System.Windows.Forms.TextBox();
-            this.TR86 = new System.Windows.Forms.TextBox();
-            this.TR26 = new System.Windows.Forms.TextBox();
-            this.TR76 = new System.Windows.Forms.TextBox();
-            this.LR6 = new System.Windows.Forms.Label();
-            this.TR16 = new System.Windows.Forms.TextBox();
-            this.LR7 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.T29 = new System.Windows.Forms.TextBox();
             this.L31 = new System.Windows.Forms.Label();
             this.T28 = new System.Windows.Forms.TextBox();
@@ -142,59 +111,6 @@
             this.L15 = new System.Windows.Forms.Label();
             this.L14 = new System.Windows.Forms.Label();
             this.PT5 = new System.Windows.Forms.Panel();
-            this.LR23 = new System.Windows.Forms.Label();
-            this.LR22 = new System.Windows.Forms.Label();
-            this.TR712 = new System.Windows.Forms.TextBox();
-            this.TR612 = new System.Windows.Forms.TextBox();
-            this.TR512 = new System.Windows.Forms.TextBox();
-            this.TR412 = new System.Windows.Forms.TextBox();
-            this.TR312 = new System.Windows.Forms.TextBox();
-            this.TR212 = new System.Windows.Forms.TextBox();
-            this.TR112 = new System.Windows.Forms.TextBox();
-            this.TR711 = new System.Windows.Forms.TextBox();
-            this.TR611 = new System.Windows.Forms.TextBox();
-            this.TR511 = new System.Windows.Forms.TextBox();
-            this.TR411 = new System.Windows.Forms.TextBox();
-            this.TR311 = new System.Windows.Forms.TextBox();
-            this.TR211 = new System.Windows.Forms.TextBox();
-            this.TR111 = new System.Windows.Forms.TextBox();
-            this.TR710 = new System.Windows.Forms.TextBox();
-            this.TR610 = new System.Windows.Forms.TextBox();
-            this.TR510 = new System.Windows.Forms.TextBox();
-            this.TR410 = new System.Windows.Forms.TextBox();
-            this.TR310 = new System.Windows.Forms.TextBox();
-            this.TR210 = new System.Windows.Forms.TextBox();
-            this.TR110 = new System.Windows.Forms.TextBox();
-            this.TR79 = new System.Windows.Forms.TextBox();
-            this.TR69 = new System.Windows.Forms.TextBox();
-            this.TR59 = new System.Windows.Forms.TextBox();
-            this.TR49 = new System.Windows.Forms.TextBox();
-            this.TR39 = new System.Windows.Forms.TextBox();
-            this.TR29 = new System.Windows.Forms.TextBox();
-            this.TR19 = new System.Windows.Forms.TextBox();
-            this.TR78 = new System.Windows.Forms.TextBox();
-            this.TR68 = new System.Windows.Forms.TextBox();
-            this.TR58 = new System.Windows.Forms.TextBox();
-            this.TR48 = new System.Windows.Forms.TextBox();
-            this.TR38 = new System.Windows.Forms.TextBox();
-            this.TR28 = new System.Windows.Forms.TextBox();
-            this.TR18 = new System.Windows.Forms.TextBox();
-            this.TR77 = new System.Windows.Forms.TextBox();
-            this.TR67 = new System.Windows.Forms.TextBox();
-            this.TR57 = new System.Windows.Forms.TextBox();
-            this.TR47 = new System.Windows.Forms.TextBox();
-            this.TR37 = new System.Windows.Forms.TextBox();
-            this.TR27 = new System.Windows.Forms.TextBox();
-            this.TR17 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.LR14 = new System.Windows.Forms.Label();
-            this.LR13 = new System.Windows.Forms.Label();
-            this.LR12 = new System.Windows.Forms.Label();
-            this.LR11 = new System.Windows.Forms.Label();
-            this.LR10 = new System.Windows.Forms.Label();
-            this.LR9 = new System.Windows.Forms.Label();
-            this.LR8 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.L39 = new System.Windows.Forms.Label();
             this.T38 = new System.Windows.Forms.TextBox();
             this.L37 = new System.Windows.Forms.Label();
@@ -214,32 +130,6 @@
             this.T30 = new System.Windows.Forms.TextBox();
             this.L33 = new System.Windows.Forms.Label();
             this.PT6 = new System.Windows.Forms.Panel();
-            this.TR715 = new System.Windows.Forms.TextBox();
-            this.TR615 = new System.Windows.Forms.TextBox();
-            this.TR515 = new System.Windows.Forms.TextBox();
-            this.TR415 = new System.Windows.Forms.TextBox();
-            this.TR315 = new System.Windows.Forms.TextBox();
-            this.TR215 = new System.Windows.Forms.TextBox();
-            this.TR115 = new System.Windows.Forms.TextBox();
-            this.TR714 = new System.Windows.Forms.TextBox();
-            this.TR614 = new System.Windows.Forms.TextBox();
-            this.TR514 = new System.Windows.Forms.TextBox();
-            this.TR414 = new System.Windows.Forms.TextBox();
-            this.TR314 = new System.Windows.Forms.TextBox();
-            this.TR214 = new System.Windows.Forms.TextBox();
-            this.TR114 = new System.Windows.Forms.TextBox();
-            this.TR713 = new System.Windows.Forms.TextBox();
-            this.TR613 = new System.Windows.Forms.TextBox();
-            this.TR513 = new System.Windows.Forms.TextBox();
-            this.TR413 = new System.Windows.Forms.TextBox();
-            this.TR313 = new System.Windows.Forms.TextBox();
-            this.TR213 = new System.Windows.Forms.TextBox();
-            this.TR113 = new System.Windows.Forms.TextBox();
-            this.LR18 = new System.Windows.Forms.Label();
-            this.LR17 = new System.Windows.Forms.Label();
-            this.LR16 = new System.Windows.Forms.Label();
-            this.LR15 = new System.Windows.Forms.Label();
-            this.labelPI1 = new System.Windows.Forms.Label();
             this.T64 = new System.Windows.Forms.TextBox();
             this.L59 = new System.Windows.Forms.Label();
             this.T63 = new System.Windows.Forms.TextBox();
@@ -291,13 +181,12 @@
             this.L41 = new System.Windows.Forms.Label();
             this.T40 = new System.Windows.Forms.TextBox();
             this.L40 = new System.Windows.Forms.Label();
-            this.LR24 = new System.Windows.Forms.Label();
-            this.LR25 = new System.Windows.Forms.Label();
-            this.LR26 = new System.Windows.Forms.Label();
-            this.LR27 = new System.Windows.Forms.Label();
             this.bGuardar = new System.Windows.Forms.Button();
             this.LImprimir = new System.Windows.Forms.Button();
             this.bEnviar = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.PT1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -400,15 +289,10 @@
             // PT1
             // 
             this.PT1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PT1.Controls.Add(this.TR2);
-            this.PT1.Controls.Add(this.LR2);
-            this.PT1.Controls.Add(this.TR1);
-            this.PT1.Controls.Add(this.LR1);
-            this.PT1.Controls.Add(this.label4);
+            this.PT1.Controls.Add(this.comboBox1);
             this.PT1.Controls.Add(this.panel2);
             this.PT1.Controls.Add(this.T3);
             this.PT1.Controls.Add(this.T2);
-            this.PT1.Controls.Add(this.T1);
             this.PT1.Controls.Add(this.L3);
             this.PT1.Controls.Add(this.L2);
             this.PT1.Controls.Add(this.L1);
@@ -416,54 +300,6 @@
             this.PT1.Name = "PT1";
             this.PT1.Size = new System.Drawing.Size(403, 101);
             this.PT1.TabIndex = 4;
-            // 
-            // TR2
-            // 
-            this.TR2.Location = new System.Drawing.Point(197, 47);
-            this.TR2.Multiline = true;
-            this.TR2.Name = "TR2";
-            this.TR2.Size = new System.Drawing.Size(203, 20);
-            this.TR2.TabIndex = 15;
-            this.TR2.Visible = false;
-            this.TR2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR2_KeyPress);
-            // 
-            // LR2
-            // 
-            this.LR2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR2.Location = new System.Drawing.Point(9, 47);
-            this.LR2.Name = "LR2";
-            this.LR2.Size = new System.Drawing.Size(182, 23);
-            this.LR2.TabIndex = 14;
-            this.LR2.Text = "Reporte final del semestre:";
-            this.LR2.Visible = false;
-            // 
-            // TR1
-            // 
-            this.TR1.Location = new System.Drawing.Point(197, 8);
-            this.TR1.Multiline = true;
-            this.TR1.Name = "TR1";
-            this.TR1.Size = new System.Drawing.Size(203, 20);
-            this.TR1.TabIndex = 13;
-            this.TR1.Visible = false;
-            this.TR1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR1_KeyPress);
-            // 
-            // LR1
-            // 
-            this.LR1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR1.Location = new System.Drawing.Point(9, 8);
-            this.LR1.Name = "LR1";
-            this.LR1.Size = new System.Drawing.Size(182, 23);
-            this.LR1.TabIndex = 12;
-            this.LR1.Text = "Departamento Académico:";
-            this.LR1.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(414, 101);
-            this.label4.TabIndex = 11;
             // 
             // panel2
             // 
@@ -564,7 +400,7 @@
             this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.T1.Location = new System.Drawing.Point(114, 4);
+            this.T1.Location = new System.Drawing.Point(124, 28);
             this.T1.Multiline = true;
             this.T1.Name = "T1";
             this.T1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -611,10 +447,10 @@
             // PT2
             // 
             this.PT2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PT2.Controls.Add(this.label6);
+            this.PT2.Controls.Add(this.comboBox3);
+            this.PT2.Controls.Add(this.comboBox2);
             this.PT2.Controls.Add(this.T10);
             this.PT2.Controls.Add(this.T8);
-            this.PT2.Controls.Add(this.T9);
             this.PT2.Controls.Add(this.T7);
             this.PT2.Controls.Add(this.L13);
             this.PT2.Controls.Add(this.L11);
@@ -622,7 +458,6 @@
             this.PT2.Controls.Add(this.L10);
             this.PT2.Controls.Add(this.T6);
             this.PT2.Controls.Add(this.T5);
-            this.PT2.Controls.Add(this.T4);
             this.PT2.Controls.Add(this.L9);
             this.PT2.Controls.Add(this.L8);
             this.PT2.Controls.Add(this.L7);
@@ -630,14 +465,6 @@
             this.PT2.Name = "PT2";
             this.PT2.Size = new System.Drawing.Size(581, 101);
             this.PT2.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(-3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(584, 104);
-            this.label6.TabIndex = 13;
             // 
             // T10
             // 
@@ -659,7 +486,7 @@
             // 
             // T9
             // 
-            this.T9.Location = new System.Drawing.Point(504, 30);
+            this.T9.Location = new System.Drawing.Point(993, 27);
             this.T9.Multiline = true;
             this.T9.Name = "T9";
             this.T9.Size = new System.Drawing.Size(67, 23);
@@ -746,7 +573,7 @@
             this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.T4.Location = new System.Drawing.Point(213, 4);
+            this.T4.Location = new System.Drawing.Point(623, 28);
             this.T4.Multiline = true;
             this.T4.Name = "T4";
             this.T4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -793,13 +620,6 @@
             // PT3
             // 
             this.PT3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PT3.Controls.Add(this.TR5);
-            this.PT3.Controls.Add(this.LR5);
-            this.PT3.Controls.Add(this.TR4);
-            this.PT3.Controls.Add(this.LR4);
-            this.PT3.Controls.Add(this.TR3);
-            this.PT3.Controls.Add(this.LR3);
-            this.PT3.Controls.Add(this.label5);
             this.PT3.Controls.Add(this.T11);
             this.PT3.Controls.Add(this.T12);
             this.PT3.Controls.Add(this.T13);
@@ -810,74 +630,6 @@
             this.PT3.Name = "PT3";
             this.PT3.Size = new System.Drawing.Size(987, 100);
             this.PT3.TabIndex = 6;
-            // 
-            // TR5
-            // 
-            this.TR5.Location = new System.Drawing.Point(455, 42);
-            this.TR5.Multiline = true;
-            this.TR5.Name = "TR5";
-            this.TR5.Size = new System.Drawing.Size(48, 20);
-            this.TR5.TabIndex = 19;
-            this.TR5.Visible = false;
-            this.TR5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR5_KeyPress);
-            // 
-            // LR5
-            // 
-            this.LR5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR5.Location = new System.Drawing.Point(242, 43);
-            this.LR5.Name = "LR5";
-            this.LR5.Size = new System.Drawing.Size(207, 23);
-            this.LR5.TabIndex = 18;
-            this.LR5.Text = "No. de asignaturas diferentes:";
-            this.LR5.Visible = false;
-            // 
-            // TR4
-            // 
-            this.TR4.Location = new System.Drawing.Point(183, 42);
-            this.TR4.Multiline = true;
-            this.TR4.Name = "TR4";
-            this.TR4.Size = new System.Drawing.Size(48, 20);
-            this.TR4.TabIndex = 17;
-            this.TR4.Visible = false;
-            this.TR4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR4_KeyPress);
-            // 
-            // LR4
-            // 
-            this.LR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR4.Location = new System.Drawing.Point(9, 44);
-            this.LR4.Name = "LR4";
-            this.LR4.Size = new System.Drawing.Size(168, 23);
-            this.LR4.TabIndex = 16;
-            this.LR4.Text = "No. de grupos atendidos:";
-            this.LR4.Visible = false;
-            // 
-            // TR3
-            // 
-            this.TR3.Location = new System.Drawing.Point(83, 7);
-            this.TR3.Multiline = true;
-            this.TR3.Name = "TR3";
-            this.TR3.Size = new System.Drawing.Size(321, 20);
-            this.TR3.TabIndex = 15;
-            this.TR3.Visible = false;
-            this.TR3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TR3_KeyPress);
-            // 
-            // LR3
-            // 
-            this.LR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR3.Location = new System.Drawing.Point(9, 7);
-            this.LR3.Name = "LR3";
-            this.LR3.Size = new System.Drawing.Size(66, 23);
-            this.LR3.TabIndex = 14;
-            this.LR3.Text = "Docente:";
-            this.LR3.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(987, 100);
-            this.label5.TabIndex = 12;
             // 
             // T11
             // 
@@ -945,24 +697,6 @@
             // PT4
             // 
             this.PT4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PT4.Controls.Add(this.LR21);
-            this.PT4.Controls.Add(this.LR20);
-            this.PT4.Controls.Add(this.LR19);
-            this.PT4.Controls.Add(this.TR126);
-            this.PT4.Controls.Add(this.TR66);
-            this.PT4.Controls.Add(this.TR116);
-            this.PT4.Controls.Add(this.TR56);
-            this.PT4.Controls.Add(this.TR106);
-            this.PT4.Controls.Add(this.TR46);
-            this.PT4.Controls.Add(this.TR96);
-            this.PT4.Controls.Add(this.TR36);
-            this.PT4.Controls.Add(this.TR86);
-            this.PT4.Controls.Add(this.TR26);
-            this.PT4.Controls.Add(this.TR76);
-            this.PT4.Controls.Add(this.LR6);
-            this.PT4.Controls.Add(this.TR16);
-            this.PT4.Controls.Add(this.LR7);
-            this.PT4.Controls.Add(this.label7);
             this.PT4.Controls.Add(this.T29);
             this.PT4.Controls.Add(this.L31);
             this.PT4.Controls.Add(this.T28);
@@ -1001,180 +735,6 @@
             this.PT4.Name = "PT4";
             this.PT4.Size = new System.Drawing.Size(474, 383);
             this.PT4.TabIndex = 7;
-            // 
-            // LR21
-            // 
-            this.LR21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR21.Location = new System.Drawing.Point(80, 316);
-            this.LR21.Name = "LR21";
-            this.LR21.Size = new System.Drawing.Size(260, 23);
-            this.LR21.TabIndex = 67;
-            this.LR21.Text = "NOMBRE DEL/LA DOCENTE";
-            this.LR21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR21.Visible = false;
-            // 
-            // LR20
-            // 
-            this.LR20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR20.Location = new System.Drawing.Point(80, 284);
-            this.LR20.Name = "LR20";
-            this.LR20.Size = new System.Drawing.Size(260, 23);
-            this.LR20.TabIndex = 66;
-            this.LR20.Text = "DOCENTE";
-            this.LR20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR20.Visible = false;
-            // 
-            // LR19
-            // 
-            this.LR19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR19.Location = new System.Drawing.Point(1, 256);
-            this.LR19.Name = "LR19";
-            this.LR19.Size = new System.Drawing.Size(472, 23);
-            this.LR19.TabIndex = 65;
-            this.LR19.Text = "TOTALES";
-            this.LR19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LR19.Visible = false;
-            // 
-            // TR126
-            // 
-            this.TR126.Location = new System.Drawing.Point(235, 232);
-            this.TR126.Multiline = true;
-            this.TR126.Name = "TR126";
-            this.TR126.Size = new System.Drawing.Size(238, 24);
-            this.TR126.TabIndex = 57;
-            this.TR126.Visible = false;
-            // 
-            // TR66
-            // 
-            this.TR66.Location = new System.Drawing.Point(1, 232);
-            this.TR66.Multiline = true;
-            this.TR66.Name = "TR66";
-            this.TR66.Size = new System.Drawing.Size(232, 24);
-            this.TR66.TabIndex = 56;
-            this.TR66.Visible = false;
-            // 
-            // TR116
-            // 
-            this.TR116.Location = new System.Drawing.Point(235, 209);
-            this.TR116.Multiline = true;
-            this.TR116.Name = "TR116";
-            this.TR116.Size = new System.Drawing.Size(238, 23);
-            this.TR116.TabIndex = 55;
-            this.TR116.Visible = false;
-            // 
-            // TR56
-            // 
-            this.TR56.Location = new System.Drawing.Point(1, 209);
-            this.TR56.Multiline = true;
-            this.TR56.Name = "TR56";
-            this.TR56.Size = new System.Drawing.Size(232, 23);
-            this.TR56.TabIndex = 54;
-            this.TR56.Visible = false;
-            // 
-            // TR106
-            // 
-            this.TR106.Location = new System.Drawing.Point(235, 186);
-            this.TR106.Multiline = true;
-            this.TR106.Name = "TR106";
-            this.TR106.Size = new System.Drawing.Size(238, 23);
-            this.TR106.TabIndex = 51;
-            this.TR106.Visible = false;
-            // 
-            // TR46
-            // 
-            this.TR46.Location = new System.Drawing.Point(1, 186);
-            this.TR46.Multiline = true;
-            this.TR46.Name = "TR46";
-            this.TR46.Size = new System.Drawing.Size(232, 23);
-            this.TR46.TabIndex = 50;
-            this.TR46.Visible = false;
-            // 
-            // TR96
-            // 
-            this.TR96.Location = new System.Drawing.Point(235, 162);
-            this.TR96.Multiline = true;
-            this.TR96.Name = "TR96";
-            this.TR96.Size = new System.Drawing.Size(238, 24);
-            this.TR96.TabIndex = 49;
-            this.TR96.Visible = false;
-            // 
-            // TR36
-            // 
-            this.TR36.Location = new System.Drawing.Point(1, 162);
-            this.TR36.Multiline = true;
-            this.TR36.Name = "TR36";
-            this.TR36.Size = new System.Drawing.Size(232, 24);
-            this.TR36.TabIndex = 48;
-            this.TR36.Visible = false;
-            // 
-            // TR86
-            // 
-            this.TR86.Location = new System.Drawing.Point(235, 139);
-            this.TR86.Multiline = true;
-            this.TR86.Name = "TR86";
-            this.TR86.Size = new System.Drawing.Size(238, 23);
-            this.TR86.TabIndex = 47;
-            this.TR86.Visible = false;
-            // 
-            // TR26
-            // 
-            this.TR26.Location = new System.Drawing.Point(1, 139);
-            this.TR26.Multiline = true;
-            this.TR26.Name = "TR26";
-            this.TR26.Size = new System.Drawing.Size(232, 23);
-            this.TR26.TabIndex = 46;
-            this.TR26.Visible = false;
-            // 
-            // TR76
-            // 
-            this.TR76.Location = new System.Drawing.Point(235, 116);
-            this.TR76.Multiline = true;
-            this.TR76.Name = "TR76";
-            this.TR76.Size = new System.Drawing.Size(238, 23);
-            this.TR76.TabIndex = 45;
-            this.TR76.Visible = false;
-            // 
-            // LR6
-            // 
-            this.LR6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR6.Location = new System.Drawing.Point(1, 37);
-            this.LR6.Name = "LR6";
-            this.LR6.Size = new System.Drawing.Size(232, 76);
-            this.LR6.TabIndex = 44;
-            this.LR6.Text = "CARRERA";
-            this.LR6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR6.Visible = false;
-            // 
-            // TR16
-            // 
-            this.TR16.Location = new System.Drawing.Point(1, 116);
-            this.TR16.Multiline = true;
-            this.TR16.Name = "TR16";
-            this.TR16.Size = new System.Drawing.Size(232, 23);
-            this.TR16.TabIndex = 43;
-            this.TR16.Visible = false;
-            // 
-            // LR7
-            // 
-            this.LR7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR7.Location = new System.Drawing.Point(235, 37);
-            this.LR7.Name = "LR7";
-            this.LR7.Size = new System.Drawing.Size(238, 76);
-            this.LR7.TabIndex = 42;
-            this.LR7.Text = "ASIGNATURA";
-            this.LR7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR7.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(-7, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(498, 383);
-            this.label7.TabIndex = 13;
             // 
             // T29
             // 
@@ -1603,59 +1163,6 @@
             // PT5
             // 
             this.PT5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PT5.Controls.Add(this.LR23);
-            this.PT5.Controls.Add(this.LR22);
-            this.PT5.Controls.Add(this.TR712);
-            this.PT5.Controls.Add(this.TR612);
-            this.PT5.Controls.Add(this.TR512);
-            this.PT5.Controls.Add(this.TR412);
-            this.PT5.Controls.Add(this.TR312);
-            this.PT5.Controls.Add(this.TR212);
-            this.PT5.Controls.Add(this.TR112);
-            this.PT5.Controls.Add(this.TR711);
-            this.PT5.Controls.Add(this.TR611);
-            this.PT5.Controls.Add(this.TR511);
-            this.PT5.Controls.Add(this.TR411);
-            this.PT5.Controls.Add(this.TR311);
-            this.PT5.Controls.Add(this.TR211);
-            this.PT5.Controls.Add(this.TR111);
-            this.PT5.Controls.Add(this.TR710);
-            this.PT5.Controls.Add(this.TR610);
-            this.PT5.Controls.Add(this.TR510);
-            this.PT5.Controls.Add(this.TR410);
-            this.PT5.Controls.Add(this.TR310);
-            this.PT5.Controls.Add(this.TR210);
-            this.PT5.Controls.Add(this.TR110);
-            this.PT5.Controls.Add(this.TR79);
-            this.PT5.Controls.Add(this.TR69);
-            this.PT5.Controls.Add(this.TR59);
-            this.PT5.Controls.Add(this.TR49);
-            this.PT5.Controls.Add(this.TR39);
-            this.PT5.Controls.Add(this.TR29);
-            this.PT5.Controls.Add(this.TR19);
-            this.PT5.Controls.Add(this.TR78);
-            this.PT5.Controls.Add(this.TR68);
-            this.PT5.Controls.Add(this.TR58);
-            this.PT5.Controls.Add(this.TR48);
-            this.PT5.Controls.Add(this.TR38);
-            this.PT5.Controls.Add(this.TR28);
-            this.PT5.Controls.Add(this.TR18);
-            this.PT5.Controls.Add(this.TR77);
-            this.PT5.Controls.Add(this.TR67);
-            this.PT5.Controls.Add(this.TR57);
-            this.PT5.Controls.Add(this.TR47);
-            this.PT5.Controls.Add(this.TR37);
-            this.PT5.Controls.Add(this.TR27);
-            this.PT5.Controls.Add(this.TR17);
-            this.PT5.Controls.Add(this.label26);
-            this.PT5.Controls.Add(this.LR14);
-            this.PT5.Controls.Add(this.LR13);
-            this.PT5.Controls.Add(this.LR12);
-            this.PT5.Controls.Add(this.LR11);
-            this.PT5.Controls.Add(this.LR10);
-            this.PT5.Controls.Add(this.LR9);
-            this.PT5.Controls.Add(this.LR8);
-            this.PT5.Controls.Add(this.label8);
             this.PT5.Controls.Add(this.L39);
             this.PT5.Controls.Add(this.T38);
             this.PT5.Controls.Add(this.L37);
@@ -1678,510 +1185,6 @@
             this.PT5.Name = "PT5";
             this.PT5.Size = new System.Drawing.Size(511, 383);
             this.PT5.TabIndex = 8;
-            // 
-            // LR23
-            // 
-            this.LR23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR23.Location = new System.Drawing.Point(47, 317);
-            this.LR23.Name = "LR23";
-            this.LR23.Size = new System.Drawing.Size(260, 23);
-            this.LR23.TabIndex = 108;
-            this.LR23.Text = "NOMBRE JEFE/A ACADEMICO";
-            this.LR23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR23.Visible = false;
-            // 
-            // LR22
-            // 
-            this.LR22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR22.Location = new System.Drawing.Point(47, 287);
-            this.LR22.Name = "LR22";
-            this.LR22.Size = new System.Drawing.Size(260, 23);
-            this.LR22.TabIndex = 107;
-            this.LR22.Text = "JEFE/A DEL AREA DE DPTO";
-            this.LR22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR22.Visible = false;
-            // 
-            // TR712
-            // 
-            this.TR712.Location = new System.Drawing.Point(416, 256);
-            this.TR712.Multiline = true;
-            this.TR712.Name = "TR712";
-            this.TR712.Size = new System.Drawing.Size(95, 24);
-            this.TR712.TabIndex = 106;
-            this.TR712.Visible = false;
-            // 
-            // TR612
-            // 
-            this.TR612.Location = new System.Drawing.Point(416, 232);
-            this.TR612.Multiline = true;
-            this.TR612.Name = "TR612";
-            this.TR612.Size = new System.Drawing.Size(95, 24);
-            this.TR612.TabIndex = 105;
-            this.TR612.Visible = false;
-            // 
-            // TR512
-            // 
-            this.TR512.Location = new System.Drawing.Point(416, 209);
-            this.TR512.Multiline = true;
-            this.TR512.Name = "TR512";
-            this.TR512.Size = new System.Drawing.Size(95, 23);
-            this.TR512.TabIndex = 104;
-            this.TR512.Visible = false;
-            // 
-            // TR412
-            // 
-            this.TR412.Location = new System.Drawing.Point(416, 186);
-            this.TR412.Multiline = true;
-            this.TR412.Name = "TR412";
-            this.TR412.Size = new System.Drawing.Size(95, 23);
-            this.TR412.TabIndex = 103;
-            this.TR412.Visible = false;
-            // 
-            // TR312
-            // 
-            this.TR312.Location = new System.Drawing.Point(416, 162);
-            this.TR312.Multiline = true;
-            this.TR312.Name = "TR312";
-            this.TR312.Size = new System.Drawing.Size(95, 24);
-            this.TR312.TabIndex = 102;
-            this.TR312.Visible = false;
-            // 
-            // TR212
-            // 
-            this.TR212.Location = new System.Drawing.Point(416, 139);
-            this.TR212.Multiline = true;
-            this.TR212.Name = "TR212";
-            this.TR212.Size = new System.Drawing.Size(95, 23);
-            this.TR212.TabIndex = 101;
-            this.TR212.Visible = false;
-            // 
-            // TR112
-            // 
-            this.TR112.Location = new System.Drawing.Point(416, 116);
-            this.TR112.Multiline = true;
-            this.TR112.Name = "TR112";
-            this.TR112.Size = new System.Drawing.Size(95, 23);
-            this.TR112.TabIndex = 100;
-            this.TR112.Visible = false;
-            // 
-            // TR711
-            // 
-            this.TR711.Location = new System.Drawing.Point(328, 256);
-            this.TR711.Multiline = true;
-            this.TR711.Name = "TR711";
-            this.TR711.Size = new System.Drawing.Size(85, 24);
-            this.TR711.TabIndex = 99;
-            this.TR711.Visible = false;
-            // 
-            // TR611
-            // 
-            this.TR611.Location = new System.Drawing.Point(328, 232);
-            this.TR611.Multiline = true;
-            this.TR611.Name = "TR611";
-            this.TR611.Size = new System.Drawing.Size(85, 24);
-            this.TR611.TabIndex = 98;
-            this.TR611.Visible = false;
-            // 
-            // TR511
-            // 
-            this.TR511.Location = new System.Drawing.Point(328, 209);
-            this.TR511.Multiline = true;
-            this.TR511.Name = "TR511";
-            this.TR511.Size = new System.Drawing.Size(85, 23);
-            this.TR511.TabIndex = 97;
-            this.TR511.Visible = false;
-            // 
-            // TR411
-            // 
-            this.TR411.Location = new System.Drawing.Point(328, 186);
-            this.TR411.Multiline = true;
-            this.TR411.Name = "TR411";
-            this.TR411.Size = new System.Drawing.Size(85, 23);
-            this.TR411.TabIndex = 96;
-            this.TR411.Visible = false;
-            // 
-            // TR311
-            // 
-            this.TR311.Location = new System.Drawing.Point(328, 162);
-            this.TR311.Multiline = true;
-            this.TR311.Name = "TR311";
-            this.TR311.Size = new System.Drawing.Size(85, 24);
-            this.TR311.TabIndex = 95;
-            this.TR311.Visible = false;
-            // 
-            // TR211
-            // 
-            this.TR211.Location = new System.Drawing.Point(328, 139);
-            this.TR211.Multiline = true;
-            this.TR211.Name = "TR211";
-            this.TR211.Size = new System.Drawing.Size(85, 23);
-            this.TR211.TabIndex = 94;
-            this.TR211.Visible = false;
-            // 
-            // TR111
-            // 
-            this.TR111.Location = new System.Drawing.Point(328, 116);
-            this.TR111.Multiline = true;
-            this.TR111.Name = "TR111";
-            this.TR111.Size = new System.Drawing.Size(85, 23);
-            this.TR111.TabIndex = 93;
-            this.TR111.Visible = false;
-            // 
-            // TR710
-            // 
-            this.TR710.Location = new System.Drawing.Point(229, 256);
-            this.TR710.Multiline = true;
-            this.TR710.Name = "TR710";
-            this.TR710.Size = new System.Drawing.Size(96, 24);
-            this.TR710.TabIndex = 92;
-            this.TR710.Visible = false;
-            // 
-            // TR610
-            // 
-            this.TR610.Location = new System.Drawing.Point(229, 232);
-            this.TR610.Multiline = true;
-            this.TR610.Name = "TR610";
-            this.TR610.Size = new System.Drawing.Size(96, 24);
-            this.TR610.TabIndex = 91;
-            this.TR610.Visible = false;
-            // 
-            // TR510
-            // 
-            this.TR510.Location = new System.Drawing.Point(229, 209);
-            this.TR510.Multiline = true;
-            this.TR510.Name = "TR510";
-            this.TR510.Size = new System.Drawing.Size(96, 23);
-            this.TR510.TabIndex = 90;
-            this.TR510.Visible = false;
-            // 
-            // TR410
-            // 
-            this.TR410.Location = new System.Drawing.Point(229, 186);
-            this.TR410.Multiline = true;
-            this.TR410.Name = "TR410";
-            this.TR410.Size = new System.Drawing.Size(96, 23);
-            this.TR410.TabIndex = 89;
-            this.TR410.Visible = false;
-            // 
-            // TR310
-            // 
-            this.TR310.Location = new System.Drawing.Point(229, 162);
-            this.TR310.Multiline = true;
-            this.TR310.Name = "TR310";
-            this.TR310.Size = new System.Drawing.Size(96, 24);
-            this.TR310.TabIndex = 88;
-            this.TR310.Visible = false;
-            // 
-            // TR210
-            // 
-            this.TR210.Location = new System.Drawing.Point(229, 139);
-            this.TR210.Multiline = true;
-            this.TR210.Name = "TR210";
-            this.TR210.Size = new System.Drawing.Size(96, 23);
-            this.TR210.TabIndex = 87;
-            this.TR210.Visible = false;
-            // 
-            // TR110
-            // 
-            this.TR110.Location = new System.Drawing.Point(229, 116);
-            this.TR110.Multiline = true;
-            this.TR110.Name = "TR110";
-            this.TR110.Size = new System.Drawing.Size(96, 23);
-            this.TR110.TabIndex = 86;
-            this.TR110.Visible = false;
-            // 
-            // TR79
-            // 
-            this.TR79.Location = new System.Drawing.Point(171, 256);
-            this.TR79.Multiline = true;
-            this.TR79.Name = "TR79";
-            this.TR79.Size = new System.Drawing.Size(54, 24);
-            this.TR79.TabIndex = 85;
-            this.TR79.Visible = false;
-            // 
-            // TR69
-            // 
-            this.TR69.Location = new System.Drawing.Point(171, 232);
-            this.TR69.Multiline = true;
-            this.TR69.Name = "TR69";
-            this.TR69.Size = new System.Drawing.Size(54, 24);
-            this.TR69.TabIndex = 84;
-            this.TR69.Visible = false;
-            // 
-            // TR59
-            // 
-            this.TR59.Location = new System.Drawing.Point(171, 209);
-            this.TR59.Multiline = true;
-            this.TR59.Name = "TR59";
-            this.TR59.Size = new System.Drawing.Size(54, 23);
-            this.TR59.TabIndex = 83;
-            this.TR59.Visible = false;
-            // 
-            // TR49
-            // 
-            this.TR49.Location = new System.Drawing.Point(171, 186);
-            this.TR49.Multiline = true;
-            this.TR49.Name = "TR49";
-            this.TR49.Size = new System.Drawing.Size(54, 23);
-            this.TR49.TabIndex = 82;
-            this.TR49.Visible = false;
-            // 
-            // TR39
-            // 
-            this.TR39.Location = new System.Drawing.Point(171, 162);
-            this.TR39.Multiline = true;
-            this.TR39.Name = "TR39";
-            this.TR39.Size = new System.Drawing.Size(54, 24);
-            this.TR39.TabIndex = 81;
-            this.TR39.Visible = false;
-            // 
-            // TR29
-            // 
-            this.TR29.Location = new System.Drawing.Point(171, 139);
-            this.TR29.Multiline = true;
-            this.TR29.Name = "TR29";
-            this.TR29.Size = new System.Drawing.Size(54, 23);
-            this.TR29.TabIndex = 80;
-            this.TR29.Visible = false;
-            // 
-            // TR19
-            // 
-            this.TR19.Location = new System.Drawing.Point(171, 116);
-            this.TR19.Multiline = true;
-            this.TR19.Name = "TR19";
-            this.TR19.Size = new System.Drawing.Size(54, 23);
-            this.TR19.TabIndex = 79;
-            this.TR19.Visible = false;
-            // 
-            // TR78
-            // 
-            this.TR78.Location = new System.Drawing.Point(116, 256);
-            this.TR78.Multiline = true;
-            this.TR78.Name = "TR78";
-            this.TR78.Size = new System.Drawing.Size(52, 24);
-            this.TR78.TabIndex = 78;
-            this.TR78.Visible = false;
-            // 
-            // TR68
-            // 
-            this.TR68.Location = new System.Drawing.Point(116, 232);
-            this.TR68.Multiline = true;
-            this.TR68.Name = "TR68";
-            this.TR68.Size = new System.Drawing.Size(52, 24);
-            this.TR68.TabIndex = 77;
-            this.TR68.Visible = false;
-            // 
-            // TR58
-            // 
-            this.TR58.Location = new System.Drawing.Point(116, 209);
-            this.TR58.Multiline = true;
-            this.TR58.Name = "TR58";
-            this.TR58.Size = new System.Drawing.Size(52, 23);
-            this.TR58.TabIndex = 76;
-            this.TR58.Visible = false;
-            // 
-            // TR48
-            // 
-            this.TR48.Location = new System.Drawing.Point(116, 186);
-            this.TR48.Multiline = true;
-            this.TR48.Name = "TR48";
-            this.TR48.Size = new System.Drawing.Size(52, 23);
-            this.TR48.TabIndex = 75;
-            this.TR48.Visible = false;
-            // 
-            // TR38
-            // 
-            this.TR38.Location = new System.Drawing.Point(116, 162);
-            this.TR38.Multiline = true;
-            this.TR38.Name = "TR38";
-            this.TR38.Size = new System.Drawing.Size(52, 24);
-            this.TR38.TabIndex = 74;
-            this.TR38.Visible = false;
-            // 
-            // TR28
-            // 
-            this.TR28.Location = new System.Drawing.Point(116, 139);
-            this.TR28.Multiline = true;
-            this.TR28.Name = "TR28";
-            this.TR28.Size = new System.Drawing.Size(52, 23);
-            this.TR28.TabIndex = 73;
-            this.TR28.Visible = false;
-            // 
-            // TR18
-            // 
-            this.TR18.Location = new System.Drawing.Point(116, 116);
-            this.TR18.Multiline = true;
-            this.TR18.Name = "TR18";
-            this.TR18.Size = new System.Drawing.Size(52, 23);
-            this.TR18.TabIndex = 72;
-            this.TR18.Visible = false;
-            // 
-            // TR77
-            // 
-            this.TR77.Location = new System.Drawing.Point(1, 256);
-            this.TR77.Multiline = true;
-            this.TR77.Name = "TR77";
-            this.TR77.Size = new System.Drawing.Size(110, 24);
-            this.TR77.TabIndex = 71;
-            this.TR77.Visible = false;
-            // 
-            // TR67
-            // 
-            this.TR67.Location = new System.Drawing.Point(1, 232);
-            this.TR67.Multiline = true;
-            this.TR67.Name = "TR67";
-            this.TR67.Size = new System.Drawing.Size(110, 24);
-            this.TR67.TabIndex = 70;
-            this.TR67.Visible = false;
-            // 
-            // TR57
-            // 
-            this.TR57.Location = new System.Drawing.Point(1, 209);
-            this.TR57.Multiline = true;
-            this.TR57.Name = "TR57";
-            this.TR57.Size = new System.Drawing.Size(110, 23);
-            this.TR57.TabIndex = 69;
-            this.TR57.Visible = false;
-            // 
-            // TR47
-            // 
-            this.TR47.Location = new System.Drawing.Point(1, 186);
-            this.TR47.Multiline = true;
-            this.TR47.Name = "TR47";
-            this.TR47.Size = new System.Drawing.Size(110, 23);
-            this.TR47.TabIndex = 68;
-            this.TR47.Visible = false;
-            // 
-            // TR37
-            // 
-            this.TR37.Location = new System.Drawing.Point(1, 162);
-            this.TR37.Multiline = true;
-            this.TR37.Name = "TR37";
-            this.TR37.Size = new System.Drawing.Size(110, 24);
-            this.TR37.TabIndex = 67;
-            this.TR37.Visible = false;
-            // 
-            // TR27
-            // 
-            this.TR27.Location = new System.Drawing.Point(1, 139);
-            this.TR27.Multiline = true;
-            this.TR27.Name = "TR27";
-            this.TR27.Size = new System.Drawing.Size(110, 23);
-            this.TR27.TabIndex = 66;
-            this.TR27.Visible = false;
-            // 
-            // TR17
-            // 
-            this.TR17.Location = new System.Drawing.Point(1, 116);
-            this.TR17.Multiline = true;
-            this.TR17.Name = "TR17";
-            this.TR17.Size = new System.Drawing.Size(110, 23);
-            this.TR17.TabIndex = 65;
-            this.TR17.Visible = false;
-            // 
-            // label26
-            // 
-            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1, 14);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(516, 23);
-            this.label26.TabIndex = 64;
-            this.label26.Text = "ESTUDIANTES";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label26.Visible = false;
-            // 
-            // LR14
-            // 
-            this.LR14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR14.Location = new System.Drawing.Point(416, 37);
-            this.LR14.Name = "LR14";
-            this.LR14.Size = new System.Drawing.Size(95, 76);
-            this.LR14.TabIndex = 63;
-            this.LR14.Text = " %NO     Acreditación";
-            this.LR14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR14.Visible = false;
-            // 
-            // LR13
-            // 
-            this.LR13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR13.Location = new System.Drawing.Point(328, 37);
-            this.LR13.Name = "LR13";
-            this.LR13.Size = new System.Drawing.Size(85, 76);
-            this.LR13.TabIndex = 62;
-            this.LR13.Text = "      NO       Acreditado";
-            this.LR13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR13.Visible = false;
-            // 
-            // LR12
-            // 
-            this.LR12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR12.Location = new System.Drawing.Point(229, 37);
-            this.LR12.Name = "LR12";
-            this.LR12.Size = new System.Drawing.Size(96, 76);
-            this.LR12.TabIndex = 61;
-            this.LR12.Text = "        %          Acreditación";
-            this.LR12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR12.Visible = false;
-            // 
-            // LR11
-            // 
-            this.LR11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR11.Location = new System.Drawing.Point(171, 78);
-            this.LR11.Name = "LR11";
-            this.LR11.Size = new System.Drawing.Size(54, 35);
-            this.LR11.TabIndex = 60;
-            this.LR11.Text = "2a.";
-            this.LR11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR11.Visible = false;
-            // 
-            // LR10
-            // 
-            this.LR10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR10.Location = new System.Drawing.Point(115, 78);
-            this.LR10.Name = "LR10";
-            this.LR10.Size = new System.Drawing.Size(54, 35);
-            this.LR10.TabIndex = 59;
-            this.LR10.Text = "1a.";
-            this.LR10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR10.Visible = false;
-            // 
-            // LR9
-            // 
-            this.LR9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR9.Location = new System.Drawing.Point(115, 37);
-            this.LR9.Name = "LR9";
-            this.LR9.Size = new System.Drawing.Size(110, 41);
-            this.LR9.TabIndex = 58;
-            this.LR9.Text = "Acreditados en oportunidad";
-            this.LR9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR9.Visible = false;
-            // 
-            // LR8
-            // 
-            this.LR8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR8.Location = new System.Drawing.Point(1, 37);
-            this.LR8.Name = "LR8";
-            this.LR8.Size = new System.Drawing.Size(110, 76);
-            this.LR8.TabIndex = 57;
-            this.LR8.Text = "Total de estudiantes";
-            this.LR8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR8.Visible = false;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(0, -9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(517, 392);
-            this.label8.TabIndex = 14;
             // 
             // L39
             // 
@@ -2403,32 +1406,6 @@
             // PT6
             // 
             this.PT6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PT6.Controls.Add(this.TR715);
-            this.PT6.Controls.Add(this.TR615);
-            this.PT6.Controls.Add(this.TR515);
-            this.PT6.Controls.Add(this.TR415);
-            this.PT6.Controls.Add(this.TR315);
-            this.PT6.Controls.Add(this.TR215);
-            this.PT6.Controls.Add(this.TR115);
-            this.PT6.Controls.Add(this.TR714);
-            this.PT6.Controls.Add(this.TR614);
-            this.PT6.Controls.Add(this.TR514);
-            this.PT6.Controls.Add(this.TR414);
-            this.PT6.Controls.Add(this.TR314);
-            this.PT6.Controls.Add(this.TR214);
-            this.PT6.Controls.Add(this.TR114);
-            this.PT6.Controls.Add(this.TR713);
-            this.PT6.Controls.Add(this.TR613);
-            this.PT6.Controls.Add(this.TR513);
-            this.PT6.Controls.Add(this.TR413);
-            this.PT6.Controls.Add(this.TR313);
-            this.PT6.Controls.Add(this.TR213);
-            this.PT6.Controls.Add(this.TR113);
-            this.PT6.Controls.Add(this.LR18);
-            this.PT6.Controls.Add(this.LR17);
-            this.PT6.Controls.Add(this.LR16);
-            this.PT6.Controls.Add(this.LR15);
-            this.PT6.Controls.Add(this.labelPI1);
             this.PT6.Controls.Add(this.T64);
             this.PT6.Controls.Add(this.L59);
             this.PT6.Controls.Add(this.T63);
@@ -2484,250 +1461,6 @@
             this.PT6.Name = "PT6";
             this.PT6.Size = new System.Drawing.Size(370, 637);
             this.PT6.TabIndex = 9;
-            // 
-            // TR715
-            // 
-            this.TR715.Location = new System.Drawing.Point(176, 460);
-            this.TR715.Multiline = true;
-            this.TR715.Name = "TR715";
-            this.TR715.Size = new System.Drawing.Size(85, 24);
-            this.TR715.TabIndex = 119;
-            this.TR715.Visible = false;
-            // 
-            // TR615
-            // 
-            this.TR615.Location = new System.Drawing.Point(176, 436);
-            this.TR615.Multiline = true;
-            this.TR615.Name = "TR615";
-            this.TR615.Size = new System.Drawing.Size(85, 24);
-            this.TR615.TabIndex = 118;
-            this.TR615.Visible = false;
-            // 
-            // TR515
-            // 
-            this.TR515.Location = new System.Drawing.Point(176, 413);
-            this.TR515.Multiline = true;
-            this.TR515.Name = "TR515";
-            this.TR515.Size = new System.Drawing.Size(85, 23);
-            this.TR515.TabIndex = 117;
-            this.TR515.Visible = false;
-            // 
-            // TR415
-            // 
-            this.TR415.Location = new System.Drawing.Point(176, 390);
-            this.TR415.Multiline = true;
-            this.TR415.Name = "TR415";
-            this.TR415.Size = new System.Drawing.Size(85, 23);
-            this.TR415.TabIndex = 116;
-            this.TR415.Visible = false;
-            // 
-            // TR315
-            // 
-            this.TR315.Location = new System.Drawing.Point(176, 366);
-            this.TR315.Multiline = true;
-            this.TR315.Name = "TR315";
-            this.TR315.Size = new System.Drawing.Size(85, 24);
-            this.TR315.TabIndex = 115;
-            this.TR315.Visible = false;
-            // 
-            // TR215
-            // 
-            this.TR215.Location = new System.Drawing.Point(176, 343);
-            this.TR215.Multiline = true;
-            this.TR215.Name = "TR215";
-            this.TR215.Size = new System.Drawing.Size(85, 23);
-            this.TR215.TabIndex = 114;
-            this.TR215.Visible = false;
-            // 
-            // TR115
-            // 
-            this.TR115.Location = new System.Drawing.Point(176, 320);
-            this.TR115.Multiline = true;
-            this.TR115.Name = "TR115";
-            this.TR115.Size = new System.Drawing.Size(85, 23);
-            this.TR115.TabIndex = 113;
-            this.TR115.Visible = false;
-            // 
-            // TR714
-            // 
-            this.TR714.Location = new System.Drawing.Point(88, 460);
-            this.TR714.Multiline = true;
-            this.TR714.Name = "TR714";
-            this.TR714.Size = new System.Drawing.Size(85, 24);
-            this.TR714.TabIndex = 112;
-            this.TR714.Visible = false;
-            // 
-            // TR614
-            // 
-            this.TR614.Location = new System.Drawing.Point(88, 436);
-            this.TR614.Multiline = true;
-            this.TR614.Name = "TR614";
-            this.TR614.Size = new System.Drawing.Size(85, 24);
-            this.TR614.TabIndex = 111;
-            this.TR614.Visible = false;
-            // 
-            // TR514
-            // 
-            this.TR514.Location = new System.Drawing.Point(88, 413);
-            this.TR514.Multiline = true;
-            this.TR514.Name = "TR514";
-            this.TR514.Size = new System.Drawing.Size(85, 23);
-            this.TR514.TabIndex = 110;
-            this.TR514.Visible = false;
-            // 
-            // TR414
-            // 
-            this.TR414.Location = new System.Drawing.Point(88, 390);
-            this.TR414.Multiline = true;
-            this.TR414.Name = "TR414";
-            this.TR414.Size = new System.Drawing.Size(85, 23);
-            this.TR414.TabIndex = 109;
-            this.TR414.Visible = false;
-            // 
-            // TR314
-            // 
-            this.TR314.Location = new System.Drawing.Point(88, 366);
-            this.TR314.Multiline = true;
-            this.TR314.Name = "TR314";
-            this.TR314.Size = new System.Drawing.Size(85, 24);
-            this.TR314.TabIndex = 108;
-            this.TR314.Visible = false;
-            // 
-            // TR214
-            // 
-            this.TR214.Location = new System.Drawing.Point(88, 343);
-            this.TR214.Multiline = true;
-            this.TR214.Name = "TR214";
-            this.TR214.Size = new System.Drawing.Size(85, 23);
-            this.TR214.TabIndex = 107;
-            this.TR214.Visible = false;
-            // 
-            // TR114
-            // 
-            this.TR114.Location = new System.Drawing.Point(88, 320);
-            this.TR114.Multiline = true;
-            this.TR114.Name = "TR114";
-            this.TR114.Size = new System.Drawing.Size(85, 23);
-            this.TR114.TabIndex = 106;
-            this.TR114.Visible = false;
-            // 
-            // TR713
-            // 
-            this.TR713.Location = new System.Drawing.Point(0, 460);
-            this.TR713.Multiline = true;
-            this.TR713.Name = "TR713";
-            this.TR713.Size = new System.Drawing.Size(85, 24);
-            this.TR713.TabIndex = 105;
-            this.TR713.Visible = false;
-            // 
-            // TR613
-            // 
-            this.TR613.Location = new System.Drawing.Point(0, 436);
-            this.TR613.Multiline = true;
-            this.TR613.Name = "TR613";
-            this.TR613.Size = new System.Drawing.Size(85, 24);
-            this.TR613.TabIndex = 104;
-            this.TR613.Visible = false;
-            // 
-            // TR513
-            // 
-            this.TR513.Location = new System.Drawing.Point(0, 413);
-            this.TR513.Multiline = true;
-            this.TR513.Name = "TR513";
-            this.TR513.Size = new System.Drawing.Size(85, 23);
-            this.TR513.TabIndex = 103;
-            this.TR513.Visible = false;
-            // 
-            // TR413
-            // 
-            this.TR413.Location = new System.Drawing.Point(0, 390);
-            this.TR413.Multiline = true;
-            this.TR413.Name = "TR413";
-            this.TR413.Size = new System.Drawing.Size(85, 23);
-            this.TR413.TabIndex = 102;
-            this.TR413.Visible = false;
-            // 
-            // TR313
-            // 
-            this.TR313.Location = new System.Drawing.Point(0, 366);
-            this.TR313.Multiline = true;
-            this.TR313.Name = "TR313";
-            this.TR313.Size = new System.Drawing.Size(85, 24);
-            this.TR313.TabIndex = 101;
-            this.TR313.Visible = false;
-            // 
-            // TR213
-            // 
-            this.TR213.Location = new System.Drawing.Point(0, 343);
-            this.TR213.Multiline = true;
-            this.TR213.Name = "TR213";
-            this.TR213.Size = new System.Drawing.Size(85, 23);
-            this.TR213.TabIndex = 100;
-            this.TR213.Visible = false;
-            // 
-            // TR113
-            // 
-            this.TR113.Location = new System.Drawing.Point(0, 320);
-            this.TR113.Multiline = true;
-            this.TR113.Name = "TR113";
-            this.TR113.Size = new System.Drawing.Size(85, 23);
-            this.TR113.TabIndex = 99;
-            this.TR113.Visible = false;
-            // 
-            // LR18
-            // 
-            this.LR18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR18.Location = new System.Drawing.Point(-16, 218);
-            this.LR18.Name = "LR18";
-            this.LR18.Size = new System.Drawing.Size(277, 23);
-            this.LR18.TabIndex = 65;
-            this.LR18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR18.Visible = false;
-            // 
-            // LR17
-            // 
-            this.LR17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR17.Location = new System.Drawing.Point(176, 241);
-            this.LR17.Name = "LR17";
-            this.LR17.Size = new System.Drawing.Size(85, 76);
-            this.LR17.TabIndex = 98;
-            this.LR17.Text = "Suma de estudiantes";
-            this.LR17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR17.Visible = false;
-            // 
-            // LR16
-            // 
-            this.LR16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR16.Location = new System.Drawing.Point(88, 241);
-            this.LR16.Name = "LR16";
-            this.LR16.Size = new System.Drawing.Size(85, 76);
-            this.LR16.TabIndex = 97;
-            this.LR16.Text = "       %          Deserción:";
-            this.LR16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR16.Visible = false;
-            // 
-            // LR15
-            // 
-            this.LR15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LR15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR15.Location = new System.Drawing.Point(0, 241);
-            this.LR15.Name = "LR15";
-            this.LR15.Size = new System.Drawing.Size(85, 76);
-            this.LR15.TabIndex = 96;
-            this.LR15.Text = "Desertó";
-            this.LR15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LR15.Visible = false;
-            // 
-            // labelPI1
-            // 
-            this.labelPI1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelPI1.Location = new System.Drawing.Point(0, 0);
-            this.labelPI1.Name = "labelPI1";
-            this.labelPI1.Size = new System.Drawing.Size(370, 637);
-            this.labelPI1.TabIndex = 15;
             // 
             // T64
             // 
@@ -2974,7 +1707,7 @@
             this.L55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L55.Location = new System.Drawing.Point(3, 441);
             this.L55.Name = "L55";
-            this.L55.Size = new System.Drawing.Size(118, 21);
+            this.L55.Size = new System.Drawing.Size(106, 21);
             this.L55.TabIndex = 75;
             this.L55.Text = "PROCEDIMENTAL";
             this.L55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3342,49 +2075,6 @@
             this.L40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L40.Visible = false;
             // 
-            // LR24
-            // 
-            this.LR24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR24.Location = new System.Drawing.Point(6, 635);
-            this.LR24.Name = "LR24";
-            this.LR24.Size = new System.Drawing.Size(54, 23);
-            this.LR24.TabIndex = 45;
-            this.LR24.Text = "Notas:";
-            this.LR24.Visible = false;
-            // 
-            // LR25
-            // 
-            this.LR25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR25.Location = new System.Drawing.Point(6, 655);
-            this.LR25.Name = "LR25";
-            this.LR25.Size = new System.Drawing.Size(512, 13);
-            this.LR25.TabIndex = 46;
-            this.LR25.Text = "1.  Los estudiantes que se incluirán como NO acreditaron incluyen a los alumnos d" +
-    "esertores.";
-            this.LR25.Visible = false;
-            // 
-            // LR26
-            // 
-            this.LR26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR26.Location = new System.Drawing.Point(6, 674);
-            this.LR26.Name = "LR26";
-            this.LR26.Size = new System.Drawing.Size(641, 37);
-            this.LR26.TabIndex = 47;
-            this.LR26.Text = "2.   Entendiendo como estudiante desertor al que toma la decisión de no presentar" +
-    " exámenes de regularización o extraordinarios aun teniendo derecho a ellos.";
-            this.LR26.Visible = false;
-            // 
-            // LR27
-            // 
-            this.LR27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LR27.Location = new System.Drawing.Point(6, 708);
-            this.LR27.Name = "LR27";
-            this.LR27.Size = new System.Drawing.Size(614, 32);
-            this.LR27.TabIndex = 48;
-            this.LR27.Text = "3.  Este registro deberá de acompañarse con sus respectivos instrumentos de evalu" +
-    "ación y  listas de calificaciones que avalen los datos aquí presentados.";
-            this.LR27.Visible = false;
-            // 
             // bGuardar
             // 
             this.bGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3415,6 +2105,30 @@
             this.bEnviar.Text = "Enviar";
             this.bEnviar.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(114, 5);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(282, 21);
+            this.comboBox1.TabIndex = 11;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(214, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(357, 21);
+            this.comboBox2.TabIndex = 15;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(504, 30);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(67, 21);
+            this.comboBox3.TabIndex = 16;
+            // 
             // ID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3425,16 +2139,15 @@
             this.Controls.Add(this.bEnviar);
             this.Controls.Add(this.LImprimir);
             this.Controls.Add(this.bGuardar);
-            this.Controls.Add(this.LR27);
-            this.Controls.Add(this.LR26);
-            this.Controls.Add(this.LR25);
-            this.Controls.Add(this.LR24);
+            this.Controls.Add(this.T9);
+            this.Controls.Add(this.T1);
             this.Controls.Add(this.PT6);
             this.Controls.Add(this.PT5);
             this.Controls.Add(this.PT4);
             this.Controls.Add(this.PT3);
             this.Controls.Add(this.PT2);
             this.Controls.Add(this.PT1);
+            this.Controls.Add(this.T4);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ID";
@@ -3612,120 +2325,6 @@
         private System.Windows.Forms.Label L51;
         private System.Windows.Forms.Label L50;
         private System.Windows.Forms.Label L49;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TR2;
-        private System.Windows.Forms.Label LR2;
-        private System.Windows.Forms.TextBox TR1;
-        private System.Windows.Forms.Label LR1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label labelPI1;
-        private System.Windows.Forms.TextBox TR5;
-        private System.Windows.Forms.Label LR5;
-        private System.Windows.Forms.TextBox TR4;
-        private System.Windows.Forms.Label LR4;
-        private System.Windows.Forms.TextBox TR3;
-        private System.Windows.Forms.Label LR3;
-        private System.Windows.Forms.Label LR21;
-        private System.Windows.Forms.Label LR20;
-        private System.Windows.Forms.Label LR19;
-        private System.Windows.Forms.TextBox TR126;
-        private System.Windows.Forms.TextBox TR66;
-        private System.Windows.Forms.TextBox TR116;
-        private System.Windows.Forms.TextBox TR56;
-        private System.Windows.Forms.TextBox TR106;
-        private System.Windows.Forms.TextBox TR46;
-        private System.Windows.Forms.TextBox TR96;
-        private System.Windows.Forms.TextBox TR36;
-        private System.Windows.Forms.TextBox TR86;
-        private System.Windows.Forms.TextBox TR26;
-        private System.Windows.Forms.TextBox TR76;
-        private System.Windows.Forms.Label LR6;
-        private System.Windows.Forms.TextBox TR16;
-        private System.Windows.Forms.Label LR7;
-        private System.Windows.Forms.Label LR23;
-        private System.Windows.Forms.Label LR22;
-        private System.Windows.Forms.TextBox TR712;
-        private System.Windows.Forms.TextBox TR612;
-        private System.Windows.Forms.TextBox TR512;
-        private System.Windows.Forms.TextBox TR412;
-        private System.Windows.Forms.TextBox TR312;
-        private System.Windows.Forms.TextBox TR212;
-        private System.Windows.Forms.TextBox TR112;
-        private System.Windows.Forms.TextBox TR711;
-        private System.Windows.Forms.TextBox TR611;
-        private System.Windows.Forms.TextBox TR511;
-        private System.Windows.Forms.TextBox TR411;
-        private System.Windows.Forms.TextBox TR311;
-        private System.Windows.Forms.TextBox TR211;
-        private System.Windows.Forms.TextBox TR111;
-        private System.Windows.Forms.TextBox TR710;
-        private System.Windows.Forms.TextBox TR610;
-        private System.Windows.Forms.TextBox TR510;
-        private System.Windows.Forms.TextBox TR410;
-        private System.Windows.Forms.TextBox TR310;
-        private System.Windows.Forms.TextBox TR210;
-        private System.Windows.Forms.TextBox TR110;
-        private System.Windows.Forms.TextBox TR79;
-        private System.Windows.Forms.TextBox TR69;
-        private System.Windows.Forms.TextBox TR59;
-        private System.Windows.Forms.TextBox TR49;
-        private System.Windows.Forms.TextBox TR39;
-        private System.Windows.Forms.TextBox TR29;
-        private System.Windows.Forms.TextBox TR19;
-        private System.Windows.Forms.TextBox TR78;
-        private System.Windows.Forms.TextBox TR68;
-        private System.Windows.Forms.TextBox TR58;
-        private System.Windows.Forms.TextBox TR48;
-        private System.Windows.Forms.TextBox TR38;
-        private System.Windows.Forms.TextBox TR28;
-        private System.Windows.Forms.TextBox TR18;
-        private System.Windows.Forms.TextBox TR77;
-        private System.Windows.Forms.TextBox TR67;
-        private System.Windows.Forms.TextBox TR57;
-        private System.Windows.Forms.TextBox TR47;
-        private System.Windows.Forms.TextBox TR37;
-        private System.Windows.Forms.TextBox TR27;
-        private System.Windows.Forms.TextBox TR17;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label LR14;
-        private System.Windows.Forms.Label LR13;
-        private System.Windows.Forms.Label LR12;
-        private System.Windows.Forms.Label LR11;
-        private System.Windows.Forms.Label LR10;
-        private System.Windows.Forms.Label LR9;
-        private System.Windows.Forms.Label LR8;
-        private System.Windows.Forms.TextBox TR715;
-        private System.Windows.Forms.TextBox TR615;
-        private System.Windows.Forms.TextBox TR515;
-        private System.Windows.Forms.TextBox TR415;
-        private System.Windows.Forms.TextBox TR315;
-        private System.Windows.Forms.TextBox TR215;
-        private System.Windows.Forms.TextBox TR115;
-        private System.Windows.Forms.TextBox TR714;
-        private System.Windows.Forms.TextBox TR614;
-        private System.Windows.Forms.TextBox TR514;
-        private System.Windows.Forms.TextBox TR414;
-        private System.Windows.Forms.TextBox TR314;
-        private System.Windows.Forms.TextBox TR214;
-        private System.Windows.Forms.TextBox TR114;
-        private System.Windows.Forms.TextBox TR713;
-        private System.Windows.Forms.TextBox TR613;
-        private System.Windows.Forms.TextBox TR513;
-        private System.Windows.Forms.TextBox TR413;
-        private System.Windows.Forms.TextBox TR313;
-        private System.Windows.Forms.TextBox TR213;
-        private System.Windows.Forms.TextBox TR113;
-        private System.Windows.Forms.Label LR18;
-        private System.Windows.Forms.Label LR17;
-        private System.Windows.Forms.Label LR16;
-        private System.Windows.Forms.Label LR15;
-        private System.Windows.Forms.Label LR24;
-        private System.Windows.Forms.Label LR25;
-        private System.Windows.Forms.Label LR26;
-        private System.Windows.Forms.Label LR27;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem subirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem evidenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calificacionesToolStripMenuItem;
@@ -3735,6 +2334,9 @@
         private System.Windows.Forms.Button bGuardar;
         private System.Windows.Forms.Button LImprimir;
         private System.Windows.Forms.Button bEnviar;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 

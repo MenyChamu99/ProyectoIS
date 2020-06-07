@@ -40,126 +40,6 @@ namespace InterfazDocente
 
         private void planDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            label4.Visible = false;
-            label5.Visible = false;
-            label6.Visible = false;
-            label7.Visible = false;
-            label8.Visible = false;
-            labelPI1.Visible = false;
-
-            LR1.Visible = false;
-            LR2.Visible = false;
-            LR3.Visible = false;
-            LR4.Visible = false;
-            LR5.Visible = false;
-            LR6.Visible = false;
-            LR7.Visible = false;
-            LR8.Visible = false;
-            LR9.Visible = false;
-            LR10.Visible = false;
-            LR11.Visible = false;
-            LR12.Visible = false;
-            LR13.Visible = false;
-            LR14.Visible = false;
-            LR15.Visible = false;
-            LR16.Visible = false;
-            LR17.Visible = false;
-            LR18.Visible = false;
-            label26.Visible = false;
-            LR19.Visible = false;
-            LR20.Visible = false;
-            LR21.Visible = false;
-            LR22.Visible = false;
-            LR23.Visible = false;
-            LR24.Visible = false;
-            LR25.Visible = false;
-            LR26.Visible = false;
-            LR27.Visible = false;
-
-            TR1.Visible = false;
-            TR2.Visible = false;
-            TR1.Visible = false;
-            TR3.Visible = false;
-            TR4.Visible = false;
-            TR5.Visible = false;
-            TR16.Visible = false;
-            TR26.Visible = false;
-            TR36.Visible = false;
-            TR46.Visible = false;
-            TR56.Visible = false;
-            TR66.Visible = false;
-            TR76.Visible = false;
-            TR86.Visible = false;
-            TR96.Visible = false;
-            TR106.Visible = false;
-            TR116.Visible = false;
-            TR126.Visible = false;
-            TR17.Visible = false;
-            TR27.Visible = false;
-            TR37.Visible = false;
-            TR47.Visible = false;
-            TR57.Visible = false;
-            TR67.Visible = false;
-            TR77.Visible = false;
-            TR18.Visible = false;
-            TR28.Visible = false;
-            TR38.Visible = false;
-            TR48.Visible = false;
-            TR58.Visible = false;
-            TR68.Visible = false;
-            TR78.Visible = false;
-            TR19.Visible = false;
-            TR29.Visible = false;
-            TR39.Visible = false;
-            TR49.Visible = false;
-            TR19.Visible = false;
-            TR59.Visible = false;
-            TR69.Visible = false;
-            TR79.Visible = false;
-            TR110.Visible = false;
-            TR210.Visible = false;
-            TR310.Visible = false;
-            TR410.Visible = false;
-            TR510.Visible = false;
-            TR610.Visible = false;
-            TR710.Visible = false;
-            TR111.Visible = false;
-            TR211.Visible = false;
-            TR311.Visible = false;
-            TR411.Visible = false;
-            TR511.Visible = false;
-            TR611.Visible = false;
-            TR711.Visible = false;
-            TR112.Visible = false;
-            TR212.Visible = false;
-            TR312.Visible = false;
-            TR412.Visible = false;
-            TR512.Visible = false;
-            TR612.Visible = false;
-            TR712.Visible = false;
-            TR113.Visible = false;
-            TR213.Visible = false;
-            TR313.Visible = false;
-            TR413.Visible = false;
-            TR513.Visible = false;
-            TR613.Visible = false;
-            TR713.Visible = false;
-            TR114.Visible = false;
-            TR214.Visible = false;
-            TR314.Visible = false;
-            TR414.Visible = false;
-            TR514.Visible = false;
-            TR614.Visible = false;
-            TR714.Visible = false;
-            TR115.Visible = false;
-            TR215.Visible = false;
-            TR315.Visible = false;
-            TR415.Visible = false;
-            TR515.Visible = false;
-            TR615.Visible = false;
-            TR715.Visible = false;
-
             L1.Visible = true;
             L2.Visible = true;
             L3.Visible = true;
@@ -298,6 +178,9 @@ namespace InterfazDocente
 
         private void reporteFinalToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           RF  RF = new RF();
+            RF.Show();
+
             L1.Visible = false;
             L2.Visible = false;
             L3.Visible = false;
@@ -429,127 +312,7 @@ namespace InterfazDocente
             T63.Visible = false;
             T64.Visible = false;
 
-            label4.Visible = true;
-            label5.Visible = true;
-            label6.Visible = true;
-            label7.Visible = true;
-            label8.Visible = true;
-            labelPI1.Visible = true;
-
-            LR1.Visible = true;
-            LR2.Visible = true;
-            LR3.Visible = true;
-            LR4.Visible = true;
-            LR5.Visible = true;
-            LR6.Visible = true;
-            LR7.Visible = true;
-            LR8.Visible = true;
-            LR9.Visible = true;
-            LR10.Visible = true;
-            LR11.Visible = true;
-            LR12.Visible = true;
-            LR13.Visible = true;
-            LR14.Visible = true;
-            LR15.Visible = true;
-            LR16.Visible = true;
-            LR17.Visible = true;
-            LR18.Visible = true;
-            label26.Visible = true;
-            LR19.Visible = true;
-            LR20.Visible = true;
-            LR21.Visible = true;
-            LR22.Visible = true;
-            LR23.Visible = true;
-            LR24.Visible = true;
-            LR25.Visible = true;
-            LR26.Visible = true;
-            LR27.Visible = true;
-            LImprimir.Visible = true;
-            bGuardar.Visible = true;
-            bEnviar.Visible = true;
-
-            TR1.Visible = true;
-            TR2.Visible = true;
-            TR1.Visible = true;
-            TR3.Visible = true;
-            TR4.Visible = true;
-            TR5.Visible = true;
-            TR16.Visible = true;
-            TR26.Visible = true;
-            TR36.Visible = true;
-            TR46.Visible = true;
-            TR56.Visible = true;
-            TR66.Visible = true;
-            TR76.Visible = true;
-            TR86.Visible = true;
-            TR96.Visible = true;
-            TR106.Visible = true;
-            TR116.Visible = true;
-            TR126.Visible = true;
-            TR17.Visible = true;
-            TR27.Visible = true;
-            TR37.Visible = true;
-            TR47.Visible = true;
-            TR57.Visible = true;
-            TR67.Visible = true;
-            TR77.Visible = true;
-            TR18.Visible = true;
-            TR28.Visible = true;
-            TR38.Visible = true;
-            TR48.Visible = true;
-            TR58.Visible = true;
-            TR68.Visible = true;
-            TR78.Visible = true;
-            TR19.Visible = true;
-            TR29.Visible = true;
-            TR39.Visible = true;
-            TR49.Visible = true;
-            TR19.Visible = true;
-            TR59.Visible = true;
-            TR69.Visible = true;
-            TR79.Visible = true;
-            TR110.Visible = true;
-            TR210.Visible = true;
-            TR310.Visible = true;
-            TR410.Visible = true;
-            TR510.Visible = true;
-            TR610.Visible = true;
-            TR710.Visible = true;
-            TR111.Visible = true;
-            TR211.Visible = true;
-            TR311.Visible = true;
-            TR411.Visible = true;
-            TR511.Visible = true;
-            TR611.Visible = true;
-            TR711.Visible = true;
-            TR112.Visible = true;
-            TR212.Visible = true;
-            TR312.Visible = true;
-            TR412.Visible = true;
-            TR512.Visible = true;
-            TR612.Visible = true;
-            TR712.Visible = true;
-            TR113.Visible = true;
-            TR213.Visible = true;
-            TR313.Visible = true;
-            TR413.Visible = true;
-            TR513.Visible = true;
-            TR613.Visible = true;
-            TR713.Visible = true;
-            TR114.Visible = true;
-            TR214.Visible = true;
-            TR314.Visible = true;
-            TR414.Visible = true;
-            TR514.Visible = true;
-            TR614.Visible = true;
-            TR714.Visible = true;
-            TR115.Visible = true;
-            TR215.Visible = true;
-            TR315.Visible = true;
-            TR415.Visible = true;
-            TR515.Visible = true;
-            TR615.Visible = true;
-            TR715.Visible = true;
+            
         }
 
         private void evidenciaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -591,52 +354,32 @@ namespace InterfazDocente
 
         private void TR4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar >= 32 && e.KeyChar <= 47 || e.KeyChar >= 58 && e.KeyChar <= 255)
-            {
-                MessageBox.Show("Sólo números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+           
         }
 
         private void TR5_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar >= 32 && e.KeyChar <= 47 || e.KeyChar >= 58 && e.KeyChar <= 255)
-            {
-                MessageBox.Show("Sólo números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+           
         }
 
         private void TR1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar >= 33 && e.KeyChar <= 64 || e.KeyChar >= 91 && e.KeyChar <= 96 || e.KeyChar >= 123 && e.KeyChar <= 255)
-            {
-                MessageBox.Show("Sólo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+           
         }
 
         private void TR2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar >= 33 && e.KeyChar <= 64 || e.KeyChar >= 91 && e.KeyChar <= 96 || e.KeyChar >= 123 && e.KeyChar <= 255)
-            {
-                MessageBox.Show("Sólo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+           
         }
 
         private void TR3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar >= 33 && e.KeyChar <= 64 || e.KeyChar >= 91 && e.KeyChar <= 96 || e.KeyChar >= 123 && e.KeyChar <= 255)
-            {
-                MessageBox.Show("Sólo letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+           
+        }
+
+        private void TR1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

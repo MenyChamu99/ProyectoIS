@@ -765,6 +765,9 @@ namespace Proyecto_Ing_Soft
             }
         }
 
-        
+        private void txtIdMateria_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }
