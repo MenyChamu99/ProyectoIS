@@ -49,14 +49,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.T3 = new System.Windows.Forms.TextBox();
             this.T2 = new System.Windows.Forms.TextBox();
-            this.T1 = new System.Windows.Forms.TextBox();
             this.L3 = new System.Windows.Forms.Label();
             this.L2 = new System.Windows.Forms.Label();
             this.L1 = new System.Windows.Forms.Label();
+            this.T1 = new System.Windows.Forms.TextBox();
             this.PT2 = new System.Windows.Forms.Panel();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.T10 = new System.Windows.Forms.TextBox();
             this.T8 = new System.Windows.Forms.TextBox();
-            this.T9 = new System.Windows.Forms.TextBox();
             this.T7 = new System.Windows.Forms.TextBox();
             this.L13 = new System.Windows.Forms.Label();
             this.L11 = new System.Windows.Forms.Label();
@@ -64,10 +65,11 @@
             this.L10 = new System.Windows.Forms.Label();
             this.T6 = new System.Windows.Forms.TextBox();
             this.T5 = new System.Windows.Forms.TextBox();
-            this.T4 = new System.Windows.Forms.TextBox();
             this.L9 = new System.Windows.Forms.Label();
             this.L8 = new System.Windows.Forms.Label();
             this.L7 = new System.Windows.Forms.Label();
+            this.T9 = new System.Windows.Forms.TextBox();
+            this.T4 = new System.Windows.Forms.TextBox();
             this.PT3 = new System.Windows.Forms.Panel();
             this.T11 = new System.Windows.Forms.TextBox();
             this.T12 = new System.Windows.Forms.TextBox();
@@ -184,9 +186,6 @@
             this.bGuardar = new System.Windows.Forms.Button();
             this.LImprimir = new System.Windows.Forms.Button();
             this.bEnviar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.PT1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -223,20 +222,20 @@
             this.planDeTrabajoToolStripMenuItem,
             this.reporteFinalToolStripMenuItem});
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.crearToolStripMenuItem.Text = "&Crear";
             // 
             // planDeTrabajoToolStripMenuItem
             // 
             this.planDeTrabajoToolStripMenuItem.Name = "planDeTrabajoToolStripMenuItem";
-            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.planDeTrabajoToolStripMenuItem.Text = "&Plan de trabajo";
             this.planDeTrabajoToolStripMenuItem.Click += new System.EventHandler(this.planDeTrabajoToolStripMenuItem_Click);
             // 
             // reporteFinalToolStripMenuItem
             // 
             this.reporteFinalToolStripMenuItem.Name = "reporteFinalToolStripMenuItem";
-            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.reporteFinalToolStripMenuItem.Text = "&Reporte final";
             this.reporteFinalToolStripMenuItem.Click += new System.EventHandler(this.reporteFinalToolStripMenuItem_Click);
             // 
@@ -246,20 +245,20 @@
             this.evidenciaToolStripMenuItem,
             this.calificacionesToolStripMenuItem});
             this.subirToolStripMenuItem.Name = "subirToolStripMenuItem";
-            this.subirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.subirToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.subirToolStripMenuItem.Text = "&Subir";
             // 
             // evidenciaToolStripMenuItem
             // 
             this.evidenciaToolStripMenuItem.Name = "evidenciaToolStripMenuItem";
-            this.evidenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.evidenciaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.evidenciaToolStripMenuItem.Text = "&Evidencia";
             this.evidenciaToolStripMenuItem.Click += new System.EventHandler(this.evidenciaToolStripMenuItem_Click_1);
             // 
             // calificacionesToolStripMenuItem
             // 
             this.calificacionesToolStripMenuItem.Name = "calificacionesToolStripMenuItem";
-            this.calificacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calificacionesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.calificacionesToolStripMenuItem.Text = "&Calificaciones";
             this.calificacionesToolStripMenuItem.Click += new System.EventHandler(this.calificacionesToolStripMenuItem_Click);
             // 
@@ -269,31 +268,31 @@
             this.observacionesToolStripMenuItem,
             this.trabajosEntregadosToolStripMenuItem});
             this.verToolStripMenuItem.Name = "verToolStripMenuItem";
-            this.verToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.verToolStripMenuItem.Text = "&Ver";
             // 
             // observacionesToolStripMenuItem
             // 
             this.observacionesToolStripMenuItem.Name = "observacionesToolStripMenuItem";
-            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.observacionesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.observacionesToolStripMenuItem.Text = "&Observaciones";
             this.observacionesToolStripMenuItem.Click += new System.EventHandler(this.observacionesToolStripMenuItem_Click);
             // 
             // trabajosEntregadosToolStripMenuItem
             // 
             this.trabajosEntregadosToolStripMenuItem.Name = "trabajosEntregadosToolStripMenuItem";
-            this.trabajosEntregadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trabajosEntregadosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.trabajosEntregadosToolStripMenuItem.Text = "&Trabajos entregados";
             this.trabajosEntregadosToolStripMenuItem.Click += new System.EventHandler(this.trabajosEntregadosToolStripMenuItem_Click);
             // 
             // PT1
             // 
             this.PT1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PT1.Controls.Add(this.comboBox1);
             this.PT1.Controls.Add(this.panel2);
             this.PT1.Controls.Add(this.T3);
             this.PT1.Controls.Add(this.T2);
             this.PT1.Controls.Add(this.L3);
+            this.PT1.Controls.Add(this.T1);
             this.PT1.Controls.Add(this.L2);
             this.PT1.Controls.Add(this.L1);
             this.PT1.Location = new System.Drawing.Point(3, 56);
@@ -395,19 +394,6 @@
             this.T2.TabIndex = 9;
             this.T2.Visible = false;
             // 
-            // T1
-            // 
-            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T1.Location = new System.Drawing.Point(124, 28);
-            this.T1.Multiline = true;
-            this.T1.Name = "T1";
-            this.T1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T1.Size = new System.Drawing.Size(282, 22);
-            this.T1.TabIndex = 8;
-            this.T1.Visible = false;
-            // 
             // L3
             // 
             this.L3.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -444,6 +430,19 @@
             this.L1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L1.Visible = false;
             // 
+            // T1
+            // 
+            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T1.Location = new System.Drawing.Point(114, 5);
+            this.T1.Multiline = true;
+            this.T1.Name = "T1";
+            this.T1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.T1.Size = new System.Drawing.Size(282, 22);
+            this.T1.TabIndex = 8;
+            this.T1.Visible = false;
+            // 
             // PT2
             // 
             this.PT2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -466,6 +465,22 @@
             this.PT2.Size = new System.Drawing.Size(581, 101);
             this.PT2.TabIndex = 5;
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(504, 30);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(67, 21);
+            this.comboBox3.TabIndex = 16;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(214, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(357, 21);
+            this.comboBox2.TabIndex = 15;
+            // 
             // T10
             // 
             this.T10.Location = new System.Drawing.Point(504, 58);
@@ -483,15 +498,6 @@
             this.T8.Size = new System.Drawing.Size(67, 25);
             this.T8.TabIndex = 14;
             this.T8.Visible = false;
-            // 
-            // T9
-            // 
-            this.T9.Location = new System.Drawing.Point(993, 27);
-            this.T9.Multiline = true;
-            this.T9.Name = "T9";
-            this.T9.Size = new System.Drawing.Size(67, 23);
-            this.T9.TabIndex = 13;
-            this.T9.Visible = false;
             // 
             // T7
             // 
@@ -568,19 +574,6 @@
             this.T5.TabIndex = 9;
             this.T5.Visible = false;
             // 
-            // T4
-            // 
-            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T4.Location = new System.Drawing.Point(623, 28);
-            this.T4.Multiline = true;
-            this.T4.Name = "T4";
-            this.T4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T4.Size = new System.Drawing.Size(357, 22);
-            this.T4.TabIndex = 8;
-            this.T4.Visible = false;
-            // 
             // L9
             // 
             this.L9.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -616,6 +609,28 @@
             this.L7.Text = "NOMBRE DE LA ASIGNATURA:";
             this.L7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.L7.Visible = false;
+            // 
+            // T9
+            // 
+            this.T9.Location = new System.Drawing.Point(993, 27);
+            this.T9.Multiline = true;
+            this.T9.Name = "T9";
+            this.T9.Size = new System.Drawing.Size(67, 23);
+            this.T9.TabIndex = 13;
+            this.T9.Visible = false;
+            // 
+            // T4
+            // 
+            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T4.Location = new System.Drawing.Point(623, 28);
+            this.T4.Multiline = true;
+            this.T4.Name = "T4";
+            this.T4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.T4.Size = new System.Drawing.Size(357, 22);
+            this.T4.TabIndex = 8;
+            this.T4.Visible = false;
             // 
             // PT3
             // 
@@ -2105,30 +2120,6 @@
             this.bEnviar.Text = "Enviar";
             this.bEnviar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(114, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(282, 21);
-            this.comboBox1.TabIndex = 11;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(214, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(357, 21);
-            this.comboBox2.TabIndex = 15;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(504, 30);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(67, 21);
-            this.comboBox3.TabIndex = 16;
-            // 
             // ID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2140,7 +2131,6 @@
             this.Controls.Add(this.LImprimir);
             this.Controls.Add(this.bGuardar);
             this.Controls.Add(this.T9);
-            this.Controls.Add(this.T1);
             this.Controls.Add(this.PT6);
             this.Controls.Add(this.PT5);
             this.Controls.Add(this.PT4);
@@ -2334,7 +2324,6 @@
         private System.Windows.Forms.Button bGuardar;
         private System.Windows.Forms.Button LImprimir;
         private System.Windows.Forms.Button bEnviar;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
     }

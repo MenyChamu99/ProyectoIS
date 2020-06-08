@@ -406,7 +406,6 @@
             this.T1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.T1.Size = new System.Drawing.Size(282, 22);
             this.T1.TabIndex = 8;
-            this.T1.Visible = false;
             // 
             // L3
             // 

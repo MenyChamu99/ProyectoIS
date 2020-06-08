@@ -255,7 +255,7 @@ namespace Proyecto_Ing_Soft
 
         private void btnAgregarM_Click(object sender, EventArgs e)
         {
-            if (txtIdMateria.Text != "" && txtNombreM.Text != "" && txtUnidades.Text != "" && cbIdCarrera.SelectedIndex != 0 && txtHoras.Text != "" && txtCreditos.Text != "")
+            if (txtIdMateria.Text != "" && txtNombreM.Text != "" && txtUnidades.Text != "" && txtHoras.Text != "" && txtCreditos.Text != "")
             {
                 if (c.MateriaRegistrada(txtIdMateria.Text) == 0)
                 {
@@ -308,18 +308,20 @@ namespace Proyecto_Ing_Soft
 
         private void button6_Click(object sender, EventArgs e)//btnEditarUsuario
         {
-            MessageBox.Show(c.actualizar(txtIdUsuario.Text, txtNombre.Text, txtUsuario.Text, txtContra.Text, cbTipousuario.SelectedItem.ToString()));
+            MessageBox.Show(c.actualizarU(txtIdUsuario.Text, txtNombre.Text, txtUsuario.Text, txtContra.Text, cbTipousuario.SelectedItem.ToString()));
             c.cargarPersonas(DgvUsuarios);
         }
 
         private void btnEditarCarrera_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(c.actualizarC(txtIdCarrera.Text, txtNombreC.Text));
+           // c.cargarPersonas(DgvUsuarios);
         }
 
         private void btnEditarMateria_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(c.actualizarM(txtIdMateria.Text, txtNombreM.Text, txtHoras.Text, cbIdCarrera.SelectedItem.ToString(), txtCreditos.Text, txtUnidades.Text));
+            c.cargarPersonas(DgvUsuarios);
         }
 
         private void btnEliminarMateria_Click(object sender, EventArgs e)
