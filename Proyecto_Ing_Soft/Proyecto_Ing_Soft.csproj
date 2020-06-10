@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
@@ -47,79 +48,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calif.cs">
+    <Compile Include="Presentacion\Calif.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calif.Designer.cs">
+    <Compile Include="Presentacion\Calif.Designer.cs">
       <DependentUpon>Calif.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="InicioSesion.cs">
+    <Compile Include="Presentacion\InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioSesion.Designer.cs">
+    <Compile Include="Presentacion\InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterfazAdmin.cs">
+    <Compile Include="Presentacion\InterfazAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfazAdmin.Designer.cs">
+    <Compile Include="Presentacion\InterfazAdmin.Designer.cs">
       <DependentUpon>InterfazAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterfazJefeDpto.cs">
+    <Compile Include="Presentacion\InterfazJefeDpto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfazJefeDpto.Designer.cs">
+    <Compile Include="Presentacion\InterfazJefeDpto.Designer.cs">
       <DependentUpon>InterfazJefeDpto.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlumnoaGrupo.cs">
+    <Compile Include="Presentacion\AlumnoaGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlumnoaGrupo.Designer.cs">
+    <Compile Include="Presentacion\AlumnoaGrupo.Designer.cs">
       <DependentUpon>AlumnoaGrupo.cs</DependentUpon>
     </Compile>
-    <Compile Include="GrupoaDocente.cs">
+    <Compile Include="Presentacion\GrupoaDocente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GrupoaDocente.Designer.cs">
+    <Compile Include="Presentacion\GrupoaDocente.Designer.cs">
       <DependentUpon>GrupoaDocente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Htrabajo.cs">
+    <Compile Include="Presentacion\Htrabajo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Htrabajo.Designer.cs">
+    <Compile Include="Presentacion\Htrabajo.Designer.cs">
       <DependentUpon>Htrabajo.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlanT.cs">
+    <Compile Include="Presentacion\PlanT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PlanT.Designer.cs">
+    <Compile Include="Presentacion\PlanT.Designer.cs">
       <DependentUpon>PlanT.cs</DependentUpon>
     </Compile>
-    <Compile Include="MDocente.cs">
+    <Compile Include="Presentacion\MDocente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MDocente.Designer.cs">
+    <Compile Include="Presentacion\MDocente.Designer.cs">
       <DependentUpon>MDocente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Obs.cs">
+    <Compile Include="Presentacion\Obs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Obs.Designer.cs">
+    <Compile Include="Presentacion\Obs.Designer.cs">
       <DependentUpon>Obs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RF.cs">
+    <Compile Include="Presentacion\RF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RF.Designer.cs">
+    <Compile Include="Presentacion\RF.Designer.cs">
       <DependentUpon>RF.cs</DependentUpon>
     </Compile>
-    <Compile Include="SEvidencia.cs">
+    <Compile Include="Presentacion\SEvidencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SEvidencia.Designer.cs">
+    <Compile Include="Presentacion\SEvidencia.Designer.cs">
       <DependentUpon>SEvidencia.cs</DependentUpon>
     </Compile>
     <Compile Include="UsuariosBDDataSet.Designer.cs">
@@ -127,34 +128,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UsuariosBDDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Calif.resx">
+    <EmbeddedResource Include="Presentacion\Calif.resx">
       <DependentUpon>Calif.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InicioSesion.resx">
+    <EmbeddedResource Include="Presentacion\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterfazAdmin.resx">
+    <EmbeddedResource Include="Presentacion\InterfazAdmin.resx">
       <DependentUpon>InterfazAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterfazJefeDpto.resx">
+    <EmbeddedResource Include="Presentacion\InterfazJefeDpto.resx">
       <DependentUpon>InterfazJefeDpto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AlumnoaGrupo.resx">
+    <EmbeddedResource Include="Presentacion\AlumnoaGrupo.resx">
       <DependentUpon>AlumnoaGrupo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GrupoaDocente.resx">
+    <EmbeddedResource Include="Presentacion\GrupoaDocente.resx">
       <DependentUpon>GrupoaDocente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Htrabajo.resx">
+    <EmbeddedResource Include="Presentacion\Htrabajo.resx">
       <DependentUpon>Htrabajo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlanT.resx">
+    <EmbeddedResource Include="Presentacion\PlanT.resx">
       <DependentUpon>PlanT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MDocente.resx">
+    <EmbeddedResource Include="Presentacion\MDocente.resx">
       <DependentUpon>MDocente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Obs.resx">
+    <EmbeddedResource Include="Presentacion\Obs.resx">
       <DependentUpon>Obs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -166,10 +167,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RF.resx">
+    <EmbeddedResource Include="Presentacion\RF.resx">
       <DependentUpon>RF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SEvidencia.resx">
+    <EmbeddedResource Include="Presentacion\SEvidencia.resx">
       <DependentUpon>SEvidencia.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -195,6 +196,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datos\" />
+    <Folder Include="Negocios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

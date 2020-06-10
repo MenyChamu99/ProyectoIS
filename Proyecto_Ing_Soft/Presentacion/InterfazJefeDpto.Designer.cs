@@ -127,7 +127,7 @@
             // planDeTrabajoToolStripMenuItem
             // 
             this.planDeTrabajoToolStripMenuItem.Name = "planDeTrabajoToolStripMenuItem";
-            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.planDeTrabajoToolStripMenuItem.Text = "&Plan de Trabajo";
             this.planDeTrabajoToolStripMenuItem.Click += new System.EventHandler(this.planDeTrabajoToolStripMenuItem_Click);
             // 
@@ -507,6 +507,7 @@
             this.cbCarrera.Size = new System.Drawing.Size(90, 21);
             this.cbCarrera.TabIndex = 40;
             this.cbCarrera.Visible = false;
+            this.cbCarrera.SelectedIndexChanged += new System.EventHandler(this.cbCarrera_SelectedIndexChanged);
             // 
             // cbTipoSangre
             // 

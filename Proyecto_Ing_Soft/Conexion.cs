@@ -7,6 +7,9 @@ using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Configuration;
+using System.IO;
+
 
 
 namespace Proyecto_Ing_Soft
@@ -15,9 +18,10 @@ namespace Proyecto_Ing_Soft
     {
         SqlConnection cn;
         SqlCommand cmd;
-        SqlDataReader dr,dr2;
+        SqlDataReader dr;
         SqlDataAdapter da;
         DataTable dt;
+        
 
         public Conexion()
         {
@@ -29,9 +33,10 @@ namespace Proyecto_Ing_Soft
 
             } catch (Exception ex)
             {
-                MessageBox.Show("No se conecto con la base de datos: "+ex.ToString());
+                //MessageBox.Show("No se conecto con la base de datos: "+ex.ToString());
             }
         }
+       
         public string insertar(String id,String nombre,String usuario,String contraseña,String tipodeusuario)
         {
             string salida = "Si se inserto";

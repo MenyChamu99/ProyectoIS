@@ -648,6 +648,11 @@ namespace Proyecto_Ing_Soft
                 
             }
         }
+
+        private void cbCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

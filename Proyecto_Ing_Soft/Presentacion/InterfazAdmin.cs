@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Proyecto_Ing_Soft
 {
     public partial class InterfazAdmin : Form
@@ -72,9 +74,10 @@ namespace Proyecto_Ing_Soft
             f1.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//boton Registrar Usuario
         {
-            // Conexion c=new Conexion();
+
+             Conexion c=new Conexion();
             if (txtIdUsuario.Text!="" && txtNombre.Text!="" && txtUsuario.Text!="" && txtContra.Text!="" && cbTipousuario.SelectedItem.ToString()!=null) {
                 if (c.personaRegistrada(txtIdUsuario.Text) == 0)
                 {
@@ -86,7 +89,7 @@ namespace Proyecto_Ing_Soft
                     txtUsuario.Clear();
                     txtContra.Clear();
                 }
-                else
+               else
                 {
                     MessageBox.Show("El registro ya existe", "Imposible de registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtIdUsuario.Clear();
@@ -96,14 +99,9 @@ namespace Proyecto_Ing_Soft
             {
                 MessageBox.Show("Debe llenar todos los campos", "Campos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            // MessageBox.Show(cbTipousuario.SelectedItem.ToString());
-            //MessageBox.Show(txtIdUsuario.Text);
-            //  MessageBox.Show(txtNombre.Text);
-            // MessageBox.Show(txtUsuario.Text);
-            //  MessageBox.Show(txtContra.Text);
-            
-        }
 
+        }
+        
         private void docenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //UsuarioCampos

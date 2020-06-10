@@ -20,81 +20,83 @@ namespace Proyecto_Ing_Soft
             
         }
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-38Q67F7T\SQLEXPRESS;Initial Catalog=UsuariosBD;Integrated Security = True");
-        
+        public bool lleno;
         public void logear(String usuario, String contraseña)
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            CamposLlenos(lleno);
+            bool bandera = CamposLlenos(lleno);
+            if (bandera == true)
             {
-                MessageBox.Show("Ingresar todos los campos", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else 
-            { 
                 try
                 {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT Nombre,Tipo_Usuario FROM Usuarios WHERE Usuario = @usuario AND Contraseña = @contraseña", con);
-                cmd.Parameters.AddWithValue("usuario", usuario);
-                cmd.Parameters.AddWithValue("contraseña", contraseña);
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                if (dt.Rows.Count == 1)
-                {
-                    this.Hide();
-                    if (dt.Rows[0][1].ToString() == "Admin")
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT Nombre,Tipo_Usuario FROM Usuarios WHERE Usuario = @usuario AND Contraseña = @contraseña", con);
+                    cmd.Parameters.AddWithValue("usuario", usuario);
+                    cmd.Parameters.AddWithValue("contraseña", contraseña);
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    if (dt.Rows.Count == 1)
                     {
+                        this.Hide();
+                        if (dt.Rows[0][1].ToString() == "Admin")
+                        {
                             InterfazAdmin f3 = new InterfazAdmin();
                             f3.Show();
-                            textBox1.Text = "";
-                        textBox2.Text = "";
-                    }
-                    else if (dt.Rows[0][1].ToString() == "Docente")
-                    {
+                            LimpiarCampos();
+                        }
+                        else if (dt.Rows[0][1].ToString() == "Docente")
+                        {
                             ID id = new ID();
                             id.Show();
-                            textBox1.Text = "";
-                            textBox2.Text = "";
+                            LimpiarCampos();
                         }
                         else if (dt.Rows[0][1].ToString() == "Jefe")
                         {
                             InterfazJefeDpto f4 = new InterfazJefeDpto();
                             f4.Show();
-                            textBox1.Text = "";
-                            textBox2.Text = "";
+                            LimpiarCampos();
                         }
                     }
-                else
+                    else
+                    {
+                        MessageBox.Show("Usuario y/o contraseña incorrecta");
+                        LimpiarCampos();
+                    }
+                }
+                catch (Exception e)
                 {
-                    MessageBox.Show("Usuario y/o contraseña incorrecta");
-                    textBox1.Text = "";
-                    textBox2.Text = "";
+                    MessageBox.Show(e.Message);
+                }
+                finally
+                {
+                    con.Close();
                 }
             }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-            finally
-            {
-                    con.Close();
-            }
         }
+        public Boolean CamposLlenos(bool lleno)
+        {
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Ingresar todos los campos", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lleno = false;
+                LimpiarCampos();
+            }
+            else
+            {
+                lleno = true;
+            }
+            return lleno;
+        }
+        public void LimpiarCampos()
+        {
+            textBox1.Clear();
+            textBox1.Clear();
         }
         private void button1_Click(object sender, EventArgs e)
         {
             logear(this.textBox1.Text,this.textBox2.Text);
-            //if (textBox1.Text == "" || textBox2.Text == "")
-            //{
-            //    MessageBox.Show("Ingresar todos los campos", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //else
-            //{
-            //    Form2 f2 = new Form2();
-            //    f2.Show();
-            //    // this.Close();
-            //    textBox1.Text = "";
-            //    textBox2.Text = "";
-            //}
+    
         }
 
         private void Form1_Load(object sender, EventArgs e)
