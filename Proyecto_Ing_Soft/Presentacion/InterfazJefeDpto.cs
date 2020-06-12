@@ -46,6 +46,7 @@ namespace Proyecto_Ing_Soft
         private void alumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //crear Alumno
+            lbRA.Visible = true;
             btnBuscar.Visible = true;
             lbIdAlumno.Visible = true;
             txtIdAlumno.Visible = true;
@@ -116,6 +117,7 @@ namespace Proyecto_Ing_Soft
         private void grupoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Crear Alumno
+            lbRA.Visible = false;
             btnBuscar.Visible = false;
             lbIdAlumno.Visible = false;
             txtIdAlumno.Visible = false;
@@ -165,6 +167,7 @@ namespace Proyecto_Ing_Soft
             //
 
             //crear Grupo
+            lbRG.Visible = true;
             lbIdGrupo.Visible = true;
             txtIdGrupo.Visible = true;
             lbSemestreG.Visible = true;

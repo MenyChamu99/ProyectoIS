@@ -100,6 +100,8 @@
             this.lbMateria = new System.Windows.Forms.Label();
             this.lbNombreMateria = new System.Windows.Forms.Label();
             this.dtbFechaNacimiento = new System.Windows.Forms.TextBox();
+            this.lbRG = new System.Windows.Forms.Label();
+            this.lbRA = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TablaAlumno)).BeginInit();
             this.SuspendLayout();
@@ -895,6 +897,28 @@
             this.dtbFechaNacimiento.TabIndex = 70;
             this.dtbFechaNacimiento.Visible = false;
             // 
+            // lbRG
+            // 
+            this.lbRG.AutoSize = true;
+            this.lbRG.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRG.Location = new System.Drawing.Point(345, 112);
+            this.lbRG.Name = "lbRG";
+            this.lbRG.Size = new System.Drawing.Size(630, 75);
+            this.lbRG.TabIndex = 71;
+            this.lbRG.Text = "Registrar Grupo";
+            this.lbRG.Visible = false;
+            // 
+            // lbRA
+            // 
+            this.lbRA.Font = new System.Drawing.Font("Perpetua Titling MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRA.Location = new System.Drawing.Point(8, 247);
+            this.lbRA.Name = "lbRA";
+            this.lbRA.Size = new System.Drawing.Size(297, 117);
+            this.lbRA.TabIndex = 72;
+            this.lbRA.Text = "Registrar Alumno";
+            this.lbRA.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbRA.Visible = false;
+            // 
             // InterfazJefeDpto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -902,6 +926,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.lbRA);
+            this.Controls.Add(this.lbRG);
             this.Controls.Add(this.dtbFechaNacimiento);
             this.Controls.Add(this.lbNombreMateria);
             this.Controls.Add(this.lbMateria);
@@ -966,6 +992,7 @@
             this.Controls.Add(this.lbIdAlumno);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "InterfazJefeDpto";
             this.Text = "Jefe de Departamento";
@@ -1053,5 +1080,7 @@
         private System.Windows.Forms.Label lbMateria;
         private System.Windows.Forms.Label lbNombreMateria;
         private System.Windows.Forms.TextBox dtbFechaNacimiento;
+        private System.Windows.Forms.Label lbRG;
+        private System.Windows.Forms.Label lbRA;
     }
 }
