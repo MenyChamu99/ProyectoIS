@@ -71,5 +71,36 @@ namespace Proyecto_Ing_Soft
         {
             //c.llenarTextBoxConsultaIdMateria(lbIdMateria.Text, lbNombreMateria);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text != "" || comboBox2.Text != "")
+            {
+                if (c.relacionAGRegistrado(comboBox1.Text, comboBox2.Text) == 0)
+                {
+                    c.insertarAG(comboBox1.SelectedItem.ToString(), comboBox2.SelectedItem.ToString());
+                    MessageBox.Show("Relacion Hecha", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show("El registro ya existe", "Imposible de registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Limpiar();
+                }
+            }
+        }
+        public void Limpiar()
+        {
+            
+            comboBox1.Text = "";
+            comboBox2.Text = "";
+            lbNombres.Text = "";
+            lbApellidoP.Text = "";
+            lbApellidoM.Text = "";
+            lbCarrera.Text = "";
+            lbSemestre.Text = "";
+            lbGrupo.Text = "";
+            lbIdMateria.Text = "";
+        }
     }
 }

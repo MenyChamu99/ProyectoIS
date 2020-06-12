@@ -21,7 +21,31 @@ namespace Proyecto_Ing_Soft
         Conexion c = new Conexion();
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (comboBox2.Text != "" || comboBox1.Text != "")
+            {
+                if (c.relacionGDRegistrado(comboBox2.Text, comboBox1.Text) == 0)
+                {
+                    c.insertarGD(comboBox2.Text, comboBox1.Text);
+                    MessageBox.Show("Relacion Establecida", "Registro hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show("El registro ya existe", "Imposible de registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Limpiar();
+                }
+            }
+        }
+        public void Limpiar()
+        {
+           
+            comboBox2.Text = "";
+            comboBox1.Text = "";
+            txtNombre.Clear();
+            txtUsuario.Clear();
+            lbGrupo.Text = "";
+            lbSemestre.Text = "";
+            lbIdMateria.Text = "";
         }
 
         private void GrupoaDocente_Load(object sender, EventArgs e)

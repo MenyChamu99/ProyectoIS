@@ -191,7 +191,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "GrupoaDocente";
-            this.Text = "Form7";
+            this.Text = "Asignar Grupo a Docente";
             this.Load += new System.EventHandler(this.GrupoaDocente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

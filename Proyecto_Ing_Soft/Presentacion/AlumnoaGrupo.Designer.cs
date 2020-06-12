@@ -162,6 +162,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Asignar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label9
             // 
@@ -226,7 +227,7 @@
             this.DoubleBuffered = true;
             this.Name = "AlumnoaGrupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
+            this.Text = "Relacionar Alumno con Grupo";
             this.Load += new System.EventHandler(this.AlumnoaGrupo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
