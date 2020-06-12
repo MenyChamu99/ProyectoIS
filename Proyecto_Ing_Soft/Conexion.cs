@@ -106,6 +106,34 @@ namespace Proyecto_Ing_Soft
             }
             return salida;
         }
+        public string insertarAG(String idr, String idA, String idG)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO RAlumnoGrupo(idRelacion, idAlumno, idGrupo) values('" + idr + "','" + idA + "','" + idG + "')", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
+        public string insertarGD(String idr, String idG, String idD)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO RGrupoDocente(idRelacion, idGrupo, idDocente) values('" + idr + "','" + idG + "','" + idD + "')", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
         public int personaRegistrada(String id)
         {
             int contador = 0;
@@ -201,7 +229,45 @@ namespace Proyecto_Ing_Soft
             }
             return contador;
         }
+        public int relacionAGRegistrado(String id)
+        {
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM RAlumnoGrupo WHERE idRelacion='" + id + "'", cn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    contador++;
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien: " + ex.ToString());
+            }
+            return contador;
+        }
 
+        public int relacionGDRegistrado(String id)
+        {
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM RGrupoDocente WHERE idRelacion='" + id + "'", cn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    contador++;
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien: " + ex.ToString());
+            }
+            return contador;
+        }
         public void llenarTextBoxConsulta(String id,TextBox txtNombre, TextBox txtUsuario, TextBox txtContraseña, ComboBox cbtipousuario)
         {
             try

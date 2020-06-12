@@ -30,6 +30,7 @@ namespace Proyecto_Ing_Soft
             Usuario.Visible = true;
             Contraseña.Visible = true;
             TipoUsuario.Visible = true;
+            lbRegistrarUsuario.Visible = true;
             //txtID.Visible = false;
             txtNombre.Visible = true;
             txtUsuario.Visible = true;
@@ -116,6 +117,7 @@ namespace Proyecto_Ing_Soft
             Usuario.Visible = false;
             Contraseña.Visible = false;
             TipoUsuario.Visible = false;
+            lbRegistrarUsuario.Visible = false;
             //txtID.Visible = false;
             txtNombre.Visible = false;
             txtUsuario.Visible = false;
@@ -173,6 +175,7 @@ namespace Proyecto_Ing_Soft
             btnBuscar.Visible = true;
             btnAgregar.Visible = false;
             btnEliminarUsuario.Visible = true;
+            lbRegistrarUsuario.Visible = false;
             //CarreraCampos
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
@@ -230,6 +233,7 @@ namespace Proyecto_Ing_Soft
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
             btnEliminarUsuario.Visible = false;
+            lbRegistrarUsuario.Visible = false;
             //CamposMateria
             btnAgregarM.Visible = true;
             IdMateria.Visible = true;
@@ -378,6 +382,7 @@ namespace Proyecto_Ing_Soft
             btnEditarUsuario.Visible = false;
             btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = false;
+            lbRegistrarUsuario.Visible = false;
             //CarreraCampos
             txtIdCarrera.Visible = true;
             IdCarrera.Visible = true;
@@ -435,6 +440,7 @@ namespace Proyecto_Ing_Soft
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
             btnEliminarUsuario.Visible = false;
+            lbRegistrarUsuario.Visible = false;
             //CamposMateria
             btnAgregarM.Visible = false;
             IdMateria.Visible = true;

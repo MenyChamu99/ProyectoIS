@@ -79,6 +79,7 @@
             this.lbUnidades = new System.Windows.Forms.Label();
             this.txtUnidades = new System.Windows.Forms.TextBox();
             this.cbIdCarrera = new System.Windows.Forms.ComboBox();
+            this.lbRegistrarUsuario = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -108,21 +109,21 @@
             // jefeDeDptoToolStripMenuItem
             // 
             this.jefeDeDptoToolStripMenuItem.Name = "jefeDeDptoToolStripMenuItem";
-            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jefeDeDptoToolStripMenuItem.Text = "&Usuario";
             this.jefeDeDptoToolStripMenuItem.Click += new System.EventHandler(this.jefeDeDptoToolStripMenuItem_Click);
             // 
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.docenteToolStripMenuItem.Text = "&Carrera";
             this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.materiasToolStripMenuItem.Text = "&Materia";
             this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
             // 
@@ -139,21 +140,21 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuarioToolStripMenuItem.Text = "&Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // carreraToolStripMenuItem
             // 
             this.carreraToolStripMenuItem.Name = "carreraToolStripMenuItem";
-            this.carreraToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.carreraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.carreraToolStripMenuItem.Text = "&Carrera";
             this.carreraToolStripMenuItem.Click += new System.EventHandler(this.carreraToolStripMenuItem_Click);
             // 
             // materiaToolStripMenuItem
             // 
             this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
-            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.materiaToolStripMenuItem.Text = "&Materia";
             this.materiaToolStripMenuItem.Click += new System.EventHandler(this.materiaToolStripMenuItem_Click);
             // 
@@ -581,6 +582,17 @@
             this.cbIdCarrera.TabIndex = 46;
             this.cbIdCarrera.Visible = false;
             // 
+            // lbRegistrarUsuario
+            // 
+            this.lbRegistrarUsuario.AutoSize = true;
+            this.lbRegistrarUsuario.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegistrarUsuario.Location = new System.Drawing.Point(393, 151);
+            this.lbRegistrarUsuario.Name = "lbRegistrarUsuario";
+            this.lbRegistrarUsuario.Size = new System.Drawing.Size(688, 75);
+            this.lbRegistrarUsuario.TabIndex = 47;
+            this.lbRegistrarUsuario.Text = "Registrar Usuario";
+            this.lbRegistrarUsuario.Visible = false;
+            // 
             // InterfazAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -588,6 +600,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.lbRegistrarUsuario);
             this.Controls.Add(this.cbIdCarrera);
             this.Controls.Add(this.txtUnidades);
             this.Controls.Add(this.lbUnidades);
@@ -633,7 +646,7 @@
             this.DoubleBuffered = true;
             this.Name = "InterfazAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Administrador";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -697,5 +710,6 @@
         private System.Windows.Forms.Label lbUnidades;
         private System.Windows.Forms.TextBox txtUnidades;
         private System.Windows.Forms.ComboBox cbIdCarrera;
+        private System.Windows.Forms.Label lbRegistrarUsuario;
     }
 }

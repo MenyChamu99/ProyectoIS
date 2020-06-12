@@ -3210,7 +3210,7 @@
             this.Controls.Add(this.PT2);
             this.Controls.Add(this.PT1);
             this.Name = "PlanT";
-            this.Text = "Docente";
+            this.Text = "Revisar Plan de Trabajo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ID_Load);
             this.PT1.ResumeLayout(false);
