@@ -79,7 +79,10 @@
             this.lbUnidades = new System.Windows.Forms.Label();
             this.txtUnidades = new System.Windows.Forms.TextBox();
             this.cbIdCarrera = new System.Windows.Forms.ComboBox();
-            this.lbRegistrarUsuario = new System.Windows.Forms.Label();
+            this.lbRU = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lbRM = new System.Windows.Forms.Label();
+            this.lbRC = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -109,21 +112,21 @@
             // jefeDeDptoToolStripMenuItem
             // 
             this.jefeDeDptoToolStripMenuItem.Name = "jefeDeDptoToolStripMenuItem";
-            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.jefeDeDptoToolStripMenuItem.Text = "&Usuario";
             this.jefeDeDptoToolStripMenuItem.Click += new System.EventHandler(this.jefeDeDptoToolStripMenuItem_Click);
             // 
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.docenteToolStripMenuItem.Text = "&Carrera";
             this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.materiasToolStripMenuItem.Text = "&Materia";
             this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
             // 
@@ -140,21 +143,21 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.usuarioToolStripMenuItem.Text = "&Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // carreraToolStripMenuItem
             // 
             this.carreraToolStripMenuItem.Name = "carreraToolStripMenuItem";
-            this.carreraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carreraToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.carreraToolStripMenuItem.Text = "&Carrera";
             this.carreraToolStripMenuItem.Click += new System.EventHandler(this.carreraToolStripMenuItem_Click);
             // 
             // materiaToolStripMenuItem
             // 
             this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
-            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.materiaToolStripMenuItem.Text = "&Materia";
             this.materiaToolStripMenuItem.Click += new System.EventHandler(this.materiaToolStripMenuItem_Click);
             // 
@@ -538,7 +541,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
             this.label1.Location = new System.Drawing.Point(-3, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1373, 55);
@@ -582,16 +585,49 @@
             this.cbIdCarrera.TabIndex = 46;
             this.cbIdCarrera.Visible = false;
             // 
-            // lbRegistrarUsuario
+            // lbRU
             // 
-            this.lbRegistrarUsuario.AutoSize = true;
-            this.lbRegistrarUsuario.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRegistrarUsuario.Location = new System.Drawing.Point(393, 151);
-            this.lbRegistrarUsuario.Name = "lbRegistrarUsuario";
-            this.lbRegistrarUsuario.Size = new System.Drawing.Size(688, 75);
-            this.lbRegistrarUsuario.TabIndex = 47;
-            this.lbRegistrarUsuario.Text = "Registrar Usuario";
-            this.lbRegistrarUsuario.Visible = false;
+            this.lbRU.AutoSize = true;
+            this.lbRU.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRU.Location = new System.Drawing.Point(393, 151);
+            this.lbRU.Name = "lbRU";
+            this.lbRU.Size = new System.Drawing.Size(688, 75);
+            this.lbRU.TabIndex = 47;
+            this.lbRU.Text = "Registrar Usuario";
+            this.lbRU.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.DarkGreen;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(12, 38);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(534, 29);
+            this.label12.TabIndex = 48;
+            this.label12.Text = "INSTITUTO TECNOLOGICO DE DELICIAS";
+            // 
+            // lbRM
+            // 
+            this.lbRM.AutoSize = true;
+            this.lbRM.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRM.Location = new System.Drawing.Point(403, 161);
+            this.lbRM.Name = "lbRM";
+            this.lbRM.Size = new System.Drawing.Size(678, 75);
+            this.lbRM.TabIndex = 49;
+            this.lbRM.Text = "Registrar Materia";
+            this.lbRM.Visible = false;
+            // 
+            // lbRC
+            // 
+            this.lbRC.AutoSize = true;
+            this.lbRC.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRC.Location = new System.Drawing.Point(417, 161);
+            this.lbRC.Name = "lbRC";
+            this.lbRC.Size = new System.Drawing.Size(691, 75);
+            this.lbRC.TabIndex = 50;
+            this.lbRC.Text = "Registrar Carrera";
+            this.lbRC.Visible = false;
             // 
             // InterfazAdmin
             // 
@@ -600,7 +636,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.lbRegistrarUsuario);
+            this.Controls.Add(this.lbRC);
+            this.Controls.Add(this.lbRM);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lbRU);
             this.Controls.Add(this.cbIdCarrera);
             this.Controls.Add(this.txtUnidades);
             this.Controls.Add(this.lbUnidades);
@@ -644,6 +683,7 @@
             this.Controls.Add(this.Nombre);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InterfazAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
@@ -710,6 +750,9 @@
         private System.Windows.Forms.Label lbUnidades;
         private System.Windows.Forms.TextBox txtUnidades;
         private System.Windows.Forms.ComboBox cbIdCarrera;
-        private System.Windows.Forms.Label lbRegistrarUsuario;
+        private System.Windows.Forms.Label lbRU;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbRM;
+        private System.Windows.Forms.Label lbRC;
     }
 }

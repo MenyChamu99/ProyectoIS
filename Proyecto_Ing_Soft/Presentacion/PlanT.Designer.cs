@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlanT));
             this.PT1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -3209,6 +3210,7 @@
             this.Controls.Add(this.PT3);
             this.Controls.Add(this.PT2);
             this.Controls.Add(this.PT1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PlanT";
             this.Text = "Revisar Plan de Trabajo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

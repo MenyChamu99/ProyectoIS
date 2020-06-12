@@ -261,7 +261,7 @@
             this.label12.BackColor = System.Drawing.Color.DarkGreen;
             this.label12.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(25, 3);
+            this.label12.Location = new System.Drawing.Point(12, 6);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(534, 29);
             this.label12.TabIndex = 24;
@@ -306,6 +306,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TablaCalif);
             this.Controls.Add(this.comboBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calif";
             this.Text = "Captura de Calificaciones";
             this.Load += new System.EventHandler(this.Calif_Load);

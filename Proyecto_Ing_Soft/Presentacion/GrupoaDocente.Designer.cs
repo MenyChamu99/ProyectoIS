@@ -43,12 +43,13 @@
             this.lbSemestre = new System.Windows.Forms.Label();
             this.lbGrupo = new System.Windows.Forms.Label();
             this.lbIdMateria = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
             this.label1.Location = new System.Drawing.Point(-3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(805, 52);
@@ -170,12 +171,24 @@
             this.lbIdMateria.Size = new System.Drawing.Size(134, 20);
             this.lbIdMateria.TabIndex = 16;
             // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.DarkGreen;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(12, 11);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(534, 29);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "INSTITUTO TECNOLOGICO DE DELICIAS";
+            // 
             // GrupoaDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.lbIdMateria);
             this.Controls.Add(this.lbGrupo);
             this.Controls.Add(this.lbSemestre);
@@ -190,6 +203,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GrupoaDocente";
             this.Text = "Asignar Grupo a Docente";
             this.Load += new System.EventHandler(this.GrupoaDocente_Load);
@@ -215,5 +229,6 @@
         private System.Windows.Forms.Label lbSemestre;
         private System.Windows.Forms.Label lbGrupo;
         private System.Windows.Forms.Label lbIdMateria;
+        private System.Windows.Forms.Label label12;
     }
 }

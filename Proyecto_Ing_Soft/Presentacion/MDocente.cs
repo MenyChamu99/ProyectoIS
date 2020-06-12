@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -380,6 +381,20 @@ namespace InterfazDocente
         private void TR1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void LImprimir_Click(object sender, EventArgs e)
+        {
+            printDocument1 = new PrintDocument();
+            PrinterSettings ps = new PrinterSettings();
+            printDocument1.PrinterSettings = ps;
+            printDocument1.PrintPage += imprimir;
+            printDocument1.Print();
+        }
+        private void imprimir(object sender, PrintPageEventArgs e)
+        {
+            Font font = new Font("Arial",14,FontStyle.Regular,GraphicsUnit.Point);
+           // e.Graphics.DrawString();
         }
     }
 }

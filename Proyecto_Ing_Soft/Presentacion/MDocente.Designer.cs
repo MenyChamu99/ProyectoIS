@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ID));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,9 +51,9 @@
             this.T3 = new System.Windows.Forms.TextBox();
             this.T2 = new System.Windows.Forms.TextBox();
             this.L3 = new System.Windows.Forms.Label();
+            this.T1 = new System.Windows.Forms.TextBox();
             this.L2 = new System.Windows.Forms.Label();
             this.L1 = new System.Windows.Forms.Label();
-            this.T1 = new System.Windows.Forms.TextBox();
             this.PT2 = new System.Windows.Forms.Panel();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -186,6 +187,7 @@
             this.bGuardar = new System.Windows.Forms.Button();
             this.LImprimir = new System.Windows.Forms.Button();
             this.bEnviar = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.menuStrip1.SuspendLayout();
             this.PT1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -406,6 +408,19 @@
             this.L3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.L3.Visible = false;
             // 
+            // T1
+            // 
+            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T1.Location = new System.Drawing.Point(114, 5);
+            this.T1.Multiline = true;
+            this.T1.Name = "T1";
+            this.T1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.T1.Size = new System.Drawing.Size(282, 22);
+            this.T1.TabIndex = 8;
+            this.T1.Visible = false;
+            // 
             // L2
             // 
             this.L2.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -429,19 +444,6 @@
             this.L1.Text = "CATEDRATICO:";
             this.L1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L1.Visible = false;
-            // 
-            // T1
-            // 
-            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T1.Location = new System.Drawing.Point(114, 5);
-            this.T1.Multiline = true;
-            this.T1.Name = "T1";
-            this.T1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T1.Size = new System.Drawing.Size(282, 22);
-            this.T1.TabIndex = 8;
-            this.T1.Visible = false;
             // 
             // PT2
             // 
@@ -2109,6 +2111,7 @@
             this.LImprimir.TabIndex = 51;
             this.LImprimir.Text = "Imprimir";
             this.LImprimir.UseVisualStyleBackColor = true;
+            this.LImprimir.Click += new System.EventHandler(this.LImprimir_Click);
             // 
             // bEnviar
             // 
@@ -2139,6 +2142,7 @@
             this.Controls.Add(this.PT1);
             this.Controls.Add(this.T4);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ID";
             this.Text = "Docente";
@@ -2326,6 +2330,7 @@
         private System.Windows.Forms.Button bEnviar;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 

@@ -46,12 +46,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lbIdMateria = new System.Windows.Forms.Label();
             this.lbNombreMateria = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.BackColor = System.Drawing.Color.DarkGreen;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(800, 47);
@@ -59,7 +60,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.Yellow;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(191)))), ((int)(((byte)(10)))));
             this.label2.Location = new System.Drawing.Point(-1, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(801, 23);
@@ -200,6 +201,17 @@
             this.lbNombreMateria.Size = new System.Drawing.Size(168, 22);
             this.lbNombreMateria.TabIndex = 16;
             // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.DarkGreen;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans Unicode", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(12, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(534, 29);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "INSTITUTO TECNOLOGICO DE DELICIAS";
+            // 
             // AlumnoaGrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +219,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.lbNombreMateria);
             this.Controls.Add(this.lbIdMateria);
             this.Controls.Add(this.label10);
@@ -225,6 +238,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AlumnoaGrupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relacionar Alumno con Grupo";
@@ -254,5 +268,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbIdMateria;
         private System.Windows.Forms.Label lbNombreMateria;
+        private System.Windows.Forms.Label label12;
     }
 }

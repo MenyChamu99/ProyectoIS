@@ -30,7 +30,7 @@ namespace Proyecto_Ing_Soft
             Usuario.Visible = true;
             Contraseña.Visible = true;
             TipoUsuario.Visible = true;
-            lbRegistrarUsuario.Visible = true;
+            lbRU.Visible = true;
             //txtID.Visible = false;
             txtNombre.Visible = true;
             txtUsuario.Visible = true;
@@ -117,7 +117,7 @@ namespace Proyecto_Ing_Soft
             Usuario.Visible = false;
             Contraseña.Visible = false;
             TipoUsuario.Visible = false;
-            lbRegistrarUsuario.Visible = false;
+            lbRU.Visible = false;
             //txtID.Visible = false;
             txtNombre.Visible = false;
             txtUsuario.Visible = false;
@@ -128,6 +128,7 @@ namespace Proyecto_Ing_Soft
             btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = false;
             //CarreraCampos
+            lbRC.Visible = true;
             txtIdCarrera.Visible = true;
             IdCarrera.Visible = true;
             NombreCarrera.Visible = true;
@@ -153,6 +154,7 @@ namespace Proyecto_Ing_Soft
             btnEditarMateria.Visible = false;
             btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
+            lbRM.Visible = false;
             //
             DgvUsuarios.Visible = false;
         }
@@ -175,7 +177,7 @@ namespace Proyecto_Ing_Soft
             btnBuscar.Visible = true;
             btnAgregar.Visible = false;
             btnEliminarUsuario.Visible = true;
-            lbRegistrarUsuario.Visible = false;
+            lbRU.Visible = false;
             //CarreraCampos
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
@@ -209,6 +211,7 @@ namespace Proyecto_Ing_Soft
         private void materiasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //CarreraCampos
+
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
             NombreCarrera.Visible = false;
@@ -233,8 +236,9 @@ namespace Proyecto_Ing_Soft
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
             btnEliminarUsuario.Visible = false;
-            lbRegistrarUsuario.Visible = false;
+            lbRU.Visible = false;
             //CamposMateria
+            lbRM.Visible = true;
             btnAgregarM.Visible = true;
             IdMateria.Visible = true;
             NombreM.Visible = true;
@@ -382,7 +386,7 @@ namespace Proyecto_Ing_Soft
             btnEditarUsuario.Visible = false;
             btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = false;
-            lbRegistrarUsuario.Visible = false;
+            lbRU.Visible = false;
             //CarreraCampos
             txtIdCarrera.Visible = true;
             IdCarrera.Visible = true;
@@ -440,7 +444,7 @@ namespace Proyecto_Ing_Soft
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
             btnEliminarUsuario.Visible = false;
-            lbRegistrarUsuario.Visible = false;
+            lbRU.Visible = false;
             //CamposMateria
             btnAgregarM.Visible = false;
             IdMateria.Visible = true;
