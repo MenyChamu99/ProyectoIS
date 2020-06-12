@@ -48,7 +48,7 @@ namespace Proyecto_Ing_Soft
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //c.llenarTextBoxConsultaGrupo(comboBox2.SelectedItem.ToString(), txtNombre, txtUsuario);
+            c.llenarTextBoxConsultaGrupo(comboBox2.SelectedItem.ToString(), lbSemestre, lbGrupo, lbIdMateria);
 
         }
         public void LlenarCampos()

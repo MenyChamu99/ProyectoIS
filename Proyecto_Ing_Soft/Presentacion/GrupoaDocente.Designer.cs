@@ -36,13 +36,13 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lbSemestre = new System.Windows.Forms.Label();
+            this.lbGrupo = new System.Windows.Forms.Label();
+            this.lbIdMateria = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,30 +112,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(63, 207);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(139, 20);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(63, 251);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(139, 20);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(63, 298);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(139, 20);
-            this.textBox3.TabIndex = 9;
-            // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(546, 207);
@@ -170,19 +146,43 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Seleccione Grupo:";
             // 
+            // lbSemestre
+            // 
+            this.lbSemestre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbSemestre.Location = new System.Drawing.Point(72, 209);
+            this.lbSemestre.Name = "lbSemestre";
+            this.lbSemestre.Size = new System.Drawing.Size(134, 20);
+            this.lbSemestre.TabIndex = 14;
+            // 
+            // lbGrupo
+            // 
+            this.lbGrupo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbGrupo.Location = new System.Drawing.Point(72, 253);
+            this.lbGrupo.Name = "lbGrupo";
+            this.lbGrupo.Size = new System.Drawing.Size(134, 20);
+            this.lbGrupo.TabIndex = 15;
+            // 
+            // lbIdMateria
+            // 
+            this.lbIdMateria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbIdMateria.Location = new System.Drawing.Point(72, 303);
+            this.lbIdMateria.Name = "lbIdMateria";
+            this.lbIdMateria.Size = new System.Drawing.Size(134, 20);
+            this.lbIdMateria.TabIndex = 16;
+            // 
             // GrupoaDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbIdMateria);
+            this.Controls.Add(this.lbGrupo);
+            this.Controls.Add(this.lbSemestre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox2);
@@ -208,12 +208,12 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbSemestre;
+        private System.Windows.Forms.Label lbGrupo;
+        private System.Windows.Forms.Label lbIdMateria;
     }
 }

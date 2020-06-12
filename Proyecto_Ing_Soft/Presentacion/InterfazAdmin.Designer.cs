@@ -108,21 +108,21 @@
             // jefeDeDptoToolStripMenuItem
             // 
             this.jefeDeDptoToolStripMenuItem.Name = "jefeDeDptoToolStripMenuItem";
-            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.jefeDeDptoToolStripMenuItem.Text = "&Usuario";
             this.jefeDeDptoToolStripMenuItem.Click += new System.EventHandler(this.jefeDeDptoToolStripMenuItem_Click);
             // 
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.docenteToolStripMenuItem.Text = "&Carrera";
             this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.materiasToolStripMenuItem.Text = "&Materia";
             this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
             // 
@@ -482,7 +482,7 @@
             // 
             // btnEditarCarrera
             // 
-            this.btnEditarCarrera.Location = new System.Drawing.Point(862, 428);
+            this.btnEditarCarrera.Location = new System.Drawing.Point(862, 427);
             this.btnEditarCarrera.Name = "btnEditarCarrera";
             this.btnEditarCarrera.Size = new System.Drawing.Size(99, 23);
             this.btnEditarCarrera.TabIndex = 37;
@@ -493,7 +493,7 @@
             // 
             // btnEditarMateria
             // 
-            this.btnEditarMateria.Location = new System.Drawing.Point(862, 428);
+            this.btnEditarMateria.Location = new System.Drawing.Point(866, 427);
             this.btnEditarMateria.Name = "btnEditarMateria";
             this.btnEditarMateria.Size = new System.Drawing.Size(93, 23);
             this.btnEditarMateria.TabIndex = 38;
@@ -515,7 +515,7 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(573, 303);
+            this.txtIdUsuario.Location = new System.Drawing.Point(573, 324);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtIdUsuario.TabIndex = 40;

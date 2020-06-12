@@ -405,11 +405,11 @@ namespace Proyecto_Ing_Soft
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             // Conexion c=new Conexion();
-            if (txtIdAlumno.Text != "" && txtNombre.Text != "" && txtApellidoP.Text != "" && txtApellidoM.Text != "" && cbSexo.SelectedItem.ToString() != "" && cbEstadoCivil.SelectedItem.ToString() != "" && txtEdad.Text != "" && dtbFechaNacimiento.Value.ToString() != "" && cbLugarNac.SelectedItem.ToString() != "" && txtTelefono.Text != "" && txtCorreo.Text != "" && txtDomicilio.Text != "" && cbEntidadFede.SelectedItem.ToString() != "" && txtColonia.Text != "" && cbCarrera.SelectedItem.ToString() != "" && cbSemestre.SelectedItem.ToString() != "" && cbTipoSangre.SelectedItem.ToString() !=  "" && txtNombreP.Text != "" && txtTelefonoP.Text != "" && txtNombreM.Text != "" && txtTelefonoM.Text != "")
+            if (txtIdAlumno.Text != "" && txtNombre.Text != "" && txtApellidoP.Text != "" && txtApellidoM.Text != "" && cbSexo.SelectedItem.ToString() != "" && cbEstadoCivil.SelectedItem.ToString() != "" && txtEdad.Text != "" && dtbFechaNacimiento.Text != "" && cbLugarNac.SelectedItem.ToString() != "" && txtTelefono.Text != "" && txtCorreo.Text != "" && txtDomicilio.Text != "" && cbEntidadFede.SelectedItem.ToString() != "" && txtColonia.Text != "" && cbCarrera.SelectedItem.ToString() != "" && cbSemestre.SelectedItem.ToString() != "" && cbTipoSangre.SelectedItem.ToString() !=  "" && txtNombreP.Text != "" && txtTelefonoP.Text != "" && txtNombreM.Text != "" && txtTelefonoM.Text != "")
             {
                 if (c.alumnoRegistrado(txtIdAlumno.Text) == 0)
                 {
-                    c.insertarA(txtIdAlumno.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, cbSexo.SelectedItem.ToString(), cbEstadoCivil.SelectedItem.ToString(), txtEdad.Text, dtbFechaNacimiento.Value.ToString(), cbLugarNac.SelectedItem.ToString(), txtTelefono.Text, txtCorreo.Text, txtDomicilio.Text, cbEntidadFede.SelectedItem.ToString(), txtColonia.Text, cbCarrera.SelectedItem.ToString(), cbSemestre.SelectedItem.ToString(), cbTipoSangre.SelectedItem.ToString(), txtNombreP.Text, txtTelefonoP.Text, txtNombreM.Text, txtTelefonoM.Text);
+                    c.insertarA(txtIdAlumno.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, cbSexo.SelectedItem.ToString(), cbEstadoCivil.SelectedItem.ToString(), txtEdad.Text, dtbFechaNacimiento.Text, cbLugarNac.SelectedItem.ToString(), txtTelefono.Text, txtCorreo.Text, txtDomicilio.Text, cbEntidadFede.SelectedItem.ToString(), txtColonia.Text, cbCarrera.SelectedItem.ToString(), cbSemestre.SelectedItem.ToString(), cbTipoSangre.SelectedItem.ToString(), txtNombreP.Text, txtTelefonoP.Text, txtNombreM.Text, txtTelefonoM.Text);
                     MessageBox.Show("Usuario Guardado", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //c.cargarPersonas(Dgv);
                     txtIdAlumno.Clear();
@@ -624,6 +624,32 @@ namespace Proyecto_Ing_Soft
         }
 
         private void txtCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(c.actualizarA(txtIdAlumno.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, cbSexo.SelectedItem.ToString(), cbEstadoCivil.SelectedItem.ToString(), txtEdad.Text, dtbFechaNacimiento.Text, cbLugarNac.SelectedItem.ToString(), txtTelefono.Text, txtCorreo.Text, txtDomicilio.Text, cbEntidadFede.SelectedItem.ToString(), txtColonia.Text, cbCarrera.SelectedItem.ToString(), cbSemestre.SelectedItem.ToString(), cbTipoSangre.SelectedItem.ToString(), txtNombreP.Text, txtTelefonoP.Text, txtNombreM.Text, txtTelefonoM.Text));
+           // c.cargarPersonas(DgvUsuarios);
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (c.alumnoRegistrado(txtIdAlumno.Text) > 0)
+            {
+               
+                c.llenarTextBoxConsultaalumno(txtIdAlumno.Text, txtNombre, txtApellidoP, txtApellidoM, cbSexo, cbEstadoCivil, txtEdad, dtbFechaNacimiento, cbLugarNac, txtTelefono, txtCorreo, txtDomicilio, cbEntidadFede, txtColonia, cbCarrera, cbSemestre, cbTipoSangre, txtNombreP, txtTelefonoP, txtNombreM, txtTelefonoM);
+            }
+            else
+            {
+                MessageBox.Show("La carrera no existe", "No existe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Text = "";
+                
+            }
+        }
+
+        private void cbCarrera_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

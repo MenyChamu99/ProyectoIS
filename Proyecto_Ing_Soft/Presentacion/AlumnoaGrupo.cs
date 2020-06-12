@@ -59,7 +59,17 @@ namespace Proyecto_Ing_Soft
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            c.llenarTextBoxConsultaGrupo(comboBox2.SelectedItem.ToString(), lbSemestre, lbGrupo, lbIdMateria);
+        }
 
+        private void lbIdMateria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbIdMateria_TextChanged(object sender, EventArgs e)
+        {
+            //c.llenarTextBoxConsultaIdMateria(lbIdMateria.Text, lbNombreMateria);
         }
     }
 }

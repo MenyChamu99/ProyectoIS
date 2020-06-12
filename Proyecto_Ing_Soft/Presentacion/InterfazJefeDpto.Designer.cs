@@ -95,11 +95,11 @@
             this.btnAgregarG = new System.Windows.Forms.Button();
             this.btnEditarG = new System.Windows.Forms.Button();
             this.btnEliminarG = new System.Windows.Forms.Button();
-            this.dtbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.TablaAlumno = new System.Windows.Forms.DataGridView();
             this.cbIdMateria = new System.Windows.Forms.ComboBox();
             this.lbMateria = new System.Windows.Forms.Label();
             this.lbNombreMateria = new System.Windows.Forms.Label();
+            this.dtbFechaNacimiento = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TablaAlumno)).BeginInit();
             this.SuspendLayout();
@@ -144,14 +144,14 @@
             // grupoToolStripMenuItem
             // 
             this.grupoToolStripMenuItem.Name = "grupoToolStripMenuItem";
-            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.grupoToolStripMenuItem.Text = "&Grupo";
             this.grupoToolStripMenuItem.Click += new System.EventHandler(this.grupoToolStripMenuItem_Click);
             // 
             // alumnoToolStripMenuItem
             // 
             this.alumnoToolStripMenuItem.Name = "alumnoToolStripMenuItem";
-            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.alumnoToolStripMenuItem.Text = "&Alumno";
             this.alumnoToolStripMenuItem.Click += new System.EventHandler(this.alumnoToolStripMenuItem_Click);
             // 
@@ -507,6 +507,7 @@
             this.cbCarrera.Size = new System.Drawing.Size(90, 21);
             this.cbCarrera.TabIndex = 40;
             this.cbCarrera.Visible = false;
+            this.cbCarrera.SelectedIndexChanged += new System.EventHandler(this.cbCarrera_SelectedIndexChanged);
             // 
             // cbTipoSangre
             // 
@@ -685,6 +686,7 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Visible = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -705,6 +707,7 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Visible = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lbIdGrupo
             // 
@@ -845,15 +848,6 @@
             this.btnEliminarG.UseVisualStyleBackColor = true;
             this.btnEliminarG.Visible = false;
             // 
-            // dtbFechaNacimiento
-            // 
-            this.dtbFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtbFechaNacimiento.Location = new System.Drawing.Point(594, 101);
-            this.dtbFechaNacimiento.Name = "dtbFechaNacimiento";
-            this.dtbFechaNacimiento.Size = new System.Drawing.Size(100, 20);
-            this.dtbFechaNacimiento.TabIndex = 65;
-            this.dtbFechaNacimiento.Visible = false;
-            // 
             // TablaAlumno
             // 
             this.TablaAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -893,6 +887,14 @@
             this.lbNombreMateria.TabIndex = 69;
             this.lbNombreMateria.Visible = false;
             // 
+            // dtbFechaNacimiento
+            // 
+            this.dtbFechaNacimiento.Location = new System.Drawing.Point(595, 100);
+            this.dtbFechaNacimiento.Name = "dtbFechaNacimiento";
+            this.dtbFechaNacimiento.Size = new System.Drawing.Size(112, 20);
+            this.dtbFechaNacimiento.TabIndex = 70;
+            this.dtbFechaNacimiento.Visible = false;
+            // 
             // InterfazJefeDpto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -900,11 +902,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.dtbFechaNacimiento);
             this.Controls.Add(this.lbNombreMateria);
             this.Controls.Add(this.lbMateria);
             this.Controls.Add(this.cbIdMateria);
             this.Controls.Add(this.TablaAlumno);
-            this.Controls.Add(this.dtbFechaNacimiento);
             this.Controls.Add(this.btnEliminarG);
             this.Controls.Add(this.btnEditarG);
             this.Controls.Add(this.btnAgregarG);
@@ -1046,10 +1048,10 @@
         private System.Windows.Forms.Button btnAgregarG;
         private System.Windows.Forms.Button btnEditarG;
         private System.Windows.Forms.Button btnEliminarG;
-        private System.Windows.Forms.DateTimePicker dtbFechaNacimiento;
         private System.Windows.Forms.DataGridView TablaAlumno;
         private System.Windows.Forms.ComboBox cbIdMateria;
         private System.Windows.Forms.Label lbMateria;
         private System.Windows.Forms.Label lbNombreMateria;
+        private System.Windows.Forms.TextBox dtbFechaNacimiento;
     }
 }
