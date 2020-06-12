@@ -106,12 +106,12 @@ namespace Proyecto_Ing_Soft
             }
             return salida;
         }
-        public string insertarAG(String idr, String idA, String idG)
+        public string insertarAG(String idA, String idG)
         {
             string salida = "Si se inserto";
             try
             {
-                cmd = new SqlCommand("INSERT INTO RAlumnoGrupo(idRelacion, idAlumno, idGrupo) values('" + idr + "','" + idA + "','" + idG + "')", cn);
+                cmd = new SqlCommand("INSERT INTO RAlumnoGrupo(idAlumno, idGrupo) values('" + idA + "','" + idG + "')", cn);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -120,12 +120,12 @@ namespace Proyecto_Ing_Soft
             }
             return salida;
         }
-        public string insertarGD(String idr, String idG, String idD)
+        public string insertarGD(String idG, String idD)
         {
             string salida = "Si se inserto";
             try
             {
-                cmd = new SqlCommand("INSERT INTO RGrupoDocente(idRelacion, idGrupo, idDocente) values('" + idr + "','" + idG + "','" + idD + "')", cn);
+                cmd = new SqlCommand("INSERT INTO RGrupoDocente(idGrupo, idDocente) values('" + idG + "','" + idD + "')", cn);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -229,12 +229,12 @@ namespace Proyecto_Ing_Soft
             }
             return contador;
         }
-        public int relacionAGRegistrado(String id)
+        public int relacionAGRegistrado(String idA, String idG)
         {
             int contador = 0;
             try
             {
-                cmd = new SqlCommand("SELECT * FROM RAlumnoGrupo WHERE idRelacion='" + id + "'", cn);
+                cmd = new SqlCommand("SELECT * FROM RAlumnoGrupo WHERE idAlumno='" + idA + "' AND idGrupo='" + idG + "'", cn);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
@@ -249,12 +249,12 @@ namespace Proyecto_Ing_Soft
             return contador;
         }
 
-        public int relacionGDRegistrado(String id)
+        public int relacionGDRegistrado(String idG, String idD)
         {
             int contador = 0;
             try
             {
-                cmd = new SqlCommand("SELECT * FROM RGrupoDocente WHERE idRelacion='" + id + "'", cn);
+                cmd = new SqlCommand("SELECT * FROM RGrupoDocente WHERE idGrupo='" + idG + "' AND idDocente='" + idD + "'", cn);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {

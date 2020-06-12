@@ -46,8 +46,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lbIdMateria = new System.Windows.Forms.Label();
             this.lbNombreMateria = new System.Windows.Forms.Label();
-            this.txtRelacion = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,22 +200,6 @@
             this.lbNombreMateria.Size = new System.Drawing.Size(168, 22);
             this.lbNombreMateria.TabIndex = 16;
             // 
-            // txtRelacion
-            // 
-            this.txtRelacion.Location = new System.Drawing.Point(310, 96);
-            this.txtRelacion.Name = "txtRelacion";
-            this.txtRelacion.Size = new System.Drawing.Size(141, 20);
-            this.txtRelacion.TabIndex = 17;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(348, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Id Relacion:";
-            // 
             // AlumnoaGrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,8 +207,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtRelacion);
             this.Controls.Add(this.lbNombreMateria);
             this.Controls.Add(this.lbIdMateria);
             this.Controls.Add(this.label10);
@@ -274,7 +254,5 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbIdMateria;
         private System.Windows.Forms.Label lbNombreMateria;
-        private System.Windows.Forms.TextBox txtRelacion;
-        private System.Windows.Forms.Label label3;
     }
 }

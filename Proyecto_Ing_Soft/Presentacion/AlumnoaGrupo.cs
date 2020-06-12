@@ -74,11 +74,11 @@ namespace Proyecto_Ing_Soft
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (txtRelacion.Text != "" || comboBox1.Text != "" || comboBox2.Text != "")
+            if (comboBox1.Text != "" || comboBox2.Text != "")
             {
-                if (c.relacionAGRegistrado(txtRelacion.Text) == 0)
+                if (c.relacionAGRegistrado(comboBox1.Text, comboBox2.Text) == 0)
                 {
-                    c.insertarAG(txtRelacion.Text, comboBox1.SelectedItem.ToString(), comboBox2.SelectedItem.ToString());
+                    c.insertarAG(comboBox1.SelectedItem.ToString(), comboBox2.SelectedItem.ToString());
                     MessageBox.Show("Relacion Hecha", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Limpiar();
                 }
@@ -91,7 +91,7 @@ namespace Proyecto_Ing_Soft
         }
         public void Limpiar()
         {
-            txtRelacion.Clear();
+            
             comboBox1.Text = "";
             comboBox2.Text = "";
             lbNombres.Text = "";

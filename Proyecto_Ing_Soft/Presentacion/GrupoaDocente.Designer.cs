@@ -43,8 +43,6 @@
             this.lbSemestre = new System.Windows.Forms.Label();
             this.lbGrupo = new System.Windows.Forms.Label();
             this.lbIdMateria = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtRelacion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,30 +170,12 @@
             this.lbIdMateria.Size = new System.Drawing.Size(134, 20);
             this.lbIdMateria.TabIndex = 16;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(373, 104);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Id Relación:";
-            // 
-            // txtRelacion
-            // 
-            this.txtRelacion.Location = new System.Drawing.Point(332, 120);
-            this.txtRelacion.Name = "txtRelacion";
-            this.txtRelacion.Size = new System.Drawing.Size(136, 20);
-            this.txtRelacion.TabIndex = 18;
-            // 
             // GrupoaDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtRelacion);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.lbIdMateria);
             this.Controls.Add(this.lbGrupo);
             this.Controls.Add(this.lbSemestre);
@@ -235,7 +215,5 @@
         private System.Windows.Forms.Label lbSemestre;
         private System.Windows.Forms.Label lbGrupo;
         private System.Windows.Forms.Label lbIdMateria;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtRelacion;
     }
 }

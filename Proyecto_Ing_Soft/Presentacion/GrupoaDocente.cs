@@ -21,11 +21,11 @@ namespace Proyecto_Ing_Soft
         Conexion c = new Conexion();
         private void button2_Click(object sender, EventArgs e)
         {
-            if (txtRelacion.Text != "" || comboBox2.Text != "" || comboBox1.Text != "")
+            if (comboBox2.Text != "" || comboBox1.Text != "")
             {
-                if (c.relacionGDRegistrado(txtRelacion.Text) == 0)
+                if (c.relacionGDRegistrado(comboBox2.Text, comboBox1.Text) == 0)
                 {
-                    c.insertarGD(txtRelacion.Text, comboBox2.SelectedItem.ToString(), comboBox1.SelectedItem.ToString());
+                    c.insertarGD(comboBox2.Text, comboBox1.Text);
                     MessageBox.Show("Relacion Establecida", "Registro hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Limpiar();
                 }
@@ -38,7 +38,7 @@ namespace Proyecto_Ing_Soft
         }
         public void Limpiar()
         {
-            txtRelacion.Clear();
+           
             comboBox2.Text = "";
             comboBox1.Text = "";
             txtNombre.Clear();
