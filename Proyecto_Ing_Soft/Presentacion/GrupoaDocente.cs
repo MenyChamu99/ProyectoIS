@@ -96,5 +96,10 @@ namespace Proyecto_Ing_Soft
 
         
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

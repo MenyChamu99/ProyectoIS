@@ -95,6 +95,7 @@ namespace Proyecto_Ing_Soft
             btnEliminar.Visible = true;
             //
             // Crear Grupo
+            lbRG.Visible = false;
             lbIdGrupo.Visible = false;
             txtIdGrupo.Visible = false;
             lbSemestreG.Visible = false;
@@ -191,6 +192,7 @@ namespace Proyecto_Ing_Soft
         private void grupoAProfesorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Crear Alumno
+            lbRA.Visible = false;
             btnBuscar.Visible = false;
             lbIdAlumno.Visible = false;
             txtIdAlumno.Visible = false;
@@ -239,6 +241,7 @@ namespace Proyecto_Ing_Soft
             btnEliminar.Visible = false;
             //
             // Crear Grupo
+            lbRG.Visible = false;
             lbIdGrupo.Visible = false;
             txtIdGrupo.Visible = false;
             lbSemestreG.Visible = false;
@@ -264,6 +267,7 @@ namespace Proyecto_Ing_Soft
         private void alumnoAGrupoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Crear Alumno
+            lbRA.Visible = false;
             btnBuscar.Visible = false;
             lbIdAlumno.Visible = false;
             txtIdAlumno.Visible = false;
@@ -312,6 +316,7 @@ namespace Proyecto_Ing_Soft
             btnEliminar.Visible = false;
             //
             // Crear Grupo
+            lbRG.Visible = false;
             lbIdGrupo.Visible = false;
             txtIdGrupo.Visible = false;
             lbSemestreG.Visible = false;
@@ -336,6 +341,7 @@ namespace Proyecto_Ing_Soft
         private void planDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Crear Alumno
+            lbRA.Visible = false;
             btnBuscar.Visible = false;
             lbIdAlumno.Visible = false;
             txtIdAlumno.Visible = false;
@@ -384,6 +390,7 @@ namespace Proyecto_Ing_Soft
             btnEliminar.Visible = false;
             //
             // Crear Grupo
+            lbRG.Visible = false;
             lbIdGrupo.Visible = false;
             txtIdGrupo.Visible = false;
             lbSemestreG.Visible = false;

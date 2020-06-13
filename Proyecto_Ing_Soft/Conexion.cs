@@ -455,6 +455,23 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
             }
         }
+        public void llenarTextBoxConsultaDocente(String id, Label lbNombreD)
+        {
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Usuarios WHERE ID_Usuario=" + id + "", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    lbNombreD.Text = dr["Nombre"].ToString();
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+            }
+        }
         public void cargarPersonas(DataGridView dgv)
         {
             try

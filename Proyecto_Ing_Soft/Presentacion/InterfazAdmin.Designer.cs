@@ -112,21 +112,21 @@
             // jefeDeDptoToolStripMenuItem
             // 
             this.jefeDeDptoToolStripMenuItem.Name = "jefeDeDptoToolStripMenuItem";
-            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jefeDeDptoToolStripMenuItem.Text = "&Usuario";
             this.jefeDeDptoToolStripMenuItem.Click += new System.EventHandler(this.jefeDeDptoToolStripMenuItem_Click);
             // 
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.docenteToolStripMenuItem.Text = "&Carrera";
             this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.materiasToolStripMenuItem.Text = "&Materia";
             this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
             // 

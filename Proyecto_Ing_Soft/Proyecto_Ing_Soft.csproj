@@ -55,6 +55,12 @@
       <DependentUpon>Calif.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Presentacion\EnviarObs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\EnviarObs.Designer.cs">
+      <DependentUpon>EnviarObs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="Presentacion\Calif.resx">
       <DependentUpon>Calif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\EnviarObs.resx">
+      <DependentUpon>EnviarObs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>

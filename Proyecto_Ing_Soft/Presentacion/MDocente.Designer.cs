@@ -474,6 +474,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(67, 21);
             this.comboBox3.TabIndex = 16;
+            this.comboBox3.Visible = false;
             // 
             // comboBox2
             // 
@@ -482,6 +483,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(357, 21);
             this.comboBox2.TabIndex = 15;
+            this.comboBox2.Visible = false;
             // 
             // T10
             // 
@@ -626,7 +628,7 @@
             this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.T4.Location = new System.Drawing.Point(623, 28);
+            this.T4.Location = new System.Drawing.Point(623, 27);
             this.T4.Multiline = true;
             this.T4.Name = "T4";
             this.T4.RightToLeft = System.Windows.Forms.RightToLeft.No;
