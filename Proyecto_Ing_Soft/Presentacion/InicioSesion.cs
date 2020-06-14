@@ -91,7 +91,7 @@ namespace Proyecto_Ing_Soft
         public void LimpiarCampos()
         {
             textBox1.Clear();
-            textBox1.Clear();
+            textBox2.Clear();
         }
         private void button1_Click(object sender, EventArgs e)
         {

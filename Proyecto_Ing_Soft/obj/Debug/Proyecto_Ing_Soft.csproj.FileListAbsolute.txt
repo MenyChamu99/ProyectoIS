@@ -40,3 +40,8 @@ C:\Users\vanes\Source\Repos\ProyectoIS\Proyecto_Ing_Soft\obj\Debug\Proyecto_Ing_
 C:\Users\vanes\Source\Repos\ProyectoIS\Proyecto_Ing_Soft\obj\Debug\Proyecto_Ing_Soft.RF.resources
 C:\Users\mannu\source\repos\Proyecto_Ing_Soft\Proyecto_Ing_Soft\obj\Debug\Proyecto_Ing_Soft.RF.resources
 C:\Users\mannu\source\repos\Proyecto_Ing_Soft\Proyecto_Ing_Soft\obj\Debug\Proyecto_Ing_Soft.Presentacion.EnviarObs.resources
+C:\Users\mannu\source\repos\Proyecto_Ing_Soft\Proyecto_Ing_Soft\bin\Debug\EntityFramework.dll
+C:\Users\mannu\source\repos\Proyecto_Ing_Soft\Proyecto_Ing_Soft\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mannu\source\repos\Proyecto_Ing_Soft\Proyecto_Ing_Soft\bin\Debug\EntityFramework.xml
+C:\Users\mannu\source\repos\Proyecto_Ing_Soft\Proyecto_Ing_Soft\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mannu\source\repos\Proyecto_Ing_Soft\Proyecto_Ing_Soft\obj\Debug\Proyecto_Ing_Soft.csproj.CopyComplete

@@ -63,7 +63,7 @@ namespace Proyecto_Ing_Soft
             lbEdad.Visible = true;
             txtEdad.Visible = true;
             lbFechaNacimiento.Visible = true;
-            dtbFechaNacimiento.Visible = true;
+            txtFechaNacimiento.Visible = true;
             lbLugarNac.Visible = true;
             cbLugarNac.Visible = true;
             lbTelefono.Visible = true;
@@ -135,7 +135,7 @@ namespace Proyecto_Ing_Soft
             lbEdad.Visible = false;
             txtEdad.Visible = false;
             lbFechaNacimiento.Visible = false;
-            dtbFechaNacimiento.Visible = false;
+            txtFechaNacimiento.Visible = false;
             lbLugarNac.Visible = false;
             cbLugarNac.Visible = false;
             lbTelefono.Visible = false;
@@ -209,7 +209,7 @@ namespace Proyecto_Ing_Soft
             lbEdad.Visible = false;
             txtEdad.Visible = false;
             lbFechaNacimiento.Visible = false;
-            dtbFechaNacimiento.Visible = false;
+            txtFechaNacimiento.Visible = false;
             lbLugarNac.Visible = false;
             cbLugarNac.Visible = false;
             lbTelefono.Visible = false;
@@ -284,7 +284,7 @@ namespace Proyecto_Ing_Soft
             lbEdad.Visible = false;
             txtEdad.Visible = false;
             lbFechaNacimiento.Visible = false;
-            dtbFechaNacimiento.Visible = false;
+            txtFechaNacimiento.Visible = false;
             lbLugarNac.Visible = false;
             cbLugarNac.Visible = false;
             lbTelefono.Visible = false;
@@ -358,7 +358,7 @@ namespace Proyecto_Ing_Soft
             lbEdad.Visible = false;
             txtEdad.Visible = false;
             lbFechaNacimiento.Visible = false;
-            dtbFechaNacimiento.Visible = false;
+            txtFechaNacimiento.Visible = false;
             lbLugarNac.Visible = false;
             cbLugarNac.Visible = false;
             lbTelefono.Visible = false;
@@ -415,11 +415,11 @@ namespace Proyecto_Ing_Soft
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             // Conexion c=new Conexion();
-            if (txtIdAlumno.Text != "" && txtNombre.Text != "" && txtApellidoP.Text != "" && txtApellidoM.Text != "" && cbSexo.SelectedItem.ToString() != "" && cbEstadoCivil.SelectedItem.ToString() != "" && txtEdad.Text != "" && dtbFechaNacimiento.Text != "" && cbLugarNac.SelectedItem.ToString() != "" && txtTelefono.Text != "" && txtCorreo.Text != "" && txtDomicilio.Text != "" && cbEntidadFede.SelectedItem.ToString() != "" && txtColonia.Text != "" && cbCarrera.SelectedItem.ToString() != "" && cbSemestre.SelectedItem.ToString() != "" && cbTipoSangre.SelectedItem.ToString() !=  "" && txtNombreP.Text != "" && txtTelefonoP.Text != "" && txtNombreM.Text != "" && txtTelefonoM.Text != "")
+            if (txtIdAlumno.Text != "" && txtNombre.Text != "" && txtApellidoP.Text != "" && txtApellidoM.Text != "" && cbSexo.SelectedItem.ToString() != "" && cbEstadoCivil.SelectedItem.ToString() != "" && txtEdad.Text != "" && txtFechaNacimiento.Text != "" && cbLugarNac.SelectedItem.ToString() != "" && txtTelefono.Text != "" && txtCorreo.Text != "" && txtDomicilio.Text != "" && cbEntidadFede.SelectedItem.ToString() != "" && txtColonia.Text != "" && cbCarrera.SelectedItem.ToString() != "" && cbSemestre.SelectedItem.ToString() != "" && cbTipoSangre.SelectedItem.ToString() !=  "" && txtNombreP.Text != "" && txtTelefonoP.Text != "" && txtNombreM.Text != "" && txtTelefonoM.Text != "")
             {
                 if (c.alumnoRegistrado(txtIdAlumno.Text) == 0)
                 {
-                    c.insertarA(txtIdAlumno.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, cbSexo.SelectedItem.ToString(), cbEstadoCivil.SelectedItem.ToString(), txtEdad.Text, dtbFechaNacimiento.Text, cbLugarNac.SelectedItem.ToString(), txtTelefono.Text, txtCorreo.Text, txtDomicilio.Text, cbEntidadFede.SelectedItem.ToString(), txtColonia.Text, cbCarrera.SelectedItem.ToString(), cbSemestre.SelectedItem.ToString(), cbTipoSangre.SelectedItem.ToString(), txtNombreP.Text, txtTelefonoP.Text, txtNombreM.Text, txtTelefonoM.Text);
+                    c.insertarA(txtIdAlumno.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, cbSexo.SelectedItem.ToString(), cbEstadoCivil.SelectedItem.ToString(), txtEdad.Text, txtFechaNacimiento.Text, cbLugarNac.SelectedItem.ToString(), txtTelefono.Text, txtCorreo.Text, txtDomicilio.Text, cbEntidadFede.SelectedItem.ToString(), txtColonia.Text, cbCarrera.SelectedItem.ToString(), cbSemestre.SelectedItem.ToString(), cbTipoSangre.SelectedItem.ToString(), txtNombreP.Text, txtTelefonoP.Text, txtNombreM.Text, txtTelefonoM.Text);
                     MessageBox.Show("Usuario Guardado", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //c.cargarPersonas(Dgv);
                     txtIdAlumno.Clear();
@@ -429,21 +429,22 @@ namespace Proyecto_Ing_Soft
                     txtEdad.Clear();
                     txtEdad.Clear();
                     txtTelefono.Clear();
-                    cbEstadoCivil = null;
-                    cbSexo = null;
-                    cbLugarNac = null;
+                    this.cbEstadoCivil.Text = "";
+                    this.cbSexo.Text = "";
+                    this.cbLugarNac.Text = "";
                     txtCorreo.Clear();
                     txtDomicilio.Clear();
-                    cbEntidadFede = null;
+                    this.cbEntidadFede.Text = "";
                     txtColonia.Clear();
-                    cbCarrera = null;
-                    cbSemestre = null;
-                    cbTipoSangre = null;
+                    this.cbCarrera.Text = "";
+                    this.cbSemestre.Text = "";
+                    this.cbTipoSangre.Text = "";
                     txtNombreP.Clear();
                     txtTelefonoP.Clear();
                     txtNombreM.Clear();
                     txtTelefonoP.Clear();
-
+                    txtTelefonoM.Clear();
+                    txtFechaNacimiento.Clear();
 
                 }
                 else
@@ -640,7 +641,7 @@ namespace Proyecto_Ing_Soft
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(c.actualizarA(txtIdAlumno.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, cbSexo.SelectedItem.ToString(), cbEstadoCivil.SelectedItem.ToString(), txtEdad.Text, dtbFechaNacimiento.Text, cbLugarNac.SelectedItem.ToString(), txtTelefono.Text, txtCorreo.Text, txtDomicilio.Text, cbEntidadFede.SelectedItem.ToString(), txtColonia.Text, cbCarrera.SelectedItem.ToString(), cbSemestre.SelectedItem.ToString(), cbTipoSangre.SelectedItem.ToString(), txtNombreP.Text, txtTelefonoP.Text, txtNombreM.Text, txtTelefonoM.Text));
+            MessageBox.Show(c.actualizarA(txtIdAlumno.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, cbSexo.SelectedItem.ToString(), cbEstadoCivil.SelectedItem.ToString(), txtEdad.Text, txtFechaNacimiento.Text, cbLugarNac.SelectedItem.ToString(), txtTelefono.Text, txtCorreo.Text, txtDomicilio.Text, cbEntidadFede.SelectedItem.ToString(), txtColonia.Text, cbCarrera.SelectedItem.ToString(), cbSemestre.SelectedItem.ToString(), cbTipoSangre.SelectedItem.ToString(), txtNombreP.Text, txtTelefonoP.Text, txtNombreM.Text, txtTelefonoM.Text));
            // c.cargarPersonas(DgvUsuarios);
         }
 
@@ -649,7 +650,7 @@ namespace Proyecto_Ing_Soft
             if (c.alumnoRegistrado(txtIdAlumno.Text) > 0)
             {
                
-                c.llenarTextBoxConsultaalumno(txtIdAlumno.Text, txtNombre, txtApellidoP, txtApellidoM, cbSexo, cbEstadoCivil, txtEdad, dtbFechaNacimiento, cbLugarNac, txtTelefono, txtCorreo, txtDomicilio, cbEntidadFede, txtColonia, cbCarrera, cbSemestre, cbTipoSangre, txtNombreP, txtTelefonoP, txtNombreM, txtTelefonoM);
+                c.llenarTextBoxConsultaalumno(txtIdAlumno.Text, txtNombre, txtApellidoP, txtApellidoM, cbSexo, cbEstadoCivil, txtEdad, txtFechaNacimiento, cbLugarNac, txtTelefono, txtCorreo, txtDomicilio, cbEntidadFede, txtColonia, cbCarrera, cbSemestre, cbTipoSangre, txtNombreP, txtTelefonoP, txtNombreM, txtTelefonoM);
             }
             else
             {
