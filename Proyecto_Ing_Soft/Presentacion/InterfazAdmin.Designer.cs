@@ -112,21 +112,21 @@
             // jefeDeDptoToolStripMenuItem
             // 
             this.jefeDeDptoToolStripMenuItem.Name = "jefeDeDptoToolStripMenuItem";
-            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jefeDeDptoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.jefeDeDptoToolStripMenuItem.Text = "&Usuario";
             this.jefeDeDptoToolStripMenuItem.Click += new System.EventHandler(this.jefeDeDptoToolStripMenuItem_Click);
             // 
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.docenteToolStripMenuItem.Text = "&Carrera";
             this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
-            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.materiasToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.materiasToolStripMenuItem.Text = "&Materia";
             this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
             // 
@@ -385,6 +385,7 @@
             this.txtHoras.Size = new System.Drawing.Size(117, 20);
             this.txtHoras.TabIndex = 26;
             this.txtHoras.Visible = false;
+            this.txtHoras.TextChanged += new System.EventHandler(this.txtHoras_TextChanged);
             this.txtHoras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoras_KeyPress);
             // 
             // txtCreditos

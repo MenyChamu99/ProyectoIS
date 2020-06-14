@@ -779,5 +779,10 @@ namespace Proyecto_Ing_Soft
         {
 
         }
+
+        private void txtHoras_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

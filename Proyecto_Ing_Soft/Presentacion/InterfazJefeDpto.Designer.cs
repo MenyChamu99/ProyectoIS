@@ -99,7 +99,7 @@
             this.cbIdMateria = new System.Windows.Forms.ComboBox();
             this.lbMateria = new System.Windows.Forms.Label();
             this.lbNombreMateria = new System.Windows.Forms.Label();
-            this.dtbFechaNacimiento = new System.Windows.Forms.TextBox();
+            this.txtFechaNacimiento = new System.Windows.Forms.TextBox();
             this.lbRG = new System.Windows.Forms.Label();
             this.lbRA = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
@@ -889,13 +889,13 @@
             this.lbNombreMateria.TabIndex = 69;
             this.lbNombreMateria.Visible = false;
             // 
-            // dtbFechaNacimiento
+            // txtFechaNacimiento
             // 
-            this.dtbFechaNacimiento.Location = new System.Drawing.Point(595, 100);
-            this.dtbFechaNacimiento.Name = "dtbFechaNacimiento";
-            this.dtbFechaNacimiento.Size = new System.Drawing.Size(112, 20);
-            this.dtbFechaNacimiento.TabIndex = 70;
-            this.dtbFechaNacimiento.Visible = false;
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(595, 100);
+            this.txtFechaNacimiento.Name = "txtFechaNacimiento";
+            this.txtFechaNacimiento.Size = new System.Drawing.Size(112, 20);
+            this.txtFechaNacimiento.TabIndex = 70;
+            this.txtFechaNacimiento.Visible = false;
             // 
             // lbRG
             // 
@@ -928,7 +928,7 @@
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.lbRA);
             this.Controls.Add(this.lbRG);
-            this.Controls.Add(this.dtbFechaNacimiento);
+            this.Controls.Add(this.txtFechaNacimiento);
             this.Controls.Add(this.lbNombreMateria);
             this.Controls.Add(this.lbMateria);
             this.Controls.Add(this.cbIdMateria);
@@ -1079,7 +1079,7 @@
         private System.Windows.Forms.ComboBox cbIdMateria;
         private System.Windows.Forms.Label lbMateria;
         private System.Windows.Forms.Label lbNombreMateria;
-        private System.Windows.Forms.TextBox dtbFechaNacimiento;
+        private System.Windows.Forms.TextBox txtFechaNacimiento;
         private System.Windows.Forms.Label lbRG;
         private System.Windows.Forms.Label lbRA;
     }

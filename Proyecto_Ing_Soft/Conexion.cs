@@ -134,6 +134,90 @@ namespace Proyecto_Ing_Soft
             }
             return salida;
         }
+        // public string insertarCal(String id, String nombres, String apellidop, String apellidom, int unidad1, int unidad2, int unidad3, int unidad4, int unidad5)
+        //{
+        //  string salida = "Si se inserto";
+        //try
+        //{
+        //  cmd = new SqlCommand("INSERT INTO Calificaciones(IdAlumno,Nombres,ApellidoP,ApellidoM,Unidad1,Unidad2,Unidad3,Unidad4,Unidad5) values('" + id + "','" + nombres + "','" + apellidop + "','" + apellidom + "'," + unidad1 + "," + unidad2 + "," + unidad3 + "," + unidad4 + "," + unidad5 + ")", cn);
+        //cmd.ExecuteNonQuery();
+        //}
+        //catch (Exception ex)
+        //{
+        //  salida = "No se conecto: " + ex.ToString();
+        //}
+        //return salida;
+        // }
+        public string insertarCal1(String id, String nombres, String apellidop, String apellidom, int unidad1)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Calificaciones(IdAlumno,Nombres,ApellidoP,ApellidoM,Unidad1) values('" + id + "','" + nombres + "','" + apellidop + "','" + apellidom + "'," + unidad1 + ")", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
+        public string insertarCal2(String id, String nombres, String apellidop, String apellidom, int unidad2)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Calificaciones(IdAlumno,Nombres,ApellidoP,ApellidoM,Unidad2) values('" + id + "','" + nombres + "','" + apellidop + "','" + apellidom + "'," + unidad2 +  ")", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
+        public string insertarCal3(String id, String nombres, String apellidop, String apellidom, int unidad3)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Calificaciones(IdAlumno,Nombres,ApellidoP,ApellidoM,Unidad3) values('" + id + "','" + nombres + "','" + apellidop + "','" + apellidom + "'," + unidad3 + ")", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
+        public string insertarCal4(String id, String nombres, String apellidop, String apellidom, int unidad4)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Calificaciones(IdAlumno,Nombres,ApellidoP,ApellidoM,Unidad4) values('" + id + "','" + nombres + "','" + apellidop + "','" + apellidom + "'," + unidad4 +  ")", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
+        public string insertarCal5(String id, String nombres, String apellidop, String apellidom, int unidad5)
+        {
+            string salida = "Si se inserto";
+            try
+            {
+                cmd = new SqlCommand("INSERT INTO Calificaciones(IdAlumno,Nombres,ApellidoP,ApellidoM,Unidad5) values('" + id + "','" + nombres + "','" + apellidop + "','" + apellidom + "'," + unidad5 + ")", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se conecto: " + ex.ToString();
+            }
+            return salida;
+        }
         public int personaRegistrada(String id)
         {
             int contador = 0;
@@ -267,6 +351,67 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo consultar bien: " + ex.ToString());
             }
             return contador;
+        }
+        public int CalificacionRegistrada(String id)
+        {
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Calificaciones WHERE IdAlumno='"+ id +"'", cn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    contador++;
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien: " + ex.ToString());
+            }
+            return contador;
+        }
+
+        public String CalAlumno(String id)
+        {
+            string cmp = "";
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Calificaciones WHERE IdAlumno='" + id + "'", cn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                   
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien: " + ex.ToString());
+            }
+            return cmp;
+        }
+
+        public string existeAlumno(string alumno)
+        {
+            string cmp = "";
+            string query = "SELECT * FROM Calificaciones WHERE IdAlumno =@alumno";
+            try
+            {
+
+            }
+            catch (Exception es)
+            {
+                cmd = new SqlCommand(query, cn);
+                cmd.Parameters.AddWithValue("@alumno", alumno);
+                cn.Open();
+                cmp = cmd.ExecuteScalar().ToString();
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return cmp;
         }
         public void llenarTextBoxConsulta(String id,TextBox txtNombre, TextBox txtUsuario, TextBox txtContraseña, ComboBox cbtipousuario)
         {
@@ -420,6 +565,47 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
             }
         }
+        public void llenarTextBoxConsultaAlCal(String id, TextBox txtNombres, TextBox txtApellidoP, TextBox txtApellidoM)
+        {
+            try
+            {
+                cmd = new SqlCommand("SELECT * FROM Alumnos WHERE idAlumno=" + id + "", cn);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    txtNombres.Text = dr["Nombres"].ToString();
+                    txtApellidoP.Text = dr["ApellidoP"].ToString();
+                    txtApellidoM.Text = dr["ApellidoM"].ToString();
+
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+            }
+         }
+            public void llenarTextBoxConsultaCalUni(String idC, TextBox txtU1, TextBox txtU2, TextBox txtU3, TextBox txtU4, TextBox txtU5 )
+            {
+                try
+                {
+                    cmd = new SqlCommand("SELECT * FROM Calificaciones WHERE IdAlumno=" + idC + "", cn);
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        txtU1.Text = dr["Unidad1"].ToString();
+                        txtU2.Text = dr["Unidad2"].ToString();
+                        txtU3.Text = dr["Unidad3"].ToString();
+                        txtU4.Text = dr["Unidad4"].ToString();
+                        txtU5.Text = dr["Unidad5"].ToString();
+                }
+                    dr.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
+                }
+            }
         //public void llenarTextBoxConsultaIdMateria(String id, Label lbNombreMateria)
         //{
         //    try
@@ -429,7 +615,7 @@ namespace Proyecto_Ing_Soft
         //        if (dr2.Read())
         //        {
         //            lbNombreMateria.Text = dr2["Nombre"].ToString();
-                    
+
         //        }
         //        dr2.Close();
         //    }
@@ -455,6 +641,7 @@ namespace Proyecto_Ing_Soft
                 MessageBox.Show("No se pudo llenar los campos: " + ex.ToString());
             }
         }
+        
         public void llenarTextBoxConsultaDocente(String id, Label lbNombreD)
         {
             try
@@ -546,6 +733,20 @@ namespace Proyecto_Ing_Soft
             }
             return salida;
         }
+        public string actualizarCal(String id, String nombres, String apellidop, String apellidom, int unidad1, int unidad2, int unidad3, int unidad4, int unidad5)
+        {
+            string salida = "Se actualizaron los datos";
+            try
+            {
+                cmd = new SqlCommand("UPDATE Calificaciones set Nombres = '" + nombres + "', ApellidoP = '" + apellidop + "', ApellidoM = '" + apellidom + "', Unidad1 = '" + unidad1 + "', Unidad2 = '" + unidad2 + "',Unidad3 = '" + unidad3 + "', Unidad4 = '" + unidad4 + "', Unidad5 = '" + unidad5 + "' WHERE IdAlumno =" + id + "", cn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                salida = "No se actualizo" + ex.ToString();
+            }
+            return salida;
+        }
         public string actualizarA(String id, String nombre, String apellidoP, String apellidoM, String sexo, String edoCivil, String edad, String fecha, String lugarN, String telefono, String correo, String domicilio, String entidad, String colonia, String carrera, String semestre, String sangre, String nomP, String telP, String nomM, String telM)
         {
             string salida = "Se actualizaron los datos";
@@ -608,6 +809,6 @@ namespace Proyecto_Ing_Soft
             //cn.Close();
             return salida;
         }
-
+       
     }
 }

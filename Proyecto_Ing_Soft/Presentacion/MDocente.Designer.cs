@@ -474,7 +474,6 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(67, 21);
             this.comboBox3.TabIndex = 16;
-            this.comboBox3.Visible = false;
             // 
             // comboBox2
             // 
@@ -483,7 +482,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(357, 21);
             this.comboBox2.TabIndex = 15;
-            this.comboBox2.Visible = false;
             // 
             // T10
             // 
