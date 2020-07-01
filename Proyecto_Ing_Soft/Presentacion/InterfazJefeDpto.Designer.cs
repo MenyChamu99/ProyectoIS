@@ -82,7 +82,6 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.lbIdGrupo = new System.Windows.Forms.Label();
             this.lbSemestreG = new System.Windows.Forms.Label();
             this.lbGrupo = new System.Windows.Forms.Label();
@@ -91,7 +90,6 @@
             this.cbTurno = new System.Windows.Forms.ComboBox();
             this.cbGrupo = new System.Windows.Forms.ComboBox();
             this.cbSemestreG = new System.Windows.Forms.ComboBox();
-            this.btnBuscarG = new System.Windows.Forms.Button();
             this.btnAgregarG = new System.Windows.Forms.Button();
             this.btnEditarG = new System.Windows.Forms.Button();
             this.btnEliminarG = new System.Windows.Forms.Button();
@@ -102,6 +100,9 @@
             this.txtFechaNacimiento = new System.Windows.Forms.TextBox();
             this.lbRG = new System.Windows.Forms.Label();
             this.lbRA = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TablaAlumno)).BeginInit();
             this.SuspendLayout();
@@ -146,14 +147,14 @@
             // grupoToolStripMenuItem
             // 
             this.grupoToolStripMenuItem.Name = "grupoToolStripMenuItem";
-            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.grupoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.grupoToolStripMenuItem.Text = "&Grupo";
             this.grupoToolStripMenuItem.Click += new System.EventHandler(this.grupoToolStripMenuItem_Click);
             // 
             // alumnoToolStripMenuItem
             // 
             this.alumnoToolStripMenuItem.Name = "alumnoToolStripMenuItem";
-            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alumnoToolStripMenuItem.Text = "&Alumno";
             this.alumnoToolStripMenuItem.Click += new System.EventHandler(this.alumnoToolStripMenuItem_Click);
             // 
@@ -485,6 +486,7 @@
             this.txtIdAlumno.Size = new System.Drawing.Size(100, 20);
             this.txtIdAlumno.TabIndex = 38;
             this.txtIdAlumno.Visible = false;
+            this.txtIdAlumno.TextChanged += new System.EventHandler(this.txtIdAlumno_TextChanged);
             this.txtIdAlumno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdAlumno_KeyPress);
             // 
             // cbEstadoCivil
@@ -700,21 +702,10 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Visible = false;
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(167, 41);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 52;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Visible = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // lbIdGrupo
             // 
             this.lbIdGrupo.AutoSize = true;
-            this.lbIdGrupo.Location = new System.Drawing.Point(284, 252);
+            this.lbIdGrupo.Location = new System.Drawing.Point(314, 252);
             this.lbIdGrupo.Name = "lbIdGrupo";
             this.lbIdGrupo.Size = new System.Drawing.Size(51, 13);
             this.lbIdGrupo.TabIndex = 53;
@@ -753,11 +744,12 @@
             // 
             // txtIdGrupo
             // 
-            this.txtIdGrupo.Location = new System.Drawing.Point(335, 250);
+            this.txtIdGrupo.Location = new System.Drawing.Point(372, 250);
             this.txtIdGrupo.Name = "txtIdGrupo";
             this.txtIdGrupo.Size = new System.Drawing.Size(84, 20);
             this.txtIdGrupo.TabIndex = 57;
             this.txtIdGrupo.Visible = false;
+            this.txtIdGrupo.TextChanged += new System.EventHandler(this.txtIdGrupo_TextChanged);
             this.txtIdGrupo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdGrupo_KeyPress);
             // 
             // cbTurno
@@ -770,6 +762,7 @@
             this.cbTurno.Name = "cbTurno";
             this.cbTurno.Size = new System.Drawing.Size(100, 21);
             this.cbTurno.TabIndex = 58;
+            this.cbTurno.Text = "Seleccionar Turno";
             this.cbTurno.Visible = false;
             // 
             // cbGrupo
@@ -785,6 +778,7 @@
             this.cbGrupo.Name = "cbGrupo";
             this.cbGrupo.Size = new System.Drawing.Size(51, 21);
             this.cbGrupo.TabIndex = 59;
+            this.cbGrupo.Text = "Seleccionar Grupo";
             this.cbGrupo.Visible = false;
             // 
             // cbSemestreG
@@ -807,17 +801,8 @@
             this.cbSemestreG.Name = "cbSemestreG";
             this.cbSemestreG.Size = new System.Drawing.Size(89, 21);
             this.cbSemestreG.TabIndex = 60;
+            this.cbSemestreG.Text = "Seleccionar Semestre";
             this.cbSemestreG.Visible = false;
-            // 
-            // btnBuscarG
-            // 
-            this.btnBuscarG.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarG.Image")));
-            this.btnBuscarG.Location = new System.Drawing.Point(423, 241);
-            this.btnBuscarG.Name = "btnBuscarG";
-            this.btnBuscarG.Size = new System.Drawing.Size(42, 31);
-            this.btnBuscarG.TabIndex = 61;
-            this.btnBuscarG.UseVisualStyleBackColor = true;
-            this.btnBuscarG.Visible = false;
             // 
             // btnAgregarG
             // 
@@ -866,6 +851,7 @@
             this.cbIdMateria.Name = "cbIdMateria";
             this.cbIdMateria.Size = new System.Drawing.Size(99, 21);
             this.cbIdMateria.TabIndex = 67;
+            this.cbIdMateria.Text = "Seleccionar Id Materia";
             this.cbIdMateria.Visible = false;
             this.cbIdMateria.SelectedIndexChanged += new System.EventHandler(this.cbIdMateria_SelectedIndexChanged);
             // 
@@ -919,6 +905,33 @@
             this.lbRA.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbRA.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(-3, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1373, 40);
+            this.label1.TabIndex = 73;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(191)))), ((int)(((byte)(10)))));
+            this.label2.Location = new System.Drawing.Point(-3, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1373, 23);
+            this.label2.TabIndex = 74;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(941, 278);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 75;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Visible = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // InterfazJefeDpto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -926,6 +939,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.lbRA);
             this.Controls.Add(this.lbRG);
             this.Controls.Add(this.txtFechaNacimiento);
@@ -936,7 +950,6 @@
             this.Controls.Add(this.btnEliminarG);
             this.Controls.Add(this.btnEditarG);
             this.Controls.Add(this.btnAgregarG);
-            this.Controls.Add(this.btnBuscarG);
             this.Controls.Add(this.cbSemestreG);
             this.Controls.Add(this.cbGrupo);
             this.Controls.Add(this.cbTurno);
@@ -945,7 +958,6 @@
             this.Controls.Add(this.lbGrupo);
             this.Controls.Add(this.lbSemestreG);
             this.Controls.Add(this.lbIdGrupo);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
@@ -991,6 +1003,8 @@
             this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.lbIdAlumno);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -1062,7 +1076,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lbIdGrupo;
         private System.Windows.Forms.Label lbSemestreG;
         private System.Windows.Forms.Label lbGrupo;
@@ -1071,7 +1084,6 @@
         private System.Windows.Forms.ComboBox cbTurno;
         private System.Windows.Forms.ComboBox cbGrupo;
         private System.Windows.Forms.ComboBox cbSemestreG;
-        private System.Windows.Forms.Button btnBuscarG;
         private System.Windows.Forms.Button btnAgregarG;
         private System.Windows.Forms.Button btnEditarG;
         private System.Windows.Forms.Button btnEliminarG;
@@ -1082,5 +1094,8 @@
         private System.Windows.Forms.TextBox txtFechaNacimiento;
         private System.Windows.Forms.Label lbRG;
         private System.Windows.Forms.Label lbRA;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

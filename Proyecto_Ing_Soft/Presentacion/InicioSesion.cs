@@ -21,6 +21,8 @@ namespace Proyecto_Ing_Soft
         }
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-38Q67F7T\SQLEXPRESS;Initial Catalog=UsuariosBD;Integrated Security = True");
         public bool lleno;
+        Conexion c = new Conexion();
+        public String User,Pass;
         public void logear(String usuario, String contraseña)
         {
             CamposLlenos(lleno);
@@ -95,6 +97,14 @@ namespace Proyecto_Ing_Soft
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            Usuario u = new Usuario();
+            //c.User1 = this.textBox1.Text;
+            //c.Pass1 = this.textBox2.Text;
+            //User = this.textBox1.Text;
+            //Pass = this.textBox2.Text;
+            //Obs ob = new Obs(User,Pass);
+            u.getUsuario = textBox1.Text;
+            u.getContraseña = textBox2.Text;
             logear(this.textBox1.Text,this.textBox2.Text);
     
         }
@@ -131,7 +141,13 @@ namespace Proyecto_Ing_Soft
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            //Usuario u = new Usuario();
+            //u.setUsuario(textBox1.Text);
+        }
+        private void sacarUsuario()
+        {
+            //Usuario u = new Usuario();
+            //MessageBox.Show("Usuario: " + u.GetUsuario());
         }
     }
 }

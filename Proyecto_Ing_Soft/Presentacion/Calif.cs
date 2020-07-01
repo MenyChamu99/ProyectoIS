@@ -42,17 +42,20 @@ namespace InterfazDocente
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            c.llenarTextBoxConsultaAlCal(comboBox2.SelectedItem.ToString(), txtNombres, txtApellidoP, txtApellidoM);
-            c.llenarTextBoxConsultaCalUni(comboBox2.SelectedItem.ToString(), txtU1, txtU2, txtU3, txtU4, txtU5);
-           
-            //this.txtU1.Text = "";
-            //txtU2.Text = "";
-            //txtU3.Text = "";
-            //txtU4.Text = "";
-            //txtU5.Text = "";
-       
+            c.llenarTextBoxConsultaAlCal(comboBox2.SelectedItem.ToString(), txtNombres, txtApellidoP, txtApellidoM,txtU1,txtU2,txtU3,txtU4,txtU5);
+            //c.llenarTextBoxConsultaCalUni(comboBox2.SelectedItem.ToString(), txtU1, txtU2, txtU3, txtU4, txtU5);
+            //if (c.CalAlumno(comboBox2.SelectedIndex.ToString()) == true)
+            //{
+            //    btnActualizar.Enabled = true;
+            //}
+                //this.txtU1.Text = "";
+                //txtU2.Text = "";
+                //txtU3.Text = "";
+                //txtU4.Text = "";
+                //txtU5.Text = "";
 
-        }
+
+            }
 
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -108,33 +111,37 @@ namespace InterfazDocente
         {
             if (comboBox2.Text != "" || txtNombres.Text != "" || txtApellidoP.Text != "" || txtApellidoM.Text != "")
             {
-                if (c.CalificacionRegistrada(comboBox2.SelectedIndex.ToString()) == 0)
+                if (txtU1.Text != "" && txtU2.Text != "" && txtU3.Text != "" && txtU4.Text != "" && txtU5.Text != "")
                 {
-                    //c.insertarCal(comboBox2.Text, txtNombres.Text, txtApellidoP.Text, txtApellidoM.Text, Convert.ToInt32(txtU1.Text) , Convert.ToInt32(txtU2.Text), Convert.ToInt32(txtU3.Text), Convert.ToInt32(txtU4.Text), Convert.ToInt32(txtU5.Text));
-                    c.insertarCal1(comboBox2.Text, txtNombres.Text, txtApellidoP.Text, txtApellidoM.Text, Convert.ToInt32(txtU1.Text));
-                   
-                    c.cargarAlumnos(TablaCalif);
-
-                    c.insertarCal2(comboBox2.Text, txtNombres.Text, txtApellidoP.Text, txtApellidoM.Text, Convert.ToInt32(txtU2.Text));
-                    
-                    c.cargarAlumnos(TablaCalif);
-
-                    c.insertarCal3(comboBox2.Text, txtNombres.Text, txtApellidoP.Text, txtApellidoM.Text, Convert.ToInt32(txtU3.Text));
-                    
-                    c.cargarAlumnos(TablaCalif);
-
-                    c.insertarCal4(comboBox2.Text, txtNombres.Text, txtApellidoP.Text, txtApellidoM.Text, Convert.ToInt32(txtU4.Text));
-                    
-                    c.cargarAlumnos(TablaCalif);
-
-                    c.insertarCal5(comboBox2.Text, txtNombres.Text, txtApellidoP.Text, txtApellidoM.Text, Convert.ToInt32(txtU5.Text));
-                    
+                    c.insertarCal(comboBox2.Text, Convert.ToInt32(txtU1.Text), Convert.ToInt32(txtU2.Text), Convert.ToInt32(txtU3.Text), Convert.ToInt32(txtU4.Text), Convert.ToInt32(txtU5.Text));
+                    MessageBox.Show("Calificación Registrada", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     c.cargarAlumnos(TablaCalif);
                 }
-                else
+                else if (txtU1.Text != "" && txtU2.Text != "" && txtU3.Text != "" && txtU4.Text != "")
                 {
-                    MessageBox.Show("El registro ya existe", "Imposible de registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    c.insertarCal4(comboBox2.Text, Convert.ToInt32(txtU1.Text), Convert.ToInt32(txtU2.Text), Convert.ToInt32(txtU3.Text), Convert.ToInt32(txtU4.Text));
+                    MessageBox.Show("Calificación Registrada", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);
                 }
+                else if (txtU1.Text != "" && txtU2.Text != "" && txtU3.Text != "")
+                {
+                    c.insertarCal3(comboBox2.Text, Convert.ToInt32(txtU1.Text),Convert.ToInt32(txtU2.Text),Convert.ToInt32(txtU3.Text));
+                    MessageBox.Show("Calificación Registrada", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);
+                }
+                else if (txtU1.Text != "" && txtU2.Text != "")
+                {
+                    c.insertarCal2(comboBox2.Text, Convert.ToInt32(txtU1.Text),Convert.ToInt32(txtU2.Text));
+                    MessageBox.Show("Calificación Registrada", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);
+                }
+                else if (txtU1.Text != "")
+                {
+                    c.insertarCal1(comboBox2.Text, Convert.ToInt32(txtU1.Text));
+                    MessageBox.Show("Calificación Registrada", "Registro Hecho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);   
+                }
+
             }
         }
 
@@ -143,22 +150,44 @@ namespace InterfazDocente
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
-            
-            if (c.CalAlumno(comboBox2.SelectedIndex.ToString())== (TablaCalif.ToString())) {
-
-                btnActualizar.Enabled = true;
 
                 if (comboBox2.Text != "" || txtNombres.Text != "" || txtApellidoP.Text != "" || txtApellidoM.Text != "")
+                {
+                if (txtU1.Text != "" && txtU2.Text != "" && txtU3.Text != "" && txtU4.Text != "" && txtU5.Text != "") 
                 {
                     c.actualizarCal(comboBox2.Text, txtNombres.Text, txtApellidoP.Text, txtApellidoM.Text, Convert.ToInt32(txtU1.Text), Convert.ToInt32(txtU2.Text), Convert.ToInt32(txtU3.Text), Convert.ToInt32(txtU4.Text), Convert.ToInt32(txtU5.Text));
                     MessageBox.Show("Calificación actualizada", "Actualización Hecha", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     c.cargarAlumnos(TablaCalif);
-
-
+                }
+                else if (txtU1.Text != "" && txtU2.Text != "" && txtU3.Text != "" && txtU4.Text != "")
+                {
+                    c.actualizarCal4(comboBox2.Text,Convert.ToInt32(txtU1.Text), Convert.ToInt32(txtU2.Text), Convert.ToInt32(txtU3.Text), Convert.ToInt32(txtU4.Text));
+                    MessageBox.Show("Calificación actualizada", "Actualización Hecha", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);
+                }
+                else if (txtU1.Text != "" && txtU2.Text != "" && txtU3.Text != "")
+                {
+                    c.actualizarCal3(comboBox2.Text,Convert.ToInt32(txtU1.Text), Convert.ToInt32(txtU2.Text), Convert.ToInt32(txtU3.Text));
+                    MessageBox.Show("Calificación actualizada", "Actualización Hecha", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);
+                }
+                else if (txtU1.Text != "" && txtU2.Text != "")
+                {
+                    c.actualizarCal2(comboBox2.Text, Convert.ToInt32(txtU1.Text), Convert.ToInt32(txtU2.Text));
+                    MessageBox.Show("Calificación actualizada", "Actualización Hecha", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);
+                }
+                else if (txtU1.Text != "")
+                {
+                    c.actualizarCal1(comboBox2.Text, Convert.ToInt32(txtU1.Text));
+                    MessageBox.Show("Calificación actualizada", "Actualización Hecha", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    c.cargarAlumnos(TablaCalif);
                 }
             }
+                
+            
         }
 
         public static bool ValidarCampoEntero(TextBox cajatexto)
@@ -226,10 +255,6 @@ namespace InterfazDocente
             return unidadaprobada;
         }
 
-        public static int SumaCalif(int cal1, int cal2, int cal3, int cal4, int cal5)
-        {
-            return cal1 + cal2 + cal3 + cal4 + cal5;
-        }
 
         private void txtU1_KeyUp(object sender, KeyEventArgs e)
         {
@@ -255,5 +280,7 @@ namespace InterfazDocente
         {
             ValidarCampoEntero((TextBox)sender);
         }
+        public int can = 0;
+        
     }
 }

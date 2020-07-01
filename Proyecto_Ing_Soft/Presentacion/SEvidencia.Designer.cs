@@ -42,12 +42,14 @@
             this.txtRuta = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.txClave = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSubir
             // 
             this.btnSubir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubir.Location = new System.Drawing.Point(440, 135);
+            this.btnSubir.Location = new System.Drawing.Point(442, 170);
             this.btnSubir.Name = "btnSubir";
             this.btnSubir.Size = new System.Drawing.Size(56, 24);
             this.btnSubir.TabIndex = 0;
@@ -113,7 +115,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 102);
+            this.label4.Location = new System.Drawing.Point(5, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 21);
             this.label4.TabIndex = 49;
@@ -122,7 +124,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 138);
+            this.label5.Location = new System.Drawing.Point(5, 173);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 21);
             this.label5.TabIndex = 50;
@@ -130,7 +132,7 @@
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(70, 102);
+            this.txtNom.Location = new System.Drawing.Point(72, 132);
             this.txtNom.Multiline = true;
             this.txtNom.Name = "txtNom";
             this.txtNom.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -139,7 +141,7 @@
             // 
             // txtRuta
             // 
-            this.txtRuta.Location = new System.Drawing.Point(49, 135);
+            this.txtRuta.Location = new System.Drawing.Point(51, 170);
             this.txtRuta.Multiline = true;
             this.txtRuta.Name = "txtRuta";
             this.txtRuta.ReadOnly = true;
@@ -162,12 +164,32 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // txClave
+            // 
+            this.txClave.Location = new System.Drawing.Point(64, 95);
+            this.txClave.Multiline = true;
+            this.txClave.Name = "txClave";
+            this.txClave.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txClave.Size = new System.Drawing.Size(48, 26);
+            this.txClave.TabIndex = 55;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(5, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 21);
+            this.label6.TabIndex = 54;
+            this.label6.Text = "Clave:";
+            // 
             // SEvidencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(701, 413);
+            this.Controls.Add(this.txClave);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtRuta);
             this.Controls.Add(this.txtNom);
@@ -183,6 +205,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SEvidencia";
             this.Text = "Evidencias";
+            this.Load += new System.EventHandler(this.SEvidencia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +226,7 @@
         private System.Windows.Forms.TextBox txtRuta;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox txClave;
+        private System.Windows.Forms.Label label6;
     }
 }

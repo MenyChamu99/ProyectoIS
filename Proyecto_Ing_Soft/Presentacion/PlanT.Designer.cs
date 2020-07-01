@@ -62,10 +62,6 @@
             this.T36 = new System.Windows.Forms.TextBox();
             this.L36 = new System.Windows.Forms.Label();
             this.L34 = new System.Windows.Forms.Label();
-            this.T35 = new System.Windows.Forms.TextBox();
-            this.T32 = new System.Windows.Forms.TextBox();
-            this.T34 = new System.Windows.Forms.TextBox();
-            this.T31 = new System.Windows.Forms.TextBox();
             this.T33 = new System.Windows.Forms.TextBox();
             this.L32 = new System.Windows.Forms.Label();
             this.T30 = new System.Windows.Forms.TextBox();
@@ -73,12 +69,8 @@
             this.PT6 = new System.Windows.Forms.Panel();
             this.T64 = new System.Windows.Forms.TextBox();
             this.L59 = new System.Windows.Forms.Label();
-            this.T63 = new System.Windows.Forms.TextBox();
-            this.T62 = new System.Windows.Forms.TextBox();
             this.T61 = new System.Windows.Forms.TextBox();
             this.L60 = new System.Windows.Forms.Label();
-            this.T60 = new System.Windows.Forms.TextBox();
-            this.T59 = new System.Windows.Forms.TextBox();
             this.L58 = new System.Windows.Forms.Label();
             this.T58 = new System.Windows.Forms.TextBox();
             this.L65 = new System.Windows.Forms.Label();
@@ -100,17 +92,9 @@
             this.L50 = new System.Windows.Forms.Label();
             this.L49 = new System.Windows.Forms.Label();
             this.L47 = new System.Windows.Forms.Label();
-            this.T54 = new System.Windows.Forms.TextBox();
-            this.T53 = new System.Windows.Forms.TextBox();
             this.T52 = new System.Windows.Forms.TextBox();
-            this.T51 = new System.Windows.Forms.TextBox();
-            this.T50 = new System.Windows.Forms.TextBox();
             this.T49 = new System.Windows.Forms.TextBox();
             this.L46 = new System.Windows.Forms.Label();
-            this.T46 = new System.Windows.Forms.TextBox();
-            this.T45 = new System.Windows.Forms.TextBox();
-            this.T47 = new System.Windows.Forms.TextBox();
-            this.T44 = new System.Windows.Forms.TextBox();
             this.T48 = new System.Windows.Forms.TextBox();
             this.L45 = new System.Windows.Forms.Label();
             this.L44 = new System.Windows.Forms.Label();
@@ -133,31 +117,14 @@
             this.L18 = new System.Windows.Forms.Label();
             this.T17 = new System.Windows.Forms.TextBox();
             this.L19 = new System.Windows.Forms.Label();
-            this.L20 = new System.Windows.Forms.Label();
-            this.L21 = new System.Windows.Forms.Label();
-            this.L22 = new System.Windows.Forms.Label();
-            this.L23 = new System.Windows.Forms.Label();
-            this.L24 = new System.Windows.Forms.Label();
             this.T18 = new System.Windows.Forms.TextBox();
-            this.T19 = new System.Windows.Forms.TextBox();
-            this.T20 = new System.Windows.Forms.TextBox();
-            this.T21 = new System.Windows.Forms.TextBox();
-            this.T22 = new System.Windows.Forms.TextBox();
-            this.L25 = new System.Windows.Forms.Label();
-            this.L26 = new System.Windows.Forms.Label();
-            this.L27 = new System.Windows.Forms.Label();
-            this.L28 = new System.Windows.Forms.Label();
-            this.L29 = new System.Windows.Forms.Label();
             this.T23 = new System.Windows.Forms.TextBox();
-            this.T24 = new System.Windows.Forms.TextBox();
-            this.T25 = new System.Windows.Forms.TextBox();
-            this.T26 = new System.Windows.Forms.TextBox();
-            this.T27 = new System.Windows.Forms.TextBox();
             this.L30 = new System.Windows.Forms.Label();
             this.T28 = new System.Windows.Forms.TextBox();
             this.L31 = new System.Windows.Forms.Label();
             this.T29 = new System.Windows.Forms.TextBox();
             this.PT4 = new System.Windows.Forms.Panel();
+            this.L14 = new System.Windows.Forms.Label();
             this.L1 = new System.Windows.Forms.Label();
             this.L2 = new System.Windows.Forms.Label();
             this.L3 = new System.Windows.Forms.Label();
@@ -165,16 +132,20 @@
             this.T2 = new System.Windows.Forms.TextBox();
             this.T3 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.PT1 = new System.Windows.Forms.Panel();
-            this.L14 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbCate = new System.Windows.Forms.ComboBox();
+            this.cbUnidad = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cbMateria = new System.Windows.Forms.ComboBox();
             this.PT2.SuspendLayout();
             this.PT3.SuspendLayout();
             this.PT5.SuspendLayout();
@@ -437,10 +408,6 @@
             this.PT5.Controls.Add(this.T36);
             this.PT5.Controls.Add(this.L36);
             this.PT5.Controls.Add(this.L34);
-            this.PT5.Controls.Add(this.T35);
-            this.PT5.Controls.Add(this.T32);
-            this.PT5.Controls.Add(this.T34);
-            this.PT5.Controls.Add(this.T31);
             this.PT5.Controls.Add(this.T33);
             this.PT5.Controls.Add(this.L32);
             this.PT5.Controls.Add(this.T30);
@@ -566,64 +533,17 @@
             this.L34.Text = "AVANCE PROGRAMATICO";
             this.L34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // T35
-            // 
-            this.T35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T35.Location = new System.Drawing.Point(257, 74);
-            this.T35.Name = "T35";
-            this.T35.ReadOnly = true;
-            this.T35.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T35.Size = new System.Drawing.Size(252, 20);
-            this.T35.TabIndex = 46;
-            // 
-            // T32
-            // 
-            this.T32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T32.Location = new System.Drawing.Point(3, 74);
-            this.T32.Name = "T32";
-            this.T32.ReadOnly = true;
-            this.T32.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T32.Size = new System.Drawing.Size(252, 20);
-            this.T32.TabIndex = 45;
-            // 
-            // T34
-            // 
-            this.T34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T34.Location = new System.Drawing.Point(257, 51);
-            this.T34.Name = "T34";
-            this.T34.ReadOnly = true;
-            this.T34.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T34.Size = new System.Drawing.Size(252, 20);
-            this.T34.TabIndex = 42;
-            // 
-            // T31
-            // 
-            this.T31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T31.Location = new System.Drawing.Point(3, 51);
-            this.T31.Name = "T31";
-            this.T31.ReadOnly = true;
-            this.T31.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T31.Size = new System.Drawing.Size(252, 20);
-            this.T31.TabIndex = 44;
-            // 
             // T33
             // 
             this.T33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T33.Location = new System.Drawing.Point(257, 29);
+            this.T33.Multiline = true;
             this.T33.Name = "T33";
             this.T33.ReadOnly = true;
             this.T33.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T33.Size = new System.Drawing.Size(252, 20);
+            this.T33.Size = new System.Drawing.Size(252, 65);
             this.T33.TabIndex = 43;
             // 
             // L32
@@ -643,10 +563,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T30.Location = new System.Drawing.Point(3, 29);
+            this.T30.Multiline = true;
             this.T30.Name = "T30";
             this.T30.ReadOnly = true;
             this.T30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T30.Size = new System.Drawing.Size(252, 20);
+            this.T30.Size = new System.Drawing.Size(252, 65);
             this.T30.TabIndex = 41;
             // 
             // L33
@@ -665,12 +586,8 @@
             this.PT6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PT6.Controls.Add(this.T64);
             this.PT6.Controls.Add(this.L59);
-            this.PT6.Controls.Add(this.T63);
-            this.PT6.Controls.Add(this.T62);
             this.PT6.Controls.Add(this.T61);
             this.PT6.Controls.Add(this.L60);
-            this.PT6.Controls.Add(this.T60);
-            this.PT6.Controls.Add(this.T59);
             this.PT6.Controls.Add(this.L58);
             this.PT6.Controls.Add(this.T58);
             this.PT6.Controls.Add(this.L65);
@@ -692,17 +609,9 @@
             this.PT6.Controls.Add(this.L50);
             this.PT6.Controls.Add(this.L49);
             this.PT6.Controls.Add(this.L47);
-            this.PT6.Controls.Add(this.T54);
-            this.PT6.Controls.Add(this.T53);
             this.PT6.Controls.Add(this.T52);
-            this.PT6.Controls.Add(this.T51);
-            this.PT6.Controls.Add(this.T50);
             this.PT6.Controls.Add(this.T49);
             this.PT6.Controls.Add(this.L46);
-            this.PT6.Controls.Add(this.T46);
-            this.PT6.Controls.Add(this.T45);
-            this.PT6.Controls.Add(this.T47);
-            this.PT6.Controls.Add(this.T44);
             this.PT6.Controls.Add(this.T48);
             this.PT6.Controls.Add(this.L45);
             this.PT6.Controls.Add(this.L44);
@@ -743,40 +652,17 @@
             this.L59.Text = "FECHA DE ENTREGA";
             this.L59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // T63
-            // 
-            this.T63.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T63.Location = new System.Drawing.Point(186, 579);
-            this.T63.Name = "T63";
-            this.T63.ReadOnly = true;
-            this.T63.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T63.Size = new System.Drawing.Size(181, 20);
-            this.T63.TabIndex = 93;
-            // 
-            // T62
-            // 
-            this.T62.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T62.Location = new System.Drawing.Point(186, 558);
-            this.T62.Name = "T62";
-            this.T62.ReadOnly = true;
-            this.T62.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T62.Size = new System.Drawing.Size(181, 20);
-            this.T62.TabIndex = 92;
-            // 
             // T61
             // 
             this.T61.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T61.Location = new System.Drawing.Point(186, 537);
+            this.T61.Multiline = true;
             this.T61.Name = "T61";
             this.T61.ReadOnly = true;
             this.T61.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T61.Size = new System.Drawing.Size(181, 20);
+            this.T61.Size = new System.Drawing.Size(181, 61);
             this.T61.TabIndex = 91;
             // 
             // L60
@@ -789,30 +675,6 @@
             this.L60.TabIndex = 90;
             this.L60.Text = "EVIDENCIA";
             this.L60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // T60
-            // 
-            this.T60.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T60.Location = new System.Drawing.Point(3, 579);
-            this.T60.Name = "T60";
-            this.T60.ReadOnly = true;
-            this.T60.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T60.Size = new System.Drawing.Size(181, 20);
-            this.T60.TabIndex = 89;
-            // 
-            // T59
-            // 
-            this.T59.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T59.Location = new System.Drawing.Point(3, 558);
-            this.T59.Name = "T59";
-            this.T59.ReadOnly = true;
-            this.T59.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T59.Size = new System.Drawing.Size(181, 20);
-            this.T59.TabIndex = 88;
             // 
             // L58
             // 
@@ -831,10 +693,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T58.Location = new System.Drawing.Point(3, 537);
+            this.T58.Multiline = true;
             this.T58.Name = "T58";
             this.T58.ReadOnly = true;
             this.T58.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T58.Size = new System.Drawing.Size(181, 20);
+            this.T58.Size = new System.Drawing.Size(181, 61);
             this.T58.TabIndex = 86;
             // 
             // L65
@@ -1046,65 +909,18 @@
             this.L47.Text = "CRITERIOS DE EVALUACION DE LA UNIDAD";
             this.L47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // T54
-            // 
-            this.T54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T54.Location = new System.Drawing.Point(186, 350);
-            this.T54.Name = "T54";
-            this.T54.ReadOnly = true;
-            this.T54.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T54.Size = new System.Drawing.Size(181, 20);
-            this.T54.TabIndex = 65;
-            // 
-            // T53
-            // 
-            this.T53.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T53.Location = new System.Drawing.Point(186, 329);
-            this.T53.Name = "T53";
-            this.T53.ReadOnly = true;
-            this.T53.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T53.Size = new System.Drawing.Size(181, 20);
-            this.T53.TabIndex = 64;
-            // 
             // T52
             // 
             this.T52.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T52.Location = new System.Drawing.Point(186, 308);
+            this.T52.Multiline = true;
             this.T52.Name = "T52";
             this.T52.ReadOnly = true;
             this.T52.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T52.Size = new System.Drawing.Size(181, 20);
+            this.T52.Size = new System.Drawing.Size(181, 61);
             this.T52.TabIndex = 63;
-            // 
-            // T51
-            // 
-            this.T51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T51.Location = new System.Drawing.Point(3, 350);
-            this.T51.Name = "T51";
-            this.T51.ReadOnly = true;
-            this.T51.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T51.Size = new System.Drawing.Size(181, 20);
-            this.T51.TabIndex = 62;
-            // 
-            // T50
-            // 
-            this.T50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T50.Location = new System.Drawing.Point(3, 329);
-            this.T50.Name = "T50";
-            this.T50.ReadOnly = true;
-            this.T50.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T50.Size = new System.Drawing.Size(181, 20);
-            this.T50.TabIndex = 61;
             // 
             // T49
             // 
@@ -1112,10 +928,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T49.Location = new System.Drawing.Point(3, 308);
+            this.T49.Multiline = true;
             this.T49.Name = "T49";
             this.T49.ReadOnly = true;
             this.T49.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T49.Size = new System.Drawing.Size(181, 20);
+            this.T49.Size = new System.Drawing.Size(181, 61);
             this.T49.TabIndex = 60;
             // 
             // L46
@@ -1129,64 +946,17 @@
             this.L46.Text = "FUENTES DE INFORMACION";
             this.L46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // T46
-            // 
-            this.T46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T46.Location = new System.Drawing.Point(186, 262);
-            this.T46.Name = "T46";
-            this.T46.ReadOnly = true;
-            this.T46.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T46.Size = new System.Drawing.Size(181, 20);
-            this.T46.TabIndex = 58;
-            // 
-            // T45
-            // 
-            this.T45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T45.Location = new System.Drawing.Point(3, 262);
-            this.T45.Name = "T45";
-            this.T45.ReadOnly = true;
-            this.T45.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T45.Size = new System.Drawing.Size(181, 20);
-            this.T45.TabIndex = 57;
-            // 
-            // T47
-            // 
-            this.T47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T47.Location = new System.Drawing.Point(186, 241);
-            this.T47.Name = "T47";
-            this.T47.ReadOnly = true;
-            this.T47.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T47.Size = new System.Drawing.Size(181, 20);
-            this.T47.TabIndex = 56;
-            // 
-            // T44
-            // 
-            this.T44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T44.Location = new System.Drawing.Point(3, 241);
-            this.T44.Name = "T44";
-            this.T44.ReadOnly = true;
-            this.T44.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T44.Size = new System.Drawing.Size(181, 20);
-            this.T44.TabIndex = 55;
-            // 
             // T48
             // 
             this.T48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T48.Location = new System.Drawing.Point(186, 220);
+            this.T48.Multiline = true;
             this.T48.Name = "T48";
             this.T48.ReadOnly = true;
             this.T48.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T48.Size = new System.Drawing.Size(181, 20);
+            this.T48.Size = new System.Drawing.Size(181, 60);
             this.T48.TabIndex = 54;
             // 
             // L45
@@ -1217,10 +987,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T43.Location = new System.Drawing.Point(3, 220);
+            this.T43.Multiline = true;
             this.T43.Name = "T43";
             this.T43.ReadOnly = true;
             this.T43.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T43.Size = new System.Drawing.Size(181, 20);
+            this.T43.Size = new System.Drawing.Size(181, 60);
             this.T43.TabIndex = 51;
             // 
             // T42
@@ -1315,6 +1086,7 @@
             this.btnObs.TabIndex = 50;
             this.btnObs.Text = "Observaciones";
             this.btnObs.UseVisualStyleBackColor = true;
+            this.btnObs.Click += new System.EventHandler(this.btnObs_Click);
             // 
             // btnValidar
             // 
@@ -1325,6 +1097,7 @@
             this.btnValidar.TabIndex = 51;
             this.btnValidar.Text = "Validar";
             this.btnValidar.UseVisualStyleBackColor = true;
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
             // 
             // L15
             // 
@@ -1433,246 +1206,31 @@
             this.L19.Text = "SUBTEMAS (CONTENIDOS ¿Qué aprender?)";
             this.L19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // L20
-            // 
-            this.L20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L20.Location = new System.Drawing.Point(3, 184);
-            this.L20.Name = "L20";
-            this.L20.Size = new System.Drawing.Size(33, 29);
-            this.L20.TabIndex = 18;
-            this.L20.Text = "1";
-            this.L20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // L21
-            // 
-            this.L21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L21.Location = new System.Drawing.Point(3, 213);
-            this.L21.Name = "L21";
-            this.L21.Size = new System.Drawing.Size(33, 29);
-            this.L21.TabIndex = 19;
-            this.L21.Text = "2";
-            this.L21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // L22
-            // 
-            this.L22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L22.Location = new System.Drawing.Point(3, 242);
-            this.L22.Name = "L22";
-            this.L22.Size = new System.Drawing.Size(33, 29);
-            this.L22.TabIndex = 20;
-            this.L22.Text = "3";
-            this.L22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // L23
-            // 
-            this.L23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L23.Location = new System.Drawing.Point(3, 271);
-            this.L23.Name = "L23";
-            this.L23.Size = new System.Drawing.Size(33, 29);
-            this.L23.TabIndex = 21;
-            this.L23.Text = "4";
-            this.L23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // L24
-            // 
-            this.L24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L24.Location = new System.Drawing.Point(3, 300);
-            this.L24.Name = "L24";
-            this.L24.Size = new System.Drawing.Size(33, 29);
-            this.L24.TabIndex = 22;
-            this.L24.Text = "5";
-            this.L24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // T18
             // 
             this.T18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.T18.Location = new System.Drawing.Point(36, 184);
+            this.T18.Location = new System.Drawing.Point(3, 184);
             this.T18.Multiline = true;
             this.T18.Name = "T18";
             this.T18.ReadOnly = true;
             this.T18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T18.Size = new System.Drawing.Size(199, 29);
+            this.T18.Size = new System.Drawing.Size(221, 143);
             this.T18.TabIndex = 23;
-            // 
-            // T19
-            // 
-            this.T19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T19.Location = new System.Drawing.Point(36, 213);
-            this.T19.Multiline = true;
-            this.T19.Name = "T19";
-            this.T19.ReadOnly = true;
-            this.T19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T19.Size = new System.Drawing.Size(199, 29);
-            this.T19.TabIndex = 24;
-            // 
-            // T20
-            // 
-            this.T20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T20.Location = new System.Drawing.Point(36, 242);
-            this.T20.Multiline = true;
-            this.T20.Name = "T20";
-            this.T20.ReadOnly = true;
-            this.T20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T20.Size = new System.Drawing.Size(199, 29);
-            this.T20.TabIndex = 25;
-            // 
-            // T21
-            // 
-            this.T21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T21.Location = new System.Drawing.Point(36, 271);
-            this.T21.Multiline = true;
-            this.T21.Name = "T21";
-            this.T21.ReadOnly = true;
-            this.T21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T21.Size = new System.Drawing.Size(199, 29);
-            this.T21.TabIndex = 26;
-            // 
-            // T22
-            // 
-            this.T22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T22.Location = new System.Drawing.Point(36, 300);
-            this.T22.Multiline = true;
-            this.T22.Name = "T22";
-            this.T22.ReadOnly = true;
-            this.T22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T22.Size = new System.Drawing.Size(199, 29);
-            this.T22.TabIndex = 27;
-            // 
-            // L25
-            // 
-            this.L25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L25.Location = new System.Drawing.Point(235, 184);
-            this.L25.Name = "L25";
-            this.L25.Size = new System.Drawing.Size(33, 29);
-            this.L25.TabIndex = 28;
-            this.L25.Text = "6";
-            this.L25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L25.Visible = false;
-            // 
-            // L26
-            // 
-            this.L26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L26.Location = new System.Drawing.Point(235, 213);
-            this.L26.Name = "L26";
-            this.L26.Size = new System.Drawing.Size(33, 29);
-            this.L26.TabIndex = 29;
-            this.L26.Text = "7";
-            this.L26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // L27
-            // 
-            this.L27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L27.Location = new System.Drawing.Point(235, 242);
-            this.L27.Name = "L27";
-            this.L27.Size = new System.Drawing.Size(33, 29);
-            this.L27.TabIndex = 30;
-            this.L27.Text = "8";
-            this.L27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // L28
-            // 
-            this.L28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L28.Location = new System.Drawing.Point(235, 271);
-            this.L28.Name = "L28";
-            this.L28.Size = new System.Drawing.Size(33, 29);
-            this.L28.TabIndex = 31;
-            this.L28.Text = "9";
-            this.L28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // L29
-            // 
-            this.L29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L29.Location = new System.Drawing.Point(235, 300);
-            this.L29.Name = "L29";
-            this.L29.Size = new System.Drawing.Size(33, 29);
-            this.L29.TabIndex = 32;
-            this.L29.Text = "10";
-            this.L29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T23
             // 
             this.T23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.T23.Location = new System.Drawing.Point(268, 184);
+            this.T23.Location = new System.Drawing.Point(228, 184);
             this.T23.Multiline = true;
             this.T23.Name = "T23";
             this.T23.ReadOnly = true;
             this.T23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T23.Size = new System.Drawing.Size(199, 29);
+            this.T23.Size = new System.Drawing.Size(241, 143);
             this.T23.TabIndex = 33;
-            // 
-            // T24
-            // 
-            this.T24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T24.Location = new System.Drawing.Point(268, 213);
-            this.T24.Multiline = true;
-            this.T24.Name = "T24";
-            this.T24.ReadOnly = true;
-            this.T24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T24.Size = new System.Drawing.Size(199, 29);
-            this.T24.TabIndex = 34;
-            // 
-            // T25
-            // 
-            this.T25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T25.Location = new System.Drawing.Point(268, 242);
-            this.T25.Multiline = true;
-            this.T25.Name = "T25";
-            this.T25.ReadOnly = true;
-            this.T25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T25.Size = new System.Drawing.Size(199, 29);
-            this.T25.TabIndex = 35;
-            // 
-            // T26
-            // 
-            this.T26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T26.Location = new System.Drawing.Point(268, 271);
-            this.T26.Multiline = true;
-            this.T26.Name = "T26";
-            this.T26.ReadOnly = true;
-            this.T26.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T26.Size = new System.Drawing.Size(199, 29);
-            this.T26.TabIndex = 36;
-            // 
-            // T27
-            // 
-            this.T27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T27.Location = new System.Drawing.Point(268, 300);
-            this.T27.Multiline = true;
-            this.T27.Name = "T27";
-            this.T27.ReadOnly = true;
-            this.T27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T27.Size = new System.Drawing.Size(199, 29);
-            this.T27.TabIndex = 37;
             // 
             // L30
             // 
@@ -1729,26 +1287,8 @@
             this.PT4.Controls.Add(this.L31);
             this.PT4.Controls.Add(this.T28);
             this.PT4.Controls.Add(this.L30);
-            this.PT4.Controls.Add(this.T27);
-            this.PT4.Controls.Add(this.T26);
-            this.PT4.Controls.Add(this.T25);
-            this.PT4.Controls.Add(this.T24);
             this.PT4.Controls.Add(this.T23);
-            this.PT4.Controls.Add(this.L29);
-            this.PT4.Controls.Add(this.L28);
-            this.PT4.Controls.Add(this.L27);
-            this.PT4.Controls.Add(this.L26);
-            this.PT4.Controls.Add(this.L25);
-            this.PT4.Controls.Add(this.T22);
-            this.PT4.Controls.Add(this.T21);
-            this.PT4.Controls.Add(this.T20);
-            this.PT4.Controls.Add(this.T19);
             this.PT4.Controls.Add(this.T18);
-            this.PT4.Controls.Add(this.L24);
-            this.PT4.Controls.Add(this.L23);
-            this.PT4.Controls.Add(this.L22);
-            this.PT4.Controls.Add(this.L21);
-            this.PT4.Controls.Add(this.L20);
             this.PT4.Controls.Add(this.L19);
             this.PT4.Controls.Add(this.T17);
             this.PT4.Controls.Add(this.L18);
@@ -1763,6 +1303,17 @@
             this.PT4.Name = "PT4";
             this.PT4.Size = new System.Drawing.Size(474, 383);
             this.PT4.TabIndex = 7;
+            // 
+            // L14
+            // 
+            this.L14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.L14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L14.Location = new System.Drawing.Point(3, 4);
+            this.L14.Name = "L14";
+            this.L14.Size = new System.Drawing.Size(468, 23);
+            this.L14.TabIndex = 0;
+            this.L14.Text = "PLANEACION DEL CURSO";
+            this.L14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // L1
             // 
@@ -1843,29 +1394,30 @@
             this.panel2.Size = new System.Drawing.Size(403, 101);
             this.panel2.TabIndex = 5;
             // 
-            // label3
+            // textBox1
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "CATEDRATICO:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Visible = false;
+            this.textBox1.Location = new System.Drawing.Point(114, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(282, 20);
+            this.textBox1.TabIndex = 10;
             // 
-            // label2
+            // textBox2
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 23);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "PERIODO:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label2.Visible = false;
+            this.textBox2.Location = new System.Drawing.Point(114, 33);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(282, 20);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Location = new System.Drawing.Point(114, 5);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox3.Size = new System.Drawing.Size(282, 20);
+            this.textBox3.TabIndex = 8;
             // 
             // label1
             // 
@@ -1879,30 +1431,29 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Visible = false;
             // 
-            // textBox3
+            // label2
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(114, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox3.Size = new System.Drawing.Size(282, 20);
-            this.textBox3.TabIndex = 8;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "PERIODO:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Visible = false;
             // 
-            // textBox2
+            // label3
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 33);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 20);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(114, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 20);
-            this.textBox1.TabIndex = 10;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 23);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "CATEDRATICO:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Visible = false;
             // 
             // PT1
             // 
@@ -1919,17 +1470,6 @@
             this.PT1.Size = new System.Drawing.Size(403, 101);
             this.PT1.TabIndex = 4;
             // 
-            // L14
-            // 
-            this.L14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.L14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L14.Location = new System.Drawing.Point(3, 4);
-            this.L14.Name = "L14";
-            this.L14.Size = new System.Drawing.Size(468, 23);
-            this.L14.TabIndex = 0;
-            this.L14.Text = "PLANEACION DEL CURSO";
-            this.L14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Green;
@@ -1941,10 +1481,60 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(191)))), ((int)(((byte)(10)))));
-            this.label5.Location = new System.Drawing.Point(16, 30);
+            this.label5.Location = new System.Drawing.Point(-7, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1382, 23);
+            this.label5.Size = new System.Drawing.Size(1405, 23);
             this.label5.TabIndex = 53;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Green;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(4, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(325, 20);
+            this.label6.TabIndex = 54;
+            this.label6.Text = "INSTUTUTO TECNOLOGICO DE DELICIAS";
+            // 
+            // cbCate
+            // 
+            this.cbCate.FormattingEnabled = true;
+            this.cbCate.Location = new System.Drawing.Point(441, 12);
+            this.cbCate.Name = "cbCate";
+            this.cbCate.Size = new System.Drawing.Size(121, 21);
+            this.cbCate.TabIndex = 55;
+            this.cbCate.Text = "Seleccionar Catedratico";
+            this.cbCate.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // cbUnidad
+            // 
+            this.cbUnidad.FormattingEnabled = true;
+            this.cbUnidad.Location = new System.Drawing.Point(593, 12);
+            this.cbUnidad.Name = "cbUnidad";
+            this.cbUnidad.Size = new System.Drawing.Size(121, 21);
+            this.cbUnidad.TabIndex = 56;
+            this.cbUnidad.Text = "Seleccionar Unidad";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(877, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 57;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cbMateria
+            // 
+            this.cbMateria.FormattingEnabled = true;
+            this.cbMateria.Location = new System.Drawing.Point(736, 12);
+            this.cbMateria.Name = "cbMateria";
+            this.cbMateria.Size = new System.Drawing.Size(121, 21);
+            this.cbMateria.TabIndex = 58;
+            this.cbMateria.Text = "Seleccionar Materia";
             // 
             // PlanT
             // 
@@ -1953,6 +1543,11 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.cbMateria);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cbUnidad);
+            this.Controls.Add(this.cbCate);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnValidar);
@@ -1967,7 +1562,7 @@
             this.Name = "PlanT";
             this.Text = "Revisar Plan de Trabajo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.ID_Load);
+            this.Load += new System.EventHandler(this.PlanT_Load);
             this.PT2.ResumeLayout(false);
             this.PT2.PerformLayout();
             this.PT3.ResumeLayout(false);
@@ -1983,6 +1578,7 @@
             this.PT1.ResumeLayout(false);
             this.PT1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1990,7 +1586,6 @@
         private System.Windows.Forms.Panel PT2;
         private System.Windows.Forms.TextBox T10;
         private System.Windows.Forms.TextBox T8;
-        private System.Windows.Forms.TextBox T9;
         private System.Windows.Forms.TextBox T7;
         private System.Windows.Forms.Label L13;
         private System.Windows.Forms.Label L11;
@@ -1998,7 +1593,6 @@
         private System.Windows.Forms.Label L10;
         private System.Windows.Forms.TextBox T6;
         private System.Windows.Forms.TextBox T5;
-        private System.Windows.Forms.TextBox T4;
         private System.Windows.Forms.Label L9;
         private System.Windows.Forms.Label L8;
         private System.Windows.Forms.Label L7;
@@ -2020,27 +1614,15 @@
         private System.Windows.Forms.TextBox T36;
         private System.Windows.Forms.Label L36;
         private System.Windows.Forms.Label L34;
-        private System.Windows.Forms.TextBox T35;
-        private System.Windows.Forms.TextBox T32;
-        private System.Windows.Forms.TextBox T34;
-        private System.Windows.Forms.TextBox T31;
         private System.Windows.Forms.TextBox T33;
         private System.Windows.Forms.Label L32;
         private System.Windows.Forms.TextBox T30;
         private System.Windows.Forms.Label L33;
         private System.Windows.Forms.Panel PT6;
         private System.Windows.Forms.Label L47;
-        private System.Windows.Forms.TextBox T54;
-        private System.Windows.Forms.TextBox T53;
         private System.Windows.Forms.TextBox T52;
-        private System.Windows.Forms.TextBox T51;
-        private System.Windows.Forms.TextBox T50;
         private System.Windows.Forms.TextBox T49;
         private System.Windows.Forms.Label L46;
-        private System.Windows.Forms.TextBox T46;
-        private System.Windows.Forms.TextBox T45;
-        private System.Windows.Forms.TextBox T47;
-        private System.Windows.Forms.TextBox T44;
         private System.Windows.Forms.TextBox T48;
         private System.Windows.Forms.Label L45;
         private System.Windows.Forms.Label L44;
@@ -2054,12 +1636,8 @@
         private System.Windows.Forms.Label L40;
         private System.Windows.Forms.TextBox T64;
         private System.Windows.Forms.Label L59;
-        private System.Windows.Forms.TextBox T63;
-        private System.Windows.Forms.TextBox T62;
         private System.Windows.Forms.TextBox T61;
         private System.Windows.Forms.Label L60;
-        private System.Windows.Forms.TextBox T60;
-        private System.Windows.Forms.TextBox T59;
         private System.Windows.Forms.Label L58;
         private System.Windows.Forms.TextBox T58;
         private System.Windows.Forms.Label L65;
@@ -2091,26 +1669,8 @@
         private System.Windows.Forms.Label L18;
         private System.Windows.Forms.TextBox T17;
         private System.Windows.Forms.Label L19;
-        private System.Windows.Forms.Label L20;
-        private System.Windows.Forms.Label L21;
-        private System.Windows.Forms.Label L22;
-        private System.Windows.Forms.Label L23;
-        private System.Windows.Forms.Label L24;
         private System.Windows.Forms.TextBox T18;
-        private System.Windows.Forms.TextBox T19;
-        private System.Windows.Forms.TextBox T20;
-        private System.Windows.Forms.TextBox T21;
-        private System.Windows.Forms.TextBox T22;
-        private System.Windows.Forms.Label L25;
-        private System.Windows.Forms.Label L26;
-        private System.Windows.Forms.Label L27;
-        private System.Windows.Forms.Label L28;
-        private System.Windows.Forms.Label L29;
         private System.Windows.Forms.TextBox T23;
-        private System.Windows.Forms.TextBox T24;
-        private System.Windows.Forms.TextBox T25;
-        private System.Windows.Forms.TextBox T26;
-        private System.Windows.Forms.TextBox T27;
         private System.Windows.Forms.Label L30;
         private System.Windows.Forms.TextBox T28;
         private System.Windows.Forms.Label L31;
@@ -2133,6 +1693,13 @@
         private System.Windows.Forms.Panel PT1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox T9;
+        private System.Windows.Forms.TextBox T4;
+        private System.Windows.Forms.ComboBox cbCate;
+        private System.Windows.Forms.ComboBox cbUnidad;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbMateria;
     }
 }
 

@@ -41,6 +41,7 @@
             this.observacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabajosEntregadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PT1 = new System.Windows.Forms.Panel();
+            this.T2 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.T3 = new System.Windows.Forms.TextBox();
-            this.T2 = new System.Windows.Forms.TextBox();
             this.L3 = new System.Windows.Forms.Label();
             this.T1 = new System.Windows.Forms.TextBox();
             this.L2 = new System.Windows.Forms.Label();
@@ -69,8 +69,6 @@
             this.L9 = new System.Windows.Forms.Label();
             this.L8 = new System.Windows.Forms.Label();
             this.L7 = new System.Windows.Forms.Label();
-            this.T9 = new System.Windows.Forms.TextBox();
-            this.T4 = new System.Windows.Forms.TextBox();
             this.PT3 = new System.Windows.Forms.Panel();
             this.T11 = new System.Windows.Forms.TextBox();
             this.T12 = new System.Windows.Forms.TextBox();
@@ -83,26 +81,7 @@
             this.L31 = new System.Windows.Forms.Label();
             this.T28 = new System.Windows.Forms.TextBox();
             this.L30 = new System.Windows.Forms.Label();
-            this.T27 = new System.Windows.Forms.TextBox();
-            this.T26 = new System.Windows.Forms.TextBox();
-            this.T25 = new System.Windows.Forms.TextBox();
-            this.T24 = new System.Windows.Forms.TextBox();
-            this.T23 = new System.Windows.Forms.TextBox();
-            this.L29 = new System.Windows.Forms.Label();
-            this.L28 = new System.Windows.Forms.Label();
-            this.L27 = new System.Windows.Forms.Label();
-            this.L26 = new System.Windows.Forms.Label();
-            this.L25 = new System.Windows.Forms.Label();
-            this.T22 = new System.Windows.Forms.TextBox();
-            this.T21 = new System.Windows.Forms.TextBox();
-            this.T20 = new System.Windows.Forms.TextBox();
-            this.T19 = new System.Windows.Forms.TextBox();
             this.T18 = new System.Windows.Forms.TextBox();
-            this.L24 = new System.Windows.Forms.Label();
-            this.L23 = new System.Windows.Forms.Label();
-            this.L22 = new System.Windows.Forms.Label();
-            this.L21 = new System.Windows.Forms.Label();
-            this.L20 = new System.Windows.Forms.Label();
             this.L19 = new System.Windows.Forms.Label();
             this.T17 = new System.Windows.Forms.TextBox();
             this.L18 = new System.Windows.Forms.Label();
@@ -124,10 +103,6 @@
             this.T36 = new System.Windows.Forms.TextBox();
             this.L36 = new System.Windows.Forms.Label();
             this.L34 = new System.Windows.Forms.Label();
-            this.T35 = new System.Windows.Forms.TextBox();
-            this.T32 = new System.Windows.Forms.TextBox();
-            this.T34 = new System.Windows.Forms.TextBox();
-            this.T31 = new System.Windows.Forms.TextBox();
             this.T33 = new System.Windows.Forms.TextBox();
             this.L32 = new System.Windows.Forms.Label();
             this.T30 = new System.Windows.Forms.TextBox();
@@ -135,12 +110,8 @@
             this.PT6 = new System.Windows.Forms.Panel();
             this.T64 = new System.Windows.Forms.TextBox();
             this.L59 = new System.Windows.Forms.Label();
-            this.T63 = new System.Windows.Forms.TextBox();
-            this.T62 = new System.Windows.Forms.TextBox();
             this.T61 = new System.Windows.Forms.TextBox();
             this.L60 = new System.Windows.Forms.Label();
-            this.T60 = new System.Windows.Forms.TextBox();
-            this.T59 = new System.Windows.Forms.TextBox();
             this.L58 = new System.Windows.Forms.Label();
             this.T58 = new System.Windows.Forms.TextBox();
             this.L65 = new System.Windows.Forms.Label();
@@ -162,17 +133,8 @@
             this.L50 = new System.Windows.Forms.Label();
             this.L49 = new System.Windows.Forms.Label();
             this.L47 = new System.Windows.Forms.Label();
-            this.T54 = new System.Windows.Forms.TextBox();
-            this.T53 = new System.Windows.Forms.TextBox();
-            this.T52 = new System.Windows.Forms.TextBox();
-            this.T51 = new System.Windows.Forms.TextBox();
-            this.T50 = new System.Windows.Forms.TextBox();
             this.T49 = new System.Windows.Forms.TextBox();
             this.L46 = new System.Windows.Forms.Label();
-            this.T46 = new System.Windows.Forms.TextBox();
-            this.T45 = new System.Windows.Forms.TextBox();
-            this.T47 = new System.Windows.Forms.TextBox();
-            this.T44 = new System.Windows.Forms.TextBox();
             this.T48 = new System.Windows.Forms.TextBox();
             this.L45 = new System.Windows.Forms.Label();
             this.L44 = new System.Windows.Forms.Label();
@@ -185,9 +147,13 @@
             this.T40 = new System.Windows.Forms.TextBox();
             this.L40 = new System.Windows.Forms.Label();
             this.bGuardar = new System.Windows.Forms.Button();
-            this.LImprimir = new System.Windows.Forms.Button();
-            this.bEnviar = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.bImprimir = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.PT1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -224,20 +190,20 @@
             this.planDeTrabajoToolStripMenuItem,
             this.reporteFinalToolStripMenuItem});
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.crearToolStripMenuItem.Text = "&Crear";
             // 
             // planDeTrabajoToolStripMenuItem
             // 
             this.planDeTrabajoToolStripMenuItem.Name = "planDeTrabajoToolStripMenuItem";
-            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.planDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.planDeTrabajoToolStripMenuItem.Text = "&Plan de trabajo";
             this.planDeTrabajoToolStripMenuItem.Click += new System.EventHandler(this.planDeTrabajoToolStripMenuItem_Click);
             // 
             // reporteFinalToolStripMenuItem
             // 
             this.reporteFinalToolStripMenuItem.Name = "reporteFinalToolStripMenuItem";
-            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.reporteFinalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reporteFinalToolStripMenuItem.Text = "&Reporte final";
             this.reporteFinalToolStripMenuItem.Click += new System.EventHandler(this.reporteFinalToolStripMenuItem_Click);
             // 
@@ -247,7 +213,7 @@
             this.evidenciaToolStripMenuItem,
             this.calificacionesToolStripMenuItem});
             this.subirToolStripMenuItem.Name = "subirToolStripMenuItem";
-            this.subirToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.subirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.subirToolStripMenuItem.Text = "&Subir";
             // 
             // evidenciaToolStripMenuItem
@@ -270,7 +236,7 @@
             this.observacionesToolStripMenuItem,
             this.trabajosEntregadosToolStripMenuItem});
             this.verToolStripMenuItem.Name = "verToolStripMenuItem";
-            this.verToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verToolStripMenuItem.Text = "&Ver";
             // 
             // observacionesToolStripMenuItem
@@ -290,17 +256,30 @@
             // PT1
             // 
             this.PT1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PT1.Controls.Add(this.T2);
             this.PT1.Controls.Add(this.panel2);
             this.PT1.Controls.Add(this.T3);
-            this.PT1.Controls.Add(this.T2);
             this.PT1.Controls.Add(this.L3);
             this.PT1.Controls.Add(this.T1);
             this.PT1.Controls.Add(this.L2);
             this.PT1.Controls.Add(this.L1);
-            this.PT1.Location = new System.Drawing.Point(3, 56);
+            this.PT1.Location = new System.Drawing.Point(3, 55);
             this.PT1.Name = "PT1";
             this.PT1.Size = new System.Drawing.Size(403, 101);
             this.PT1.TabIndex = 4;
+            this.PT1.Visible = false;
+            // 
+            // T2
+            // 
+            this.T2.FormattingEnabled = true;
+            this.T2.Items.AddRange(new object[] {
+            "ENE-JUN",
+            "AGO-DIC"});
+            this.T2.Location = new System.Drawing.Point(114, 33);
+            this.T2.Name = "T2";
+            this.T2.Size = new System.Drawing.Size(282, 21);
+            this.T2.TabIndex = 123;
+            this.T2.Visible = false;
             // 
             // panel2
             // 
@@ -387,15 +366,6 @@
             this.T3.Visible = false;
             this.T3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // T2
-            // 
-            this.T2.Location = new System.Drawing.Point(114, 32);
-            this.T2.Multiline = true;
-            this.T2.Name = "T2";
-            this.T2.Size = new System.Drawing.Size(282, 23);
-            this.T2.TabIndex = 9;
-            this.T2.Visible = false;
-            // 
             // L3
             // 
             this.L3.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -466,6 +436,7 @@
             this.PT2.Name = "PT2";
             this.PT2.Size = new System.Drawing.Size(581, 101);
             this.PT2.TabIndex = 5;
+            this.PT2.Visible = false;
             // 
             // comboBox3
             // 
@@ -478,10 +449,11 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(214, 3);
+            this.comboBox2.Location = new System.Drawing.Point(155, 32);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(357, 21);
+            this.comboBox2.Size = new System.Drawing.Size(67, 21);
             this.comboBox2.TabIndex = 15;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // T10
             // 
@@ -506,8 +478,10 @@
             this.T7.Location = new System.Drawing.Point(352, 30);
             this.T7.Multiline = true;
             this.T7.Name = "T7";
+            this.T7.ReadOnly = true;
             this.T7.Size = new System.Drawing.Size(67, 23);
             this.T7.TabIndex = 13;
+            this.T7.Text = "5";
             this.T7.Visible = false;
             // 
             // L13
@@ -542,7 +516,7 @@
             this.L12.Name = "L12";
             this.L12.Size = new System.Drawing.Size(82, 23);
             this.L12.TabIndex = 11;
-            this.L12.Text = "GRUPO:";
+            this.L12.Text = "SEMESTRE:";
             this.L12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.L12.Visible = false;
             // 
@@ -569,10 +543,10 @@
             // 
             // T5
             // 
-            this.T5.Location = new System.Drawing.Point(155, 32);
+            this.T5.Location = new System.Drawing.Point(213, 4);
             this.T5.Multiline = true;
             this.T5.Name = "T5";
-            this.T5.Size = new System.Drawing.Size(67, 23);
+            this.T5.Size = new System.Drawing.Size(354, 23);
             this.T5.TabIndex = 9;
             this.T5.Visible = false;
             // 
@@ -612,28 +586,6 @@
             this.L7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.L7.Visible = false;
             // 
-            // T9
-            // 
-            this.T9.Location = new System.Drawing.Point(993, 27);
-            this.T9.Multiline = true;
-            this.T9.Name = "T9";
-            this.T9.Size = new System.Drawing.Size(67, 23);
-            this.T9.TabIndex = 13;
-            this.T9.Visible = false;
-            // 
-            // T4
-            // 
-            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T4.Location = new System.Drawing.Point(623, 27);
-            this.T4.Multiline = true;
-            this.T4.Name = "T4";
-            this.T4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T4.Size = new System.Drawing.Size(357, 22);
-            this.T4.TabIndex = 8;
-            this.T4.Visible = false;
-            // 
             // PT3
             // 
             this.PT3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -647,6 +599,7 @@
             this.PT3.Name = "PT3";
             this.PT3.Size = new System.Drawing.Size(987, 100);
             this.PT3.TabIndex = 6;
+            this.PT3.Visible = false;
             // 
             // T11
             // 
@@ -718,26 +671,7 @@
             this.PT4.Controls.Add(this.L31);
             this.PT4.Controls.Add(this.T28);
             this.PT4.Controls.Add(this.L30);
-            this.PT4.Controls.Add(this.T27);
-            this.PT4.Controls.Add(this.T26);
-            this.PT4.Controls.Add(this.T25);
-            this.PT4.Controls.Add(this.T24);
-            this.PT4.Controls.Add(this.T23);
-            this.PT4.Controls.Add(this.L29);
-            this.PT4.Controls.Add(this.L28);
-            this.PT4.Controls.Add(this.L27);
-            this.PT4.Controls.Add(this.L26);
-            this.PT4.Controls.Add(this.L25);
-            this.PT4.Controls.Add(this.T22);
-            this.PT4.Controls.Add(this.T21);
-            this.PT4.Controls.Add(this.T20);
-            this.PT4.Controls.Add(this.T19);
             this.PT4.Controls.Add(this.T18);
-            this.PT4.Controls.Add(this.L24);
-            this.PT4.Controls.Add(this.L23);
-            this.PT4.Controls.Add(this.L22);
-            this.PT4.Controls.Add(this.L21);
-            this.PT4.Controls.Add(this.L20);
             this.PT4.Controls.Add(this.L19);
             this.PT4.Controls.Add(this.T17);
             this.PT4.Controls.Add(this.L18);
@@ -752,6 +686,7 @@
             this.PT4.Name = "PT4";
             this.PT4.Size = new System.Drawing.Size(474, 383);
             this.PT4.TabIndex = 7;
+            this.PT4.Visible = false;
             // 
             // T29
             // 
@@ -803,255 +738,18 @@
             this.L30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L30.Visible = false;
             // 
-            // T27
-            // 
-            this.T27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T27.Location = new System.Drawing.Point(268, 300);
-            this.T27.Multiline = true;
-            this.T27.Name = "T27";
-            this.T27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T27.Size = new System.Drawing.Size(199, 29);
-            this.T27.TabIndex = 37;
-            this.T27.Visible = false;
-            // 
-            // T26
-            // 
-            this.T26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T26.Location = new System.Drawing.Point(268, 271);
-            this.T26.Multiline = true;
-            this.T26.Name = "T26";
-            this.T26.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T26.Size = new System.Drawing.Size(199, 29);
-            this.T26.TabIndex = 36;
-            this.T26.Visible = false;
-            // 
-            // T25
-            // 
-            this.T25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T25.Location = new System.Drawing.Point(268, 242);
-            this.T25.Multiline = true;
-            this.T25.Name = "T25";
-            this.T25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T25.Size = new System.Drawing.Size(199, 29);
-            this.T25.TabIndex = 35;
-            this.T25.Visible = false;
-            // 
-            // T24
-            // 
-            this.T24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T24.Location = new System.Drawing.Point(268, 213);
-            this.T24.Multiline = true;
-            this.T24.Name = "T24";
-            this.T24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T24.Size = new System.Drawing.Size(199, 29);
-            this.T24.TabIndex = 34;
-            this.T24.Visible = false;
-            // 
-            // T23
-            // 
-            this.T23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T23.Location = new System.Drawing.Point(268, 184);
-            this.T23.Multiline = true;
-            this.T23.Name = "T23";
-            this.T23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T23.Size = new System.Drawing.Size(199, 29);
-            this.T23.TabIndex = 33;
-            this.T23.Visible = false;
-            // 
-            // L29
-            // 
-            this.L29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L29.Location = new System.Drawing.Point(235, 300);
-            this.L29.Name = "L29";
-            this.L29.Size = new System.Drawing.Size(33, 29);
-            this.L29.TabIndex = 32;
-            this.L29.Text = "10";
-            this.L29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L29.Visible = false;
-            // 
-            // L28
-            // 
-            this.L28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L28.Location = new System.Drawing.Point(235, 271);
-            this.L28.Name = "L28";
-            this.L28.Size = new System.Drawing.Size(33, 29);
-            this.L28.TabIndex = 31;
-            this.L28.Text = "9";
-            this.L28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L28.Visible = false;
-            // 
-            // L27
-            // 
-            this.L27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L27.Location = new System.Drawing.Point(235, 242);
-            this.L27.Name = "L27";
-            this.L27.Size = new System.Drawing.Size(33, 29);
-            this.L27.TabIndex = 30;
-            this.L27.Text = "8";
-            this.L27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L27.Visible = false;
-            // 
-            // L26
-            // 
-            this.L26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L26.Location = new System.Drawing.Point(235, 213);
-            this.L26.Name = "L26";
-            this.L26.Size = new System.Drawing.Size(33, 29);
-            this.L26.TabIndex = 29;
-            this.L26.Text = "7";
-            this.L26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L26.Visible = false;
-            // 
-            // L25
-            // 
-            this.L25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L25.Location = new System.Drawing.Point(235, 184);
-            this.L25.Name = "L25";
-            this.L25.Size = new System.Drawing.Size(33, 29);
-            this.L25.TabIndex = 28;
-            this.L25.Text = "6";
-            this.L25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L25.Visible = false;
-            // 
-            // T22
-            // 
-            this.T22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T22.Location = new System.Drawing.Point(36, 300);
-            this.T22.Multiline = true;
-            this.T22.Name = "T22";
-            this.T22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T22.Size = new System.Drawing.Size(199, 29);
-            this.T22.TabIndex = 27;
-            this.T22.Visible = false;
-            // 
-            // T21
-            // 
-            this.T21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T21.Location = new System.Drawing.Point(36, 271);
-            this.T21.Multiline = true;
-            this.T21.Name = "T21";
-            this.T21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T21.Size = new System.Drawing.Size(199, 29);
-            this.T21.TabIndex = 26;
-            this.T21.Visible = false;
-            // 
-            // T20
-            // 
-            this.T20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T20.Location = new System.Drawing.Point(36, 242);
-            this.T20.Multiline = true;
-            this.T20.Name = "T20";
-            this.T20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T20.Size = new System.Drawing.Size(199, 29);
-            this.T20.TabIndex = 25;
-            this.T20.Visible = false;
-            // 
-            // T19
-            // 
-            this.T19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T19.Location = new System.Drawing.Point(36, 213);
-            this.T19.Multiline = true;
-            this.T19.Name = "T19";
-            this.T19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T19.Size = new System.Drawing.Size(199, 29);
-            this.T19.TabIndex = 24;
-            this.T19.Visible = false;
-            // 
             // T18
             // 
             this.T18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.T18.Location = new System.Drawing.Point(36, 184);
+            this.T18.Location = new System.Drawing.Point(3, 185);
             this.T18.Multiline = true;
             this.T18.Name = "T18";
             this.T18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T18.Size = new System.Drawing.Size(199, 29);
+            this.T18.Size = new System.Drawing.Size(468, 142);
             this.T18.TabIndex = 23;
             this.T18.Visible = false;
-            // 
-            // L24
-            // 
-            this.L24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L24.Location = new System.Drawing.Point(3, 300);
-            this.L24.Name = "L24";
-            this.L24.Size = new System.Drawing.Size(33, 29);
-            this.L24.TabIndex = 22;
-            this.L24.Text = "5";
-            this.L24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L24.Visible = false;
-            // 
-            // L23
-            // 
-            this.L23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L23.Location = new System.Drawing.Point(3, 271);
-            this.L23.Name = "L23";
-            this.L23.Size = new System.Drawing.Size(33, 29);
-            this.L23.TabIndex = 21;
-            this.L23.Text = "4";
-            this.L23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L23.Visible = false;
-            // 
-            // L22
-            // 
-            this.L22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L22.Location = new System.Drawing.Point(3, 242);
-            this.L22.Name = "L22";
-            this.L22.Size = new System.Drawing.Size(33, 29);
-            this.L22.TabIndex = 20;
-            this.L22.Text = "3";
-            this.L22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L22.Visible = false;
-            // 
-            // L21
-            // 
-            this.L21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L21.Location = new System.Drawing.Point(3, 213);
-            this.L21.Name = "L21";
-            this.L21.Size = new System.Drawing.Size(33, 29);
-            this.L21.TabIndex = 19;
-            this.L21.Text = "2";
-            this.L21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L21.Visible = false;
-            // 
-            // L20
-            // 
-            this.L20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L20.Location = new System.Drawing.Point(3, 184);
-            this.L20.Name = "L20";
-            this.L20.Size = new System.Drawing.Size(33, 29);
-            this.L20.TabIndex = 18;
-            this.L20.Text = "1";
-            this.L20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L20.Visible = false;
             // 
             // L19
             // 
@@ -1190,10 +888,6 @@
             this.PT5.Controls.Add(this.T36);
             this.PT5.Controls.Add(this.L36);
             this.PT5.Controls.Add(this.L34);
-            this.PT5.Controls.Add(this.T35);
-            this.PT5.Controls.Add(this.T32);
-            this.PT5.Controls.Add(this.T34);
-            this.PT5.Controls.Add(this.T31);
             this.PT5.Controls.Add(this.T33);
             this.PT5.Controls.Add(this.L32);
             this.PT5.Controls.Add(this.T30);
@@ -1202,6 +896,7 @@
             this.PT5.Name = "PT5";
             this.PT5.Size = new System.Drawing.Size(511, 383);
             this.PT5.TabIndex = 8;
+            this.PT5.Visible = false;
             // 
             // L39
             // 
@@ -1324,63 +1019,16 @@
             this.L34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L34.Visible = false;
             // 
-            // T35
-            // 
-            this.T35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T35.Location = new System.Drawing.Point(257, 74);
-            this.T35.Name = "T35";
-            this.T35.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T35.Size = new System.Drawing.Size(252, 20);
-            this.T35.TabIndex = 46;
-            this.T35.Visible = false;
-            // 
-            // T32
-            // 
-            this.T32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T32.Location = new System.Drawing.Point(3, 74);
-            this.T32.Name = "T32";
-            this.T32.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T32.Size = new System.Drawing.Size(252, 20);
-            this.T32.TabIndex = 45;
-            this.T32.Visible = false;
-            // 
-            // T34
-            // 
-            this.T34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T34.Location = new System.Drawing.Point(257, 51);
-            this.T34.Name = "T34";
-            this.T34.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T34.Size = new System.Drawing.Size(252, 20);
-            this.T34.TabIndex = 42;
-            this.T34.Visible = false;
-            // 
-            // T31
-            // 
-            this.T31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T31.Location = new System.Drawing.Point(3, 51);
-            this.T31.Name = "T31";
-            this.T31.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T31.Size = new System.Drawing.Size(252, 20);
-            this.T31.TabIndex = 44;
-            this.T31.Visible = false;
-            // 
             // T33
             // 
             this.T33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T33.Location = new System.Drawing.Point(257, 29);
+            this.T33.Multiline = true;
             this.T33.Name = "T33";
             this.T33.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T33.Size = new System.Drawing.Size(252, 20);
+            this.T33.Size = new System.Drawing.Size(252, 65);
             this.T33.TabIndex = 43;
             this.T33.Visible = false;
             // 
@@ -1402,9 +1050,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T30.Location = new System.Drawing.Point(3, 29);
+            this.T30.Multiline = true;
             this.T30.Name = "T30";
             this.T30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T30.Size = new System.Drawing.Size(252, 20);
+            this.T30.Size = new System.Drawing.Size(252, 65);
             this.T30.TabIndex = 41;
             this.T30.Visible = false;
             // 
@@ -1425,12 +1074,8 @@
             this.PT6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PT6.Controls.Add(this.T64);
             this.PT6.Controls.Add(this.L59);
-            this.PT6.Controls.Add(this.T63);
-            this.PT6.Controls.Add(this.T62);
             this.PT6.Controls.Add(this.T61);
             this.PT6.Controls.Add(this.L60);
-            this.PT6.Controls.Add(this.T60);
-            this.PT6.Controls.Add(this.T59);
             this.PT6.Controls.Add(this.L58);
             this.PT6.Controls.Add(this.T58);
             this.PT6.Controls.Add(this.L65);
@@ -1452,17 +1097,8 @@
             this.PT6.Controls.Add(this.L50);
             this.PT6.Controls.Add(this.L49);
             this.PT6.Controls.Add(this.L47);
-            this.PT6.Controls.Add(this.T54);
-            this.PT6.Controls.Add(this.T53);
-            this.PT6.Controls.Add(this.T52);
-            this.PT6.Controls.Add(this.T51);
-            this.PT6.Controls.Add(this.T50);
             this.PT6.Controls.Add(this.T49);
             this.PT6.Controls.Add(this.L46);
-            this.PT6.Controls.Add(this.T46);
-            this.PT6.Controls.Add(this.T45);
-            this.PT6.Controls.Add(this.T47);
-            this.PT6.Controls.Add(this.T44);
             this.PT6.Controls.Add(this.T48);
             this.PT6.Controls.Add(this.L45);
             this.PT6.Controls.Add(this.L44);
@@ -1478,6 +1114,7 @@
             this.PT6.Name = "PT6";
             this.PT6.Size = new System.Drawing.Size(370, 637);
             this.PT6.TabIndex = 9;
+            this.PT6.Visible = false;
             // 
             // T64
             // 
@@ -1504,39 +1141,16 @@
             this.L59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L59.Visible = false;
             // 
-            // T63
-            // 
-            this.T63.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T63.Location = new System.Drawing.Point(186, 579);
-            this.T63.Name = "T63";
-            this.T63.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T63.Size = new System.Drawing.Size(181, 20);
-            this.T63.TabIndex = 93;
-            this.T63.Visible = false;
-            // 
-            // T62
-            // 
-            this.T62.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T62.Location = new System.Drawing.Point(186, 558);
-            this.T62.Name = "T62";
-            this.T62.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T62.Size = new System.Drawing.Size(181, 20);
-            this.T62.TabIndex = 92;
-            this.T62.Visible = false;
-            // 
             // T61
             // 
             this.T61.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T61.Location = new System.Drawing.Point(186, 537);
+            this.T61.Multiline = true;
             this.T61.Name = "T61";
             this.T61.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T61.Size = new System.Drawing.Size(181, 20);
+            this.T61.Size = new System.Drawing.Size(181, 61);
             this.T61.TabIndex = 91;
             this.T61.Visible = false;
             // 
@@ -1551,30 +1165,6 @@
             this.L60.Text = "EVIDENCIA";
             this.L60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L60.Visible = false;
-            // 
-            // T60
-            // 
-            this.T60.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T60.Location = new System.Drawing.Point(3, 579);
-            this.T60.Name = "T60";
-            this.T60.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T60.Size = new System.Drawing.Size(181, 20);
-            this.T60.TabIndex = 89;
-            this.T60.Visible = false;
-            // 
-            // T59
-            // 
-            this.T59.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T59.Location = new System.Drawing.Point(3, 558);
-            this.T59.Name = "T59";
-            this.T59.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T59.Size = new System.Drawing.Size(181, 20);
-            this.T59.TabIndex = 88;
-            this.T59.Visible = false;
             // 
             // L58
             // 
@@ -1594,9 +1184,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T58.Location = new System.Drawing.Point(3, 537);
+            this.T58.Multiline = true;
             this.T58.Name = "T58";
             this.T58.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T58.Size = new System.Drawing.Size(181, 20);
+            this.T58.Size = new System.Drawing.Size(181, 61);
             this.T58.TabIndex = 86;
             this.T58.Visible = false;
             // 
@@ -1825,75 +1416,16 @@
             this.L47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L47.Visible = false;
             // 
-            // T54
-            // 
-            this.T54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T54.Location = new System.Drawing.Point(186, 350);
-            this.T54.Name = "T54";
-            this.T54.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T54.Size = new System.Drawing.Size(181, 20);
-            this.T54.TabIndex = 65;
-            this.T54.Visible = false;
-            // 
-            // T53
-            // 
-            this.T53.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T53.Location = new System.Drawing.Point(186, 329);
-            this.T53.Name = "T53";
-            this.T53.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T53.Size = new System.Drawing.Size(181, 20);
-            this.T53.TabIndex = 64;
-            this.T53.Visible = false;
-            // 
-            // T52
-            // 
-            this.T52.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T52.Location = new System.Drawing.Point(186, 308);
-            this.T52.Name = "T52";
-            this.T52.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T52.Size = new System.Drawing.Size(181, 20);
-            this.T52.TabIndex = 63;
-            this.T52.Visible = false;
-            // 
-            // T51
-            // 
-            this.T51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T51.Location = new System.Drawing.Point(3, 350);
-            this.T51.Name = "T51";
-            this.T51.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T51.Size = new System.Drawing.Size(181, 20);
-            this.T51.TabIndex = 62;
-            this.T51.Visible = false;
-            // 
-            // T50
-            // 
-            this.T50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T50.Location = new System.Drawing.Point(3, 329);
-            this.T50.Name = "T50";
-            this.T50.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T50.Size = new System.Drawing.Size(181, 20);
-            this.T50.TabIndex = 61;
-            this.T50.Visible = false;
-            // 
             // T49
             // 
             this.T49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T49.Location = new System.Drawing.Point(3, 308);
+            this.T49.Multiline = true;
             this.T49.Name = "T49";
             this.T49.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T49.Size = new System.Drawing.Size(181, 20);
+            this.T49.Size = new System.Drawing.Size(362, 61);
             this.T49.TabIndex = 60;
             this.T49.Visible = false;
             // 
@@ -1909,63 +1441,16 @@
             this.L46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.L46.Visible = false;
             // 
-            // T46
-            // 
-            this.T46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T46.Location = new System.Drawing.Point(186, 262);
-            this.T46.Name = "T46";
-            this.T46.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T46.Size = new System.Drawing.Size(181, 20);
-            this.T46.TabIndex = 58;
-            this.T46.Visible = false;
-            // 
-            // T45
-            // 
-            this.T45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T45.Location = new System.Drawing.Point(3, 262);
-            this.T45.Name = "T45";
-            this.T45.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T45.Size = new System.Drawing.Size(181, 20);
-            this.T45.TabIndex = 57;
-            this.T45.Visible = false;
-            // 
-            // T47
-            // 
-            this.T47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T47.Location = new System.Drawing.Point(186, 241);
-            this.T47.Name = "T47";
-            this.T47.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T47.Size = new System.Drawing.Size(181, 20);
-            this.T47.TabIndex = 56;
-            this.T47.Visible = false;
-            // 
-            // T44
-            // 
-            this.T44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T44.Location = new System.Drawing.Point(3, 241);
-            this.T44.Name = "T44";
-            this.T44.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T44.Size = new System.Drawing.Size(181, 20);
-            this.T44.TabIndex = 55;
-            this.T44.Visible = false;
-            // 
             // T48
             // 
             this.T48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T48.Location = new System.Drawing.Point(186, 220);
+            this.T48.Multiline = true;
             this.T48.Name = "T48";
             this.T48.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T48.Size = new System.Drawing.Size(181, 20);
+            this.T48.Size = new System.Drawing.Size(181, 60);
             this.T48.TabIndex = 54;
             this.T48.Visible = false;
             // 
@@ -1999,9 +1484,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T43.Location = new System.Drawing.Point(3, 220);
+            this.T43.Multiline = true;
             this.T43.Name = "T43";
             this.T43.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.T43.Size = new System.Drawing.Size(181, 20);
+            this.T43.Size = new System.Drawing.Size(181, 60);
             this.T43.TabIndex = 51;
             this.T43.Visible = false;
             // 
@@ -2095,33 +1581,77 @@
             // bGuardar
             // 
             this.bGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bGuardar.Location = new System.Drawing.Point(1094, 708);
+            this.bGuardar.Location = new System.Drawing.Point(489, 667);
             this.bGuardar.Name = "bGuardar";
             this.bGuardar.Size = new System.Drawing.Size(86, 26);
             this.bGuardar.TabIndex = 50;
             this.bGuardar.Text = "Guardar";
             this.bGuardar.UseVisualStyleBackColor = true;
+            this.bGuardar.Visible = false;
+            this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);
             // 
-            // LImprimir
+            // label4
             // 
-            this.LImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LImprimir.Location = new System.Drawing.Point(1186, 708);
-            this.LImprimir.Name = "LImprimir";
-            this.LImprimir.Size = new System.Drawing.Size(86, 26);
-            this.LImprimir.TabIndex = 51;
-            this.LImprimir.Text = "Imprimir";
-            this.LImprimir.UseVisualStyleBackColor = true;
-            this.LImprimir.Click += new System.EventHandler(this.LImprimir_Click);
+            this.label4.BackColor = System.Drawing.Color.Green;
+            this.label4.Location = new System.Drawing.Point(-3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(1373, 60);
+            this.label4.TabIndex = 121;
             // 
-            // bEnviar
+            // label5
             // 
-            this.bEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bEnviar.Location = new System.Drawing.Point(1278, 708);
-            this.bEnviar.Name = "bEnviar";
-            this.bEnviar.Size = new System.Drawing.Size(86, 26);
-            this.bEnviar.TabIndex = 120;
-            this.bEnviar.Text = "Enviar";
-            this.bEnviar.UseVisualStyleBackColor = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(191)))), ((int)(((byte)(10)))));
+            this.label5.Location = new System.Drawing.Point(0, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(1370, 23);
+            this.label5.TabIndex = 122;
+            // 
+            // bImprimir
+            // 
+            this.bImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bImprimir.Location = new System.Drawing.Point(755, 667);
+            this.bImprimir.Name = "bImprimir";
+            this.bImprimir.Size = new System.Drawing.Size(86, 26);
+            this.bImprimir.TabIndex = 51;
+            this.bImprimir.Text = "Imprimir";
+            this.bImprimir.UseVisualStyleBackColor = true;
+            this.bImprimir.Visible = false;
+            this.bImprimir.Click += new System.EventHandler(this.LImprimir_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(665, 667);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(87, 26);
+            this.btnActualizar.TabIndex = 123;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Visible = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(578, 667);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 26);
+            this.btnBuscar.TabIndex = 124;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Visible = false;
+            this.btnBuscar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(117, 27);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 125;
+            this.comboBox1.Text = "Id Catedratico";
+            this.comboBox1.Visible = false;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ID
             // 
@@ -2129,19 +1659,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.bEnviar);
-            this.Controls.Add(this.LImprimir);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.bImprimir);
             this.Controls.Add(this.bGuardar);
-            this.Controls.Add(this.T9);
             this.Controls.Add(this.PT6);
             this.Controls.Add(this.PT5);
             this.Controls.Add(this.PT4);
             this.Controls.Add(this.PT3);
             this.Controls.Add(this.PT2);
             this.Controls.Add(this.PT1);
-            this.Controls.Add(this.T4);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ID";
@@ -2179,7 +1714,6 @@
         private System.Windows.Forms.ToolStripMenuItem reporteFinalToolStripMenuItem;
         private System.Windows.Forms.Panel PT1;
         private System.Windows.Forms.TextBox T3;
-        private System.Windows.Forms.TextBox T2;
         private System.Windows.Forms.TextBox T1;
         private System.Windows.Forms.Label L3;
         private System.Windows.Forms.Label L2;
@@ -2194,7 +1728,6 @@
         private System.Windows.Forms.Panel PT2;
         private System.Windows.Forms.TextBox T10;
         private System.Windows.Forms.TextBox T8;
-        private System.Windows.Forms.TextBox T9;
         private System.Windows.Forms.TextBox T7;
         private System.Windows.Forms.Label L13;
         private System.Windows.Forms.Label L11;
@@ -2202,7 +1735,6 @@
         private System.Windows.Forms.Label L10;
         private System.Windows.Forms.TextBox T6;
         private System.Windows.Forms.TextBox T5;
-        private System.Windows.Forms.TextBox T4;
         private System.Windows.Forms.Label L9;
         private System.Windows.Forms.Label L8;
         private System.Windows.Forms.Label L7;
@@ -2228,26 +1760,7 @@
         private System.Windows.Forms.Label L31;
         private System.Windows.Forms.TextBox T28;
         private System.Windows.Forms.Label L30;
-        private System.Windows.Forms.TextBox T27;
-        private System.Windows.Forms.TextBox T26;
-        private System.Windows.Forms.TextBox T25;
-        private System.Windows.Forms.TextBox T24;
-        private System.Windows.Forms.TextBox T23;
-        private System.Windows.Forms.Label L29;
-        private System.Windows.Forms.Label L28;
-        private System.Windows.Forms.Label L27;
-        private System.Windows.Forms.Label L26;
-        private System.Windows.Forms.Label L25;
-        private System.Windows.Forms.TextBox T22;
-        private System.Windows.Forms.TextBox T21;
-        private System.Windows.Forms.TextBox T20;
-        private System.Windows.Forms.TextBox T19;
         private System.Windows.Forms.TextBox T18;
-        private System.Windows.Forms.Label L24;
-        private System.Windows.Forms.Label L23;
-        private System.Windows.Forms.Label L22;
-        private System.Windows.Forms.Label L21;
-        private System.Windows.Forms.Label L20;
         private System.Windows.Forms.Label L19;
         private System.Windows.Forms.Label L39;
         private System.Windows.Forms.TextBox T38;
@@ -2259,27 +1772,14 @@
         private System.Windows.Forms.TextBox T36;
         private System.Windows.Forms.Label L36;
         private System.Windows.Forms.Label L34;
-        private System.Windows.Forms.TextBox T35;
-        private System.Windows.Forms.TextBox T32;
-        private System.Windows.Forms.TextBox T34;
-        private System.Windows.Forms.TextBox T31;
         private System.Windows.Forms.TextBox T33;
         private System.Windows.Forms.Label L32;
         private System.Windows.Forms.TextBox T30;
         private System.Windows.Forms.Label L33;
         private System.Windows.Forms.Panel PT6;
         private System.Windows.Forms.Label L47;
-        private System.Windows.Forms.TextBox T54;
-        private System.Windows.Forms.TextBox T53;
-        private System.Windows.Forms.TextBox T52;
-        private System.Windows.Forms.TextBox T51;
-        private System.Windows.Forms.TextBox T50;
         private System.Windows.Forms.TextBox T49;
         private System.Windows.Forms.Label L46;
-        private System.Windows.Forms.TextBox T46;
-        private System.Windows.Forms.TextBox T45;
-        private System.Windows.Forms.TextBox T47;
-        private System.Windows.Forms.TextBox T44;
         private System.Windows.Forms.TextBox T48;
         private System.Windows.Forms.Label L45;
         private System.Windows.Forms.Label L44;
@@ -2293,12 +1793,8 @@
         private System.Windows.Forms.Label L40;
         private System.Windows.Forms.TextBox T64;
         private System.Windows.Forms.Label L59;
-        private System.Windows.Forms.TextBox T63;
-        private System.Windows.Forms.TextBox T62;
         private System.Windows.Forms.TextBox T61;
         private System.Windows.Forms.Label L60;
-        private System.Windows.Forms.TextBox T60;
-        private System.Windows.Forms.TextBox T59;
         private System.Windows.Forms.Label L58;
         private System.Windows.Forms.TextBox T58;
         private System.Windows.Forms.Label L65;
@@ -2326,11 +1822,16 @@
         private System.Windows.Forms.ToolStripMenuItem observacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trabajosEntregadosToolStripMenuItem;
         private System.Windows.Forms.Button bGuardar;
-        private System.Windows.Forms.Button LImprimir;
-        private System.Windows.Forms.Button bEnviar;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button bImprimir;
+        private System.Windows.Forms.ComboBox T2;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

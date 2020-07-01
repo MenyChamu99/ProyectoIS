@@ -32,16 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbIdDocente = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPlan = new System.Windows.Forms.TextBox();
+            this.txtMensaje = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lbNombreD = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbIdPlan = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lbMateria = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lbUnidad = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -79,13 +74,13 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Id Docente:";
             // 
-            // txtPlan
+            // txtMensaje
             // 
-            this.txtPlan.Location = new System.Drawing.Point(12, 139);
-            this.txtPlan.Multiline = true;
-            this.txtPlan.Name = "txtPlan";
-            this.txtPlan.Size = new System.Drawing.Size(455, 278);
-            this.txtPlan.TabIndex = 4;
+            this.txtMensaje.Location = new System.Drawing.Point(12, 139);
+            this.txtMensaje.Multiline = true;
+            this.txtMensaje.Name = "txtMensaje";
+            this.txtMensaje.Size = new System.Drawing.Size(455, 278);
+            this.txtMensaje.TabIndex = 4;
             // 
             // button1
             // 
@@ -116,77 +111,28 @@
             this.lbNombreD.Size = new System.Drawing.Size(97, 21);
             this.lbNombreD.TabIndex = 7;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(225, 82);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 16);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Id Plan de Trabajo:";
-            // 
-            // cbIdPlan
-            // 
-            this.cbIdPlan.FormattingEnabled = true;
-            this.cbIdPlan.Location = new System.Drawing.Point(345, 81);
-            this.cbIdPlan.Name = "cbIdPlan";
-            this.cbIdPlan.Size = new System.Drawing.Size(121, 21);
-            this.cbIdPlan.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(228, 112);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 16);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Materia:";
-            // 
-            // lbMateria
-            // 
-            this.lbMateria.BackColor = System.Drawing.Color.White;
-            this.lbMateria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbMateria.Location = new System.Drawing.Point(280, 112);
-            this.lbMateria.Name = "lbMateria";
-            this.lbMateria.Size = new System.Drawing.Size(97, 21);
-            this.lbMateria.TabIndex = 11;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(379, 112);
+            this.label5.BackColor = System.Drawing.Color.Green;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(-3, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Unidad:";
-            // 
-            // lbUnidad
-            // 
-            this.lbUnidad.BackColor = System.Drawing.Color.White;
-            this.lbUnidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbUnidad.Location = new System.Drawing.Point(434, 111);
-            this.lbUnidad.Name = "lbUnidad";
-            this.lbUnidad.Size = new System.Drawing.Size(32, 20);
-            this.lbUnidad.TabIndex = 13;
+            this.label5.Size = new System.Drawing.Size(415, 25);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "INSTITUTO TECNOLOGICO DE DELICIAS";
             // 
             // EnviarObs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 464);
-            this.Controls.Add(this.lbUnidad);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lbMateria);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.cbIdPlan);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.lbNombreD);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtPlan);
+            this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbIdDocente);
             this.Controls.Add(this.label2);
@@ -205,15 +151,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbIdDocente;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPlan;
+        private System.Windows.Forms.TextBox txtMensaje;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbNombreD;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbIdPlan;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lbMateria;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lbUnidad;
     }
 }

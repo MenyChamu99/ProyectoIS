@@ -46,7 +46,11 @@ namespace Proyecto_Ing_Soft.Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            c.insertarMensaje(cbIdDocente.SelectedItem.ToString(),txtMensaje.Text);
+            MessageBox.Show("Mensaje enviado","Envio exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            cbIdDocente.Text = "";
+            lbNombreD.Text = "";
+            txtMensaje.Text = "";
         }
     }
 }

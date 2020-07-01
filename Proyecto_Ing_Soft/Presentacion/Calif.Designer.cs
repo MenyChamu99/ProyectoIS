@@ -288,20 +288,17 @@
             this.button1.Text = "Subir Calificaciones";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-<<<<<<< HEAD
-=======
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Enabled = false;
-            this.btnActualizar.Location = new System.Drawing.Point(687, 153);
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnActualizar.Location = new System.Drawing.Point(688, 154);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(84, 37);
-            this.btnActualizar.TabIndex = 26;
+            this.btnActualizar.Size = new System.Drawing.Size(87, 36);
+            this.btnActualizar.TabIndex = 0;
             this.btnActualizar.Text = "Actualizar Calificaciones";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.button2_Click);
->>>>>>> prueba
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // Calif
             // 

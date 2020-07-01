@@ -47,7 +47,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.IdCarrera = new System.Windows.Forms.Label();
             this.NombreCarrera = new System.Windows.Forms.Label();
             this.txtIdCarrera = new System.Windows.Forms.TextBox();
@@ -66,8 +65,6 @@
             this.btnEliminarMateria = new System.Windows.Forms.Button();
             this.btnEliminarCarrera = new System.Windows.Forms.Button();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
-            this.btnBuscarM = new System.Windows.Forms.Button();
-            this.btnBuscarC = new System.Windows.Forms.Button();
             this.btnEditarUsuario = new System.Windows.Forms.Button();
             this.btnEditarCarrera = new System.Windows.Forms.Button();
             this.btnEditarMateria = new System.Windows.Forms.Button();
@@ -83,6 +80,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.lbRM = new System.Windows.Forms.Label();
             this.lbRC = new System.Windows.Forms.Label();
+            this.BU = new System.Windows.Forms.Label();
+            this.BM = new System.Windows.Forms.Label();
+            this.BC = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvUsuarios)).BeginInit();
             this.SuspendLayout();
@@ -255,17 +255,6 @@
             this.btnAgregar.Visible = false;
             this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(595, 347);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 14;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Visible = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // IdCarrera
             // 
             this.IdCarrera.AutoSize = true;
@@ -295,6 +284,7 @@
             this.txtIdCarrera.Size = new System.Drawing.Size(100, 20);
             this.txtIdCarrera.TabIndex = 17;
             this.txtIdCarrera.Visible = false;
+            this.txtIdCarrera.TextChanged += new System.EventHandler(this.txtIdCarrera_TextChanged);
             this.txtIdCarrera.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdCarrera_KeyPress);
             // 
             // txtNombreC
@@ -368,6 +358,7 @@
             this.txtIdMateria.Size = new System.Drawing.Size(117, 20);
             this.txtIdMateria.TabIndex = 24;
             this.txtIdMateria.Visible = false;
+            this.txtIdMateria.TextChanged += new System.EventHandler(this.txtIdMateria_TextChanged);
             this.txtIdMateria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdMateria_KeyPress_1);
             // 
             // txtNombreM
@@ -390,7 +381,7 @@
             // 
             // txtCreditos
             // 
-            this.txtCreditos.Location = new System.Drawing.Point(846, 374);
+            this.txtCreditos.Location = new System.Drawing.Point(846, 376);
             this.txtCreditos.Name = "txtCreditos";
             this.txtCreditos.Size = new System.Drawing.Size(121, 20);
             this.txtCreditos.TabIndex = 28;
@@ -452,28 +443,6 @@
             this.btnEliminarUsuario.Visible = false;
             this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
-            // btnBuscarM
-            // 
-            this.btnBuscarM.Location = new System.Drawing.Point(595, 347);
-            this.btnBuscarM.Name = "btnBuscarM";
-            this.btnBuscarM.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarM.TabIndex = 34;
-            this.btnBuscarM.Text = "Buscar";
-            this.btnBuscarM.UseVisualStyleBackColor = true;
-            this.btnBuscarM.Visible = false;
-            this.btnBuscarM.Click += new System.EventHandler(this.btnBuscarM_Click);
-            // 
-            // btnBuscarC
-            // 
-            this.btnBuscarC.Location = new System.Drawing.Point(639, 380);
-            this.btnBuscarC.Name = "btnBuscarC";
-            this.btnBuscarC.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarC.TabIndex = 35;
-            this.btnBuscarC.Text = "Buscar";
-            this.btnBuscarC.UseVisualStyleBackColor = true;
-            this.btnBuscarC.Visible = false;
-            this.btnBuscarC.Click += new System.EventHandler(this.btnBuscarC_Click);
-            // 
             // btnEditarUsuario
             // 
             this.btnEditarUsuario.Location = new System.Drawing.Point(865, 428);
@@ -520,7 +489,7 @@
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(573, 324);
+            this.txtIdUsuario.Location = new System.Drawing.Point(573, 325);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(119, 20);
             this.txtIdUsuario.TabIndex = 40;
@@ -571,8 +540,10 @@
             // 
             this.txtUnidades.Location = new System.Drawing.Point(1080, 323);
             this.txtUnidades.Name = "txtUnidades";
+            this.txtUnidades.ReadOnly = true;
             this.txtUnidades.Size = new System.Drawing.Size(100, 20);
             this.txtUnidades.TabIndex = 45;
+            this.txtUnidades.Text = "5";
             this.txtUnidades.Visible = false;
             this.txtUnidades.TextChanged += new System.EventHandler(this.txtUnidades_TextChanged);
             this.txtUnidades.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUnidades_KeyPress);
@@ -630,6 +601,39 @@
             this.lbRC.Text = "Registrar Carrera";
             this.lbRC.Visible = false;
             // 
+            // BU
+            // 
+            this.BU.AutoSize = true;
+            this.BU.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BU.Location = new System.Drawing.Point(466, 161);
+            this.BU.Name = "BU";
+            this.BU.Size = new System.Drawing.Size(592, 75);
+            this.BU.TabIndex = 51;
+            this.BU.Text = "Buscar Usuario";
+            this.BU.Visible = false;
+            // 
+            // BM
+            // 
+            this.BM.AutoSize = true;
+            this.BM.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BM.Location = new System.Drawing.Point(476, 172);
+            this.BM.Name = "BM";
+            this.BM.Size = new System.Drawing.Size(582, 75);
+            this.BM.TabIndex = 52;
+            this.BM.Text = "Buscar Materia";
+            this.BM.Visible = false;
+            // 
+            // BC
+            // 
+            this.BC.AutoSize = true;
+            this.BC.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BC.Location = new System.Drawing.Point(486, 172);
+            this.BC.Name = "BC";
+            this.BC.Size = new System.Drawing.Size(595, 75);
+            this.BC.TabIndex = 53;
+            this.BC.Text = "Buscar Carrera";
+            this.BC.Visible = false;
+            // 
             // InterfazAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,6 +641,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.BC);
+            this.Controls.Add(this.BM);
+            this.Controls.Add(this.BU);
             this.Controls.Add(this.lbRC);
             this.Controls.Add(this.lbRM);
             this.Controls.Add(this.label12);
@@ -652,8 +659,6 @@
             this.Controls.Add(this.btnEditarMateria);
             this.Controls.Add(this.btnEditarCarrera);
             this.Controls.Add(this.btnEditarUsuario);
-            this.Controls.Add(this.btnBuscarC);
-            this.Controls.Add(this.btnBuscarM);
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.btnEliminarCarrera);
             this.Controls.Add(this.btnEliminarMateria);
@@ -672,7 +677,6 @@
             this.Controls.Add(this.txtIdCarrera);
             this.Controls.Add(this.NombreCarrera);
             this.Controls.Add(this.IdCarrera);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtUsuario);
@@ -719,7 +723,6 @@
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carreraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materiaToolStripMenuItem;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label IdCarrera;
         private System.Windows.Forms.Label NombreCarrera;
         private System.Windows.Forms.TextBox txtIdCarrera;
@@ -738,8 +741,6 @@
         private System.Windows.Forms.Button btnEliminarMateria;
         private System.Windows.Forms.Button btnEliminarCarrera;
         private System.Windows.Forms.Button btnEliminarUsuario;
-        private System.Windows.Forms.Button btnBuscarM;
-        private System.Windows.Forms.Button btnBuscarC;
         private System.Windows.Forms.Button btnEditarUsuario;
         private System.Windows.Forms.Button btnEditarCarrera;
         private System.Windows.Forms.Button btnEditarMateria;
@@ -755,5 +756,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lbRM;
         private System.Windows.Forms.Label lbRC;
+        private System.Windows.Forms.Label BU;
+        private System.Windows.Forms.Label BM;
+        private System.Windows.Forms.Label BC;
     }
 }

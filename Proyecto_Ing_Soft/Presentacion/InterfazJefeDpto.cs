@@ -1,5 +1,6 @@
 ﻿
 using InterfazDocente;
+using Proyecto_Ing_Soft.Presentacion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,7 @@ namespace Proyecto_Ing_Soft
 
         }
         Conexion c = new Conexion();
-
+        
 
         private void asignarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -47,7 +48,7 @@ namespace Proyecto_Ing_Soft
         {
             //crear Alumno
             lbRA.Visible = true;
-            btnBuscar.Visible = true;
+            btnBuscar.Visible = false;
             lbIdAlumno.Visible = true;
             txtIdAlumno.Visible = true;
             lbNombre.Visible = true;
@@ -107,7 +108,7 @@ namespace Proyecto_Ing_Soft
             cbIdMateria.Visible = false;
             lbMateria.Visible = false;
             lbNombreMateria.Visible = false;
-            btnBuscarG.Visible = false;
+            //btnBuscarG.Visible = false;
             btnAgregarG.Visible = false;
             btnEditarG.Visible = false;
             btnEliminarG.Visible = false;
@@ -119,7 +120,7 @@ namespace Proyecto_Ing_Soft
         {
             //Crear Alumno
             lbRA.Visible = false;
-            btnBuscar.Visible = false;
+            btnBuscar.Visible = true;
             lbIdAlumno.Visible = false;
             txtIdAlumno.Visible = false;
             lbNombre.Visible = false;
@@ -180,7 +181,7 @@ namespace Proyecto_Ing_Soft
             cbIdMateria.Visible = true;
             lbMateria.Visible = true;
             lbNombreMateria.Visible = true;
-            btnBuscarG.Visible = true;
+            //btnBuscarG.Visible = true;
             btnAgregarG.Visible = true;
             btnEditarG.Visible = true;
             btnEliminarG.Visible = true;
@@ -253,7 +254,7 @@ namespace Proyecto_Ing_Soft
             cbIdMateria.Visible = false;
             lbMateria.Visible = false;
             lbNombreMateria.Visible = false;
-            btnBuscarG.Visible = false;
+            //btnBuscarG.Visible = false;
             btnAgregarG.Visible = false;
             btnEditarG.Visible = false;
             btnEliminarG.Visible = false;
@@ -328,7 +329,7 @@ namespace Proyecto_Ing_Soft
             cbIdMateria.Visible = false;
             lbMateria.Visible = false;
             lbNombreMateria.Visible = false;
-            btnBuscarG.Visible = false;
+            //btnBuscarG.Visible = false;
             btnAgregarG.Visible = false;
             btnEditarG.Visible = false;
             btnEliminarG.Visible = false;
@@ -402,7 +403,7 @@ namespace Proyecto_Ing_Soft
             cbIdMateria.Visible = false;
             lbMateria.Visible = false;
             lbNombreMateria.Visible = false;
-            btnBuscarG.Visible = false;
+            //btnBuscarG.Visible = false;
             btnAgregarG.Visible = false;
             btnEditarG.Visible = false;
             btnEliminarG.Visible = false;
@@ -516,7 +517,7 @@ namespace Proyecto_Ing_Soft
 
         private void cbIdMateria_SelectedIndexChanged(object sender, EventArgs e)
         {
-            c.llenarTextBoxConsultaMateria2(cbIdMateria.SelectedItem.ToString(),lbNombreMateria);
+          
         }
 
         private void txtIdAlumno_KeyPress(object sender, KeyPressEventArgs e)
@@ -645,25 +646,93 @@ namespace Proyecto_Ing_Soft
            // c.cargarPersonas(DgvUsuarios);
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            if (c.alumnoRegistrado(txtIdAlumno.Text) > 0)
-            {
+        //private void btnBuscar_Click(object sender, EventArgs e)
+        //{
+        //    if (c.alumnoRegistrado(txtIdAlumno.Text) > 0)
+        //    {
                
-                c.llenarTextBoxConsultaalumno(txtIdAlumno.Text, txtNombre, txtApellidoP, txtApellidoM, cbSexo, cbEstadoCivil, txtEdad, txtFechaNacimiento, cbLugarNac, txtTelefono, txtCorreo, txtDomicilio, cbEntidadFede, txtColonia, cbCarrera, cbSemestre, cbTipoSangre, txtNombreP, txtTelefonoP, txtNombreM, txtTelefonoM);
-            }
-            else
-            {
-                MessageBox.Show("La carrera no existe", "No existe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Text = "";
+        //        c.llenarTextBoxConsultaalumno(txtIdAlumno.Text, txtNombre, txtApellidoP, txtApellidoM, cbSexo, cbEstadoCivil, txtEdad, txtFechaNacimiento, cbLugarNac, txtTelefono, txtCorreo, txtDomicilio, cbEntidadFede, txtColonia, cbCarrera, cbSemestre, cbTipoSangre, txtNombreP, txtTelefonoP, txtNombreM, txtTelefonoM);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("La carrera no existe", "No existe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        txtNombre.Text = "";
                 
-            }
-        }
+        //    }
+        //}
 
         private void cbCarrera_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+        public static int SumaCalif(int cal1, int cal2, int cal3, int cal4, int cal5)
+        {
+            return cal1 + cal2 + cal3 + cal4 + cal5;
+        }
+
+        public static int promedio(int cal1, int cal2, int cal3, int cal4, int cal5, int total)
+        {
+            return ((cal1 + cal2 + cal3 + cal4 + cal5)/total);
+        }
+
+        private void txtIdAlumno_TextChanged(object sender, EventArgs e)
+        {
+            if (c.alumnoRegistrado(txtIdAlumno.Text) > 0)
+            {
+
+                c.llenarTextBoxConsultaalumno(txtIdAlumno.Text, txtNombre, txtApellidoP, txtApellidoM, cbSexo, cbEstadoCivil, txtEdad, txtFechaNacimiento, cbLugarNac, txtTelefono, txtCorreo, txtDomicilio, cbEntidadFede, txtColonia, cbCarrera, cbSemestre, cbTipoSangre, txtNombreP, txtTelefonoP, txtNombreM, txtTelefonoM);
+            }
+            else if(txtIdAlumno.Text == "")
+            {
+                txtIdAlumno.Text = "";
+                txtNombre.Text = "";
+                txtApellidoP.Text = "";
+                txtApellidoM.Text = "";
+                cbSexo.Text = "";
+                cbEstadoCivil.Text = "";
+                txtEdad.Text = "";
+                txtFechaNacimiento.Text = "";
+                cbLugarNac.Text = "";
+                txtTelefono.Text = "";
+                txtCorreo.Text = "";
+                txtDomicilio.Text = "";
+                cbEntidadFede.Text = "";
+                txtColonia.Text = "";
+                cbCarrera.Text = "";
+                cbSemestre.Text = "";
+                cbTipoSangre.Text = "";
+                txtNombreP.Text = "";
+                txtTelefonoP.Text = "";
+                txtNombreM.Text = "";
+                txtTelefonoM.Text = "";
+            }
+        }
+
+        private void txtIdGrupo_TextChanged(object sender, EventArgs e)
+        {
+            if (c.grupoRegistrado(txtIdGrupo.Text) > 0)
+            {
+
+                c.llenarTextBoxConsultagrupo(txtIdGrupo.Text, cbSemestreG, cbGrupo, cbTurno,cbIdMateria);
+            }
+            else if (txtIdGrupo.Text =="")
+            {
+                cbSemestreG.Text = "Seleccionar Semestre";
+                cbGrupo.Text = "Seleccionar Grupo";
+                cbTurno.Text = "Seleccionar Turno";
+                cbIdMateria.Text = "Seleccionar Id Materia";
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            c.llenarTextBoxConsultaMateria2(cbIdMateria.SelectedItem.ToString(), lbNombreMateria);
+        }
+
+        //private void btnBuscarG_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
 

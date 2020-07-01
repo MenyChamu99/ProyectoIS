@@ -38,16 +38,17 @@ namespace Proyecto_Ing_Soft
             cbTipousuario.Visible = true;
             btnAgregar.Visible = true;
             btnEditarUsuario.Visible = false;
-            btnBuscar.Visible = false;
+            //btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = false;
             //CarreraCampos
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
             NombreCarrera.Visible = false;
             txtNombreC.Visible = false;
-            btnBuscarC.Visible = false;
+            //btnBuscarC.Visible = false;
             btnEditarCarrera.Visible = false;
             btnEliminarCarrera.Visible = false;
+            lbRC.Visible = false;
             //MateriaCampos
             btnAgregarM.Visible = false;
             IdMateria.Visible = false;
@@ -61,12 +62,16 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = false;
             txtHoras.Visible = false;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = false;
+            //btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
             txtUnidades.Visible = false;
             lbUnidades.Visible = false;
+            lbRM.Visible = false;
             //
             DgvUsuarios.Visible = true;
+            BU.Visible = false;
+            BC.Visible = false;
+            BM.Visible = false;
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
@@ -125,7 +130,7 @@ namespace Proyecto_Ing_Soft
             cbTipousuario.Visible = false;
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
-            btnBuscar.Visible = false;
+            //btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = false;
             //CarreraCampos
             lbRC.Visible = true;
@@ -134,7 +139,7 @@ namespace Proyecto_Ing_Soft
             NombreCarrera.Visible = true;
             txtNombreC.Visible = true;
             btnAgregarC.Visible = true;
-            btnBuscarC.Visible = false;
+            //btnBuscarC.Visible = false;
             btnEditarCarrera.Visible = false;
             btnEliminarCarrera.Visible = false;
             //CamposMateria
@@ -152,17 +157,21 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = false;
             txtHoras.Visible = false;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = false;
+            //btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
             lbRM.Visible = false;
             //
             DgvUsuarios.Visible = false;
+            BU.Visible = false;
+            BC.Visible = false;
+            BM.Visible = false;
         }
 
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lbIdUsuario.Visible = true;
             txtIdUsuario.Visible = true;
+            BU.Visible = true;
             //IdUsuario.Visible = true;
             Nombre.Visible = true;
             Usuario.Visible = true;
@@ -174,20 +183,22 @@ namespace Proyecto_Ing_Soft
             txtContra.Visible = true;
             cbTipousuario.Visible = true;
             btnEditarUsuario.Visible = true;
-            btnBuscar.Visible = true;
+            //btnBuscar.Visible = true;
             btnAgregar.Visible = false;
             btnEliminarUsuario.Visible = true;
             lbRU.Visible = false;
             //CarreraCampos
+            BC.Visible = false;
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
             NombreCarrera.Visible = false;
             txtNombreC.Visible = false;
             btnAgregarC.Visible = false;
-            btnBuscarC.Visible = false;
+            //btnBuscarC.Visible = false;
             btnEditarCarrera.Visible = false;
             btnEliminarCarrera.Visible = false;
             //CamposMateria
+            BM.Visible = false;
             btnAgregarM.Visible = false;
             IdMateria.Visible = false;
             NombreM.Visible = false;
@@ -200,24 +211,27 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = false;
             txtHoras.Visible = false;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = false;
+            //btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
             txtUnidades.Visible = false;
             lbUnidades.Visible = false;
             //
             DgvUsuarios.Visible = false;
+            lbRC.Visible = false;
+            lbRM.Visible = false;
+            lbRU.Visible = false;
         }
 
         private void materiasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //CarreraCampos
-
+            lbRC.Visible = false;
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
             NombreCarrera.Visible = false;
             txtNombreC.Visible = false;
             btnAgregarC.Visible = false;
-            btnBuscarC.Visible = false;
+            //btnBuscarC.Visible = false;
             btnEditarCarrera.Visible = false;
             btnEliminarCarrera.Visible = false;
             //Usuario Campos
@@ -253,10 +267,13 @@ namespace Proyecto_Ing_Soft
             txtUnidades.Visible = true;
             lbUnidades.Visible = true;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = false;
+            //btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
             //
             DgvUsuarios.Visible = false;
+            BU.Visible = false;
+            BC.Visible = false;
+            BM.Visible = false;
         }
 
         private void btnAgregarM_Click(object sender, EventArgs e)
@@ -367,6 +384,7 @@ namespace Proyecto_Ing_Soft
         {
             //UsuarioCampos
             //txtID.Clear();
+            BU.Visible = false;
             txtNombre.Clear();
             txtUsuario.Clear();
             txtContra.Clear();
@@ -384,19 +402,21 @@ namespace Proyecto_Ing_Soft
             cbTipousuario.Visible = false;
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
-            btnBuscar.Visible = false;
+            //btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = false;
             lbRU.Visible = false;
             //CarreraCampos
+            BC.Visible = true;
             txtIdCarrera.Visible = true;
             IdCarrera.Visible = true;
             NombreCarrera.Visible = true;
             txtNombreC.Visible = true;
             btnAgregarC.Visible = false;
             btnEditarCarrera.Visible = true;
-            btnBuscarC.Visible = true;
+            //btnBuscarC.Visible = true;
             btnEliminarCarrera.Visible = true;
             //CamposMateria
+            BM.Visible = false;
             btnAgregarM.Visible = false;
             IdMateria.Visible = false;
             NombreM.Visible = false;
@@ -409,26 +429,31 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = false;
             txtHoras.Visible = false;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = false;
+            //btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
             txtUnidades.Visible = false;
             lbUnidades.Visible = false;
             //
             DgvUsuarios.Visible = false;
+            lbRC.Visible = false;
+            lbRM.Visible = false;
+            lbRU.Visible = false;
         }
 
         private void materiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //CarreraCampos
+            BC.Visible = false;
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
             NombreCarrera.Visible = false;
             txtNombreC.Visible = false;
             btnAgregarC.Visible = false;
-            btnBuscarC.Visible = false;
+            //btnBuscarC.Visible = false;
             btnEditarCarrera.Visible = false;
             btnEliminarCarrera.Visible = false;
             //Usuario Campos
+            BU.Visible = false;
             lbIdUsuario.Visible = false;
             txtIdUsuario.Visible = false;
             //IdUsuario.Visible = false;
@@ -446,6 +471,7 @@ namespace Proyecto_Ing_Soft
             btnEliminarUsuario.Visible = false;
             lbRU.Visible = false;
             //CamposMateria
+            BM.Visible = true;
             btnAgregarM.Visible = false;
             IdMateria.Visible = true;
             NombreM.Visible = true;
@@ -458,12 +484,15 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = true;
             txtHoras.Visible = true;
             btnEditarMateria.Visible = true;
-            btnBuscarM.Visible = true;
+            //btnBuscarM.Visible = true;
             btnEliminarMateria.Visible = true;
             txtUnidades.Visible = true;
             lbUnidades.Visible = true;
             //
             DgvUsuarios.Visible = false;
+            lbRC.Visible = false;
+            lbRM.Visible = false;
+            lbRU.Visible = false;
         }
 
         private void usuarioToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -481,14 +510,14 @@ namespace Proyecto_Ing_Soft
             cbTipousuario.Visible = true;
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
-            btnBuscar.Visible = false;
+            //btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = true;
             //CarreraCampos
             txtIdCarrera.Visible = false;
             IdCarrera.Visible = false;
             NombreCarrera.Visible = false;
             txtNombreC.Visible = false;
-            btnBuscarC.Visible = false;
+            //btnBuscarC.Visible = false;
             btnEditarCarrera.Visible = false;
             btnEliminarCarrera.Visible = false;
             //MateriaCampos
@@ -504,7 +533,7 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = false;
             txtHoras.Visible = false;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = false;
+            //btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
             //
             DgvUsuarios.Visible = false;
@@ -529,7 +558,7 @@ namespace Proyecto_Ing_Soft
             cbTipousuario.Visible = false;
             btnAgregar.Visible = false;
             btnEditarUsuario.Visible = false;
-            btnBuscar.Visible = false;
+            //btnBuscar.Visible = false;
             btnEliminarUsuario.Visible = false;
             //CarreraCampos
             txtIdCarrera.Visible = true;
@@ -538,7 +567,7 @@ namespace Proyecto_Ing_Soft
             txtNombreC.Visible = true;
             btnAgregarC.Visible = false;
             btnEditarCarrera.Visible = false;
-            btnBuscarC.Visible = true;
+            //btnBuscarC.Visible = true;
             btnEliminarCarrera.Visible = true;
 
             //CamposMateria
@@ -554,7 +583,7 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = false;
             txtHoras.Visible = false;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = false;
+            //btnBuscarM.Visible = false;
             btnEliminarMateria.Visible = false;
             //
             DgvUsuarios.Visible = false;
@@ -568,7 +597,7 @@ namespace Proyecto_Ing_Soft
             NombreCarrera.Visible = false;
             txtNombreC.Visible = false;
             btnAgregarC.Visible = false;
-            btnBuscarC.Visible = false;
+            //btnBuscarC.Visible = false;
             btnEditarCarrera.Visible = false;
             btnEliminarCarrera.Visible = false;
             //Usuario Campos
@@ -598,7 +627,7 @@ namespace Proyecto_Ing_Soft
             txtCreditos.Visible = true;
             txtHoras.Visible = true;
             btnEditarMateria.Visible = false;
-            btnBuscarM.Visible = true;
+            //btnBuscarM.Visible = true;
             btnEliminarMateria.Visible = true;
             //
             DgvUsuarios.Visible = false;
@@ -627,52 +656,63 @@ namespace Proyecto_Ing_Soft
 
         private void txtIdUsuario_TextChanged(object sender, EventArgs e)
         {
-           
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
             if (c.personaRegistrada(txtIdUsuario.Text) > 0)
             {
                 c.llenarTextBoxConsulta(txtIdUsuario.Text, txtNombre, txtUsuario, txtContra, cbTipousuario);
             }
             else
             {
-                MessageBox.Show("El Usuario no existe","No existe",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                txtNombre.Text = "";
-                txtUsuario.Text = "";
-                txtContra.Text = "";
-                cbTipousuario.SelectedIndex = 0;
+                txtNombre.Clear();
+                txtUsuario.Clear();
+                txtContra.Clear();
+                cbTipousuario.Text = "";
             }
+            
         }
 
-        private void btnBuscarC_Click(object sender, EventArgs e)
-        {
-            if (c.carreraRegistrada(txtIdCarrera.Text) > 0)
-            {
-                c.llenarTextBoxConsultaCarrera(txtIdCarrera.Text, txtNombreC);
-            }
-            else
-            {
-                MessageBox.Show("La carrera no existe", "No existe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Text = "";
-                txtIdCarrera.Text = "";
-            }
-        }
+        //private void btnBuscar_Click(object sender, EventArgs e)
+        //{
+        //    if (c.personaRegistrada(txtIdUsuario.Text) > 0)
+        //    {
+        //        c.llenarTextBoxConsulta(txtIdUsuario.Text, txtNombre, txtUsuario, txtContra, cbTipousuario);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("El Usuario no existe","No existe",MessageBoxButtons.OK,MessageBoxIcon.Error);
+        //        txtNombre.Text = "";
+        //        txtUsuario.Text = "";
+        //        txtContra.Text = "";
+        //        cbTipousuario.SelectedIndex = 0;
+        //    }
+        //}
 
-        private void btnBuscarM_Click(object sender, EventArgs e)
-        {
-            if (c.MateriaRegistrada(txtIdMateria.Text) > 0)
-            {
-                c.llenarTextBoxConsultaMateria(txtIdMateria.Text, txtNombreM, txtHoras , cbIdCarrera, txtCreditos , txtUnidades);
-            }
-            else
-            {
-                MessageBox.Show("La carrera no existe", "No existe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Text = "";
-                //txtIdCarrera.Text = "";
-            }
-        }
+        //private void btnBuscarC_Click(object sender, EventArgs e)
+        //{
+        //    if (c.carreraRegistrada(txtIdCarrera.Text) > 0)
+        //    {
+        //        c.llenarTextBoxConsultaCarrera(txtIdCarrera.Text, txtNombreC);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("La carrera no existe", "No existe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        txtNombre.Text = "";
+        //        txtIdCarrera.Text = "";
+        //    }
+        //}
+
+        //private void btnBuscarM_Click(object sender, EventArgs e)
+        //{
+        //    if (c.MateriaRegistrada(txtIdMateria.Text) > 0)
+        //    {
+        //        c.llenarTextBoxConsultaMateria(txtIdMateria.Text, txtNombreM, txtHoras , cbIdCarrera, txtCreditos , txtUnidades);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("La carrera no existe", "No existe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        txtNombre.Text = "";
+        //        //txtIdCarrera.Text = "";
+        //    }
+        //}
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -783,6 +823,35 @@ namespace Proyecto_Ing_Soft
         private void txtHoras_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtIdMateria_TextChanged(object sender, EventArgs e)
+        {
+            if (c.MateriaRegistrada(txtIdMateria.Text) > 0)
+            {
+                c.llenarTextBoxConsultaMateria(txtIdMateria.Text, txtNombreM, txtHoras, cbIdCarrera, txtCreditos, txtUnidades);
+            }
+            else 
+            {
+                txtNombreM.Clear();
+                txtHoras.Clear();
+                cbIdCarrera.Text = "";
+                txtCreditos.Clear();
+                
+            }
+        }
+
+        private void txtIdCarrera_TextChanged(object sender, EventArgs e)
+        {
+            if (c.carreraRegistrada(txtIdCarrera.Text) > 0)
+            {
+                c.llenarTextBoxConsultaCarrera(txtIdCarrera.Text, txtNombreC);
+            }
+            else
+            {
+                txtNombreC.Clear();
+            }
+            
         }
     }
 }

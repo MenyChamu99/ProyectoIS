@@ -18,7 +18,9 @@ namespace PruebaUnitariaInicio
 
             const int resesperado = 400;
 
-           // var actual = InicioSesion.SumaCalif(cal1, cal2, cal3, cal4, cal5);
+          var actual = InterfazJefeDpto.SumaCalif(calificacion1, calificacion2, calificacion3, calificacion4, calificacion5);
+
+            Assert.AreEqual(resesperado, actual);
         }
     }
 }
